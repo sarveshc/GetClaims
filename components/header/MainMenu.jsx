@@ -70,7 +70,7 @@ const MainMenu = () => {
             >
               Home
             </a>
-            <ul className="dropdown-menu">
+            <ul style={{display:'none'}} className="dropdown-menu">
               <li>
                 <div className="row">
                   {menuItems.map((menu, index) => (
@@ -85,7 +85,7 @@ const MainMenu = () => {
                         >
                           {menu.title}
                         </h6>
-                        <ul className="style-none mega-dropdown-list">
+                        {/* <ul className="style-none mega-dropdown-list">
                           {menu.items.map((item, index) => (
                             <li key={index}>
                               <Link
@@ -98,7 +98,7 @@ const MainMenu = () => {
                               </Link>
                             </li>
                           ))}
-                        </ul>
+                        </ul> */}
                       </div>
                     </div>
                   ))}
