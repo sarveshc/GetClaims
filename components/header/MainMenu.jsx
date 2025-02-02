@@ -126,7 +126,7 @@ const MainMenu = () => {
               data-bs-auto-close="outside"
               aria-expanded="false"
             >
-              Pages
+              About Us
             </a>
             <ul className="dropdown-menu">
               {pagesItems.map((item, index) => (
@@ -179,7 +179,7 @@ const MainMenu = () => {
               data-bs-auto-close="outside"
               aria-expanded="false"
             >
-              Portfolio
+              Services
             </a>
             <ul className="dropdown-menu">
               {portfolioItems.map((item, index) => (

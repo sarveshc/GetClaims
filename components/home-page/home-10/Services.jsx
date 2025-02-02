@@ -4,30 +4,30 @@ const servicesData = [
   {
     bgColor: "rgba(255, 171, 51, 0.18)",
     iconSrc: "/images/icon/icon_01.svg",
-    title: "Quality Design Maker.",
+    title: "Initial Claim Assessment.",
     description:
-      "The core of our service is based on the objective investment advice we seek to provide supported.",
+      "Our process begins with a comprehensive review of your rejected claim to understand the reasons for denial and determine the optimal steps to move forward.",
   },
   {
     bgColor: "rgba(100, 219, 226, 0.18)",
     iconSrc: "/images/icon/icon_02.svg",
-    title: "Professional Support by Expert.",
+    title: "Documentation Review and Support.",
     description:
-      "Through our Family Office Services, we are able to provide the expertise derived from our beginnings.",
+      "Our specialists carefully examine your documents to verify they comply with all necessary standards and assist you in collecting any extra information required for reapplication.",
   },
   {
     bgColor: "rgba(255, 160, 194, 0.18)",
     iconSrc: "/images/icon/icon_03.svg",
-    title: "Marketing & Affiliate Services.",
+    title: "Negotiation with Insurers.",
     description:
-      "Capco’s response is proven by our superb record of driving change through effective portfolio.",
+      "We manage all interactions with insurance companies, leveraging our expertise to negotiate and represent you effectively to reverse the denial.",
   },
   {
     bgColor: "rgba(246, 243, 255, 1)",
     iconSrc: "/images/icon/icon_04.svg",
-    title: "Cross Browser Optimized.",
+    title: "Legal Assistance.",
     description:
-      "The core of our service is based on the objective investment advice we seek to provide supported.",
+      "When needed, we offer legal assistance to safeguard your rights and ensure that your claim is properly processed through official channels.",
   },
 ];
 

@@ -169,7 +169,7 @@ const AppLanding = () => {
                       className="text-decoration-underline"
                       style={{ color: "#6A45FF" }}
                     >
-                      150,000+ client
+                      1000+ client
                     </span>
                   </div>
                   <h2 className="main-title fw-500 tx-dark m0">

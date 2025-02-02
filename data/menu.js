@@ -33,20 +33,18 @@ export const pagesItems = [
   {
     title: "About Us",
     subItems: [
-      { title: "About - Insurance", link: "/pages-menu/about-us-v1" },
-      { title: "About - Real Estate", link: "/pages-menu/about-us-v2" },
+      
+      
       { title: "About - Agency", link: "/pages-menu/about-us-v3" },
-      { title: "About - Lead Generation", link: "/pages-menu/about-us-v4" },
+      
     ],
   },
   {
     title: "Services",
     subItems: [
-      { title: "Service - Insurance", link: "/pages-menu/service-v1" },
-      { title: "Service - Real Estate", link: "/pages-menu/service-v2" },
-      { title: "Service Lead Generation", link: "/pages-menu/service-v3" },
+      
       { title: "Service Agency", link: "/pages-menu/service-v4" },
-      { title: "Service Details", link: "/pages-menu/service-details" },
+      
     ],
   },
   {
@@ -85,11 +83,11 @@ export const pagesItems = [
 ];
 
 export const portfolioItems = [
-  { name: "Portfolio 01", link: "/portfolio/portfolio-v1" },
-  { name: "Portfolio 02", link: "/portfolio/portfolio-v2" },
-  { name: "Portfolio 03", link: "/portfolio/portfolio-v3" },
-  { name: "Portfolio 04", link: "/portfolio/portfolio-v4" },
-  { name: "Portfolio 05", link: "/portfolio/portfolio-v5" },
+  { name: "Assistance in Evaluation of Claims", link: "/portfolio/portfolio-v1" },
+  { name: "Coordination with surveyors and insurance representatives", link: "/portfolio/portfolio-v2" },
+  { name: "Expert Legal and Professional Guidance for Claim Denials", link: "/portfolio/portfolio-v3" },
+  { name: "Assistance in Claim Documentation", link: "/portfolio/portfolio-v4" },
+  { name: "Understanding and Awareness of Insurance", link: "/portfolio/portfolio-v5" },
   { name: "Portfolio 06", link: "/portfolio/portfolio-v6" },
   { name: "Portfolio 07", link: "/portfolio/portfolio-v7" },
   { name: "Portfolio Details", link: "/portfolio/1" },

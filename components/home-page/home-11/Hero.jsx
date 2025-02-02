@@ -14,7 +14,7 @@ const Hero = () => {
   const content = {
     heading: "Increase your web traffic with our expert",
     subheading:
-      "Agency work with top rated talented people provide qulaity services.",
+      "We offer Claim Assistance Services with expert support, guiding you every step of the way. Proud to help you navigate the process and secure your rightful claims.",
     btnText: "Start Now",
   };
 

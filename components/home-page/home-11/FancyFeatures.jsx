@@ -16,7 +16,7 @@ const FancyFeatures = () => {
                 className="text-decoration-underline"
                 style={{ color: "#ff733b" }}
               >
-                150,000+ client
+               1000+ client
               </span>
             </div>
             <h2 className="main-title fw-normal tx-dark m0">
