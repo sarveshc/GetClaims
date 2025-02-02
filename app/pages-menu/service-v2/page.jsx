@@ -6,7 +6,7 @@ import Service2 from "@/components/services/Service2";
 import Testimonial from "@/components/home-page/home-5/Testimonial";
 import Link from "next/link";
 export const metadata = {
-  title: "Service V2 || Jano - Creative Multipurpose React NextJS Template",
+  title: "Service V2 || GetClaims - Creative Multipurpose React NextJS Template",
 };
 const ServiceV2 = () => {
   return (

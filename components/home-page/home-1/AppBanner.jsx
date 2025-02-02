@@ -25,7 +25,7 @@ const AppBanner = () => {
           <div className="title-style-one">
             <div className="sc-title text-uppercase">MOBILE APP</div>
             <h2 className="main-title fw-500 tx-dark m0">
-              Download our Jano Application.
+              Download our GetClaims Application.
             </h2>
           </div>
           <p className="fs-20 pt-30 pb-30 lg-pb-20">

@@ -12,7 +12,7 @@ import OurMission from "@/components/about/OurMission";
 import Block2 from "@/components/about/Block2";
 import CounterSection from "@/components/home-page/home-13/Counter";
 export const metadata = {
-  title: "About Us V4 || Jano - Creative Multipurpose React NextJS Template",
+  title: "About Us V4 || GetClaims - Creative Multipurpose React NextJS Template",
 };
 const AboutUsV4 = () => {
   return (
@@ -78,7 +78,7 @@ const AboutUsV4 = () => {
         <div className="container">
           <div className="title-style-ten text-center" data-aos="fade-up">
             <h2 className="main-title font-recoleta fw-normal tx-dark">
-              Jano. The People{" "}
+              GetClaims. The People{" "}
               <span className="position-relative">
                 of Expert.
                 <Image
@@ -97,7 +97,7 @@ const AboutUsV4 = () => {
                 className="text-lg tx-dark text-center lh-lg mt-25 md-mt-20"
                 data-aos="fade-up"
               >
-                At jano, we’ve seen again and again how the seemingly simple act
+                At GetClaims, we’ve seen again and again how the seemingly simple act
                 of creating can be a force for growth, change,and discovery in
                 people’s lives. We want to inspire and multiply the kind of
                 creative exploration that furthers expression, learning and

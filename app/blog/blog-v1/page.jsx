@@ -8,7 +8,7 @@ import RecentPost from "@/components/blog/RecentPost";
 import BannerPost from "@/components/blog/BannerPost";
 export const metadata = {
   title:
-    "List With Sidebar || Jano - Creative Multipurpose React NextJS Template",
+    "List With Sidebar || GetClaims - Creative Multipurpose React NextJS Template",
 };
 const ListWithSidebar = () => {
   return (

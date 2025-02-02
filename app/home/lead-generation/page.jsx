@@ -16,7 +16,7 @@ import Subscribe from "@/components/home-page/home-13/Subscribe";
 import CopyrightFooter from "@/components/home-page/home-13/CopyrightFooter";
 import Image from "next/image";
 export const metadata = {
-  title: "Insurance || Jano - Creative Multipurpose React NextJS Template",
+  title: "Insurance || GetClaims - Creative Multipurpose React NextJS Template",
 };
 const LeadGeneration = () => {
   return (

@@ -50,12 +50,12 @@ const MainMenu = () => {
           </li>
           {/* End li */}
 
-          <li className="nav-item dropdown mega-dropdown-md">
+          <li className="nav-item dropdown ">
             <a
               // className="nav-link dropdown-toggle active-menu"
-              href="#"
+              href="/"
               role="button"
-              data-bs-toggle="dropdown"
+              //data-bs-toggle="dropdown"
               data-bs-auto-close="outside"
               aria-expanded="false"
               className={
@@ -112,23 +112,23 @@ const MainMenu = () => {
             <a
               // className="nav-link dropdown-toggle"
               className={
-                pagesItems.some((menu) =>
-                  menu.subItems.some((elm) => isActive(elm.link))
-                ) ||
+                // pagesItems.some((menu) =>
+                //   menu.subItems.some((elm) => isActive(elm.link))
+                // ) ||
                 isActive("/pages-menu/pricing") ||
                 isActive("/pages-menu/testimonials")
                   ? "nav-link dropdown-toggle active-menu"
-                  : "nav-link dropdown-toggle"
+                  : "nav-link "
               }
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              data-bs-auto-close="outside"
-              aria-expanded="false"
+              href="/pages-menu/about-us-v3"
+               role="button"
+              // data-bs-toggle="dropdown"
+              // data-bs-auto-close="outside"
+              // aria-expanded="true"
             >
               About Us
             </a>
-            <ul className="dropdown-menu">
+            {/* <ul className="dropdown-menu">
               {pagesItems.map((item, index) => (
                 <li className="dropdown-submenu dropdown" key={index}>
                   <a
@@ -139,9 +139,9 @@ const MainMenu = () => {
                     className={
                       item.subItems.some((elm) => isActive(elm.link))
                         ? "dropdown-item dropdown-toggle active-menu"
-                        : "dropdown-item dropdown-toggle"
+                        : "dropdown-item "
                     }
-                    href="#"
+                    href="/pages-menu/about-us-v3"
                   >
                     <span>{item.title}</span>
                   </a>
@@ -161,7 +161,7 @@ const MainMenu = () => {
                   </ul>
                 </li>
               ))}
-            </ul>
+            </ul> */}
           </li>
           {/* End li (pages) */}
 
@@ -171,17 +171,17 @@ const MainMenu = () => {
               className={
                 portfolioItems.some((elm) => isActive(elm.link))
                   ? "nav-link dropdown-toggle active-menu"
-                  : "nav-link dropdown-toggle"
+                  : "nav-link "
               }
-              href="#"
+              href="pages-menu/service-v4"
               role="button"
-              data-bs-toggle="dropdown"
+              //data-bs-toggle="dropdown"
               data-bs-auto-close="outside"
               aria-expanded="false"
             >
               Services
             </a>
-            <ul className="dropdown-menu">
+            {/* <ul className="dropdown-menu">
               {portfolioItems.map((item, index) => (
                 <li key={index}>
                   <Link
@@ -194,11 +194,11 @@ const MainMenu = () => {
                   </Link>
                 </li>
               ))}
-            </ul>
+            </ul> */}
           </li>
           {/* End li (portfolio) */}
 
-          <li className="nav-item dropdown">
+          {/* <li className="nav-item dropdown">
             <a
               // className="nav-link dropdown-toggle"
               className={
@@ -228,7 +228,7 @@ const MainMenu = () => {
                 </li>
               ))}
             </ul>
-          </li>
+          </li> */}
           {/* End li (blog) */}
 
           <li className="nav-item dropdown">
@@ -236,11 +236,11 @@ const MainMenu = () => {
               className={
                 contactItems.some((elm) => isActive(elm.link))
                   ? "nav-link dropdown-toggle active-menu"
-                  : "nav-link dropdown-toggle"
+                  : "nav-link "
               }
-              href="#"
+              href="/contact/contact-v2"
               role="button"
-              data-bs-toggle="dropdown"
+              //data-bs-toggle="dropdown"
               data-bs-auto-close="outside"
               aria-expanded="false"
             >

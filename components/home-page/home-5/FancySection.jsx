@@ -39,7 +39,7 @@ const FancySection = () => {
           className="lazy-img arrow"
         />
       </a>
-      <div className="clip-text-two fw-bold wow fadeInUp">Jano</div>
+      <div className="clip-text-two fw-bold wow fadeInUp">GetClaims</div>
     </div>
   );
 };

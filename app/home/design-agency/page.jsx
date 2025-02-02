@@ -9,7 +9,7 @@ import Blog from "@/components/home-page/home-12/Blog";
 import Social from "@/components/home-page/home-12/Social";
 import Image from "next/image";
 export const metadata = {
-  title: "Design Agency || Jano - Creative Multipurpose React NextJS Template",
+  title: "Design Agency || GetClaims - Creative Multipurpose React NextJS Template",
 };
 const DesignAgency = () => {
   return (
@@ -107,7 +107,7 @@ const DesignAgency = () => {
             <div className="d-flex align-items-center justify-content-between">
               <span className="lines" />
               <div className="title text-uppercase tx-dark text-center">
-                JANO has been featured In
+                GetClaims has been featured In
               </div>
               <span className="lines" />
             </div>
@@ -222,13 +222,13 @@ const DesignAgency = () => {
 
             <div className="col-lg-4 mb-30 d-flex justify-content-center justify-content-lg-end order-lg-3">
               <a
-                href="mailto:support@jano.com"
+                href="mailto:support@GetClaims.com"
                 className="mail d-flex align-items-center"
               >
                 <span className="icon d-flex align-items-center justify-content-center rounded-circle">
                   <i className="far fa-envelope" />
                 </span>{" "}
-                <span>support@jano.com</span>
+                <span>support@GetClaims.com</span>
               </a>
             </div>
             {/* End .col-lg-4 */}

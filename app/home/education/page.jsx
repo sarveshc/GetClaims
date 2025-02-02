@@ -16,7 +16,7 @@ import HowToStartBlock from "@/components/home-page/home-3/HowToStartBlock";
 import SignUpBanner from "@/components/home-page/home-3/SignUpBanner";
 import Testimonial from "@/components/home-page/home-3/Testimonial";
 export const metadata = {
-  title: "Education || Jano - Creative Multipurpose React NextJS Template",
+  title: "Education || GetClaims - Creative Multipurpose React NextJS Template",
 };
 const education = () => {
   return (

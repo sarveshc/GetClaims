@@ -8,7 +8,7 @@ import Team4 from "@/components/team/Team4";
 import Link from "next/link";
 import Image from "next/image";
 export const metadata = {
-  title: "About Us v2 || Jano - Creative Multipurpose React NextJS Template",
+  title: "About Us v2 || GetClaims - Creative Multipurpose React NextJS Template",
 };
 const RealEstate = () => {
   return (

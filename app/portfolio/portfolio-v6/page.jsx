@@ -4,7 +4,7 @@ import PortfolioTopTitle from "@/components/portfolio/PortfolioTopTitle";
 import PortfolioGallery6 from "@/components/portfolio/PortfolioGallery6";
 import CallToAction from "@/components/portfolio/CallToAction";
 export const metadata = {
-  title: "Portfolio V6 || Jano - Creative Multipurpose React NextJS Template",
+  title: "Portfolio V6 || GetClaims - Creative Multipurpose React NextJS Template",
 };
 const PortfolioV5 = () => {
   return (

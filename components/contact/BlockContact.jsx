@@ -19,7 +19,7 @@ const BlockContact = () => {
       icon: "/images/icon/icon_149.svg",
       title: "Live Support",
       content: "live chat service",
-      link: "www.janolivechat.com",
+      link: "www.GetClaimslivechat.com",
       delay: "300",
     },
   ];

@@ -15,7 +15,7 @@ import Subscribe from "@/components/home-page/home-6/Subscribe";
 import FooterMenu from "@/components/home-page/home-6/FooterMenu";
 import CopyrightFooter2 from "@/components/footer/CopyrightFooter2";
 export const metadata = {
-  title: "Sass Product || Jano - Creative Multipurpose React NextJS Template",
+  title: "Sass Product || GetClaims - Creative Multipurpose React NextJS Template",
 };
 const SassProduct = () => {
   return (
@@ -51,7 +51,7 @@ const SassProduct = () => {
                     Integrates your tools
                   </div>
                   <h2 className="main-title fw-500">
-                    Connect jano with the
+                    Connect GetClaims with the
                     <span className="d-inline-block position-relative">
                       software
                       <span

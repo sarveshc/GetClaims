@@ -5,7 +5,7 @@ const accordionData = [
       "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor",
   },
   {
-    question: "How do I proccess home loan from jano?",
+    question: "How do I proccess home loan from GetClaims?",
     answer:
       "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor",
   },

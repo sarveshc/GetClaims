@@ -12,7 +12,7 @@ import FancyBanner from "@/components/home-page/home-10/FancyBanner";
 import CallToActions from "@/components/home-page/home-10/CallToActions";
 import Footer from "@/components/home-page/home-10/Footer";
 export const metadata = {
-  title: "Agency Modern || Jano - Creative Multipurpose React NextJS Template",
+  title: "Agency Modern || GetClaims - Creative Multipurpose React NextJS Template",
 };
 const AgencyModern = () => {
   return (
@@ -60,7 +60,7 @@ const AgencyModern = () => {
             </div>
             <div className="col-lg-5 ms-auto" data-aos="fade-left">
               <p className="text-lg text-center text-lg-start md-pt-30 m0">
-              At Getclaims, we help you resolve your claims and financial disputes of any nature.
+              At GetClaims, we help you resolve your claims and financial disputes of any nature.
               Many customers are often dissatisfied with the results of claim settlements.
               </p>
             </div>

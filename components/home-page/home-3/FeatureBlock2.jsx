@@ -14,7 +14,7 @@ const FeatureBlock2 = () => {
             </div>
             <p className="fs-20 tx-dark mb-50 md-mb-30">
               Instructors from around the world teach millions of students on
-              jano. We provide the tools and skills to teach what you love.
+              GetClaims. We provide the tools and skills to teach what you love.
             </p>
             <Link href="/contact" className="btn-one fw-500">
               Start Teaching Now

@@ -15,7 +15,7 @@ import Pricing from "@/components/home-page/home-2/Pricing";
 import Testimonial from "@/components/home-page/home-2/Testimonial";
 import CallToActions from "@/components/feature-web-hosting/CallToActions";
 export const metadata = {
-  title: "Web Hosting || Jano - Creative Multipurpose React NextJS Template",
+  title: "Web Hosting || GetClaims - Creative Multipurpose React NextJS Template",
 };
 const WebHosting = () => {
   return (

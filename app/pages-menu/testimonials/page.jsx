@@ -4,7 +4,7 @@ import Testimonial from "@/components/home-page/home-3/Testimonial";
 import Testimonial2 from "@/components/home-page/home-5/Testimonial";
 import Testimonial3 from "@/components/home-page/home-6/Testimonial";
 export const metadata = {
-  title: "Testimonials || Jano - Creative Multipurpose React NextJS Template",
+  title: "Testimonials || GetClaims - Creative Multipurpose React NextJS Template",
 };
 const Testimonials = () => {
   return (

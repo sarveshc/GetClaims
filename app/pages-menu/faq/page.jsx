@@ -3,7 +3,7 @@ import DefaultFooter from "@/components/footer/DefaultFooter";
 import FaqAccordion from "@/components/faqs/FaqAccordion";
 import Link from "next/link";
 export const metadata = {
-  title: "Faq's || Jano - Creative Multipurpose React NextJS Template",
+  title: "Faq's || GetClaims - Creative Multipurpose React NextJS Template",
 };
 const Faq = () => {
   return (

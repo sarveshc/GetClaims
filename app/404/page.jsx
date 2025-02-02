@@ -3,7 +3,7 @@ import Link from "next/link";
 import DefaulHeader from "@/components/header/DefaulHeader";
 import Image from "next/image";
 export const metadata = {
-  title: "404 || Jano - Creative Multipurpose React NextJS Template",
+  title: "404 || GetClaims - Creative Multipurpose React NextJS Template",
 };
 const Pricing = () => {
   return (

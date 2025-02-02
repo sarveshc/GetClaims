@@ -3,7 +3,7 @@ import ContactForm2 from "@/components/contact/ContactForm2";
 import Footer from "@/components/home-page/home-10/Footer";
 import Header from "@/components/home-page/home-10/Header";
 export const metadata = {
-  title: "Contact v2 || Jano - Creative Multipurpose React NextJS Template",
+  title: "Contact v2 || GetClaims - Creative Multipurpose React NextJS Template",
 };
 const ContactV2 = () => {
   return (

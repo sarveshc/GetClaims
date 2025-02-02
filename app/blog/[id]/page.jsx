@@ -14,7 +14,7 @@ import blogsData from "@/data/blog";
 import Image from "next/image";
 export const metadata = {
   title:
-    "Dynamic Blog Details || Jano - Creative Multipurpose React NextJS Template",
+    "Dynamic Blog Details || GetClaims - Creative Multipurpose React NextJS Template",
 };
 const DynamicBlogDetails = ({ params }) => {
   const id = params.id;

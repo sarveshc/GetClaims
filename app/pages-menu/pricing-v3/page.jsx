@@ -10,7 +10,7 @@ import Pricing3 from "@/components/pricing/Pricing3";
 import CompareTable from "@/components/pricing/CompareTable";
 import Faq3 from "@/components/faqs/Faq3";
 export const metadata = {
-  title: "Pricing V3 || Jano - Creative Multipurpose React NextJS Template",
+  title: "Pricing V3 || GetClaims - Creative Multipurpose React NextJS Template",
 };
 const PricingV3 = () => {
   return (

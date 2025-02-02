@@ -10,7 +10,7 @@ import IncludedPlan from "@/components/home-page/home-2/IncludedPlan";
 import Features from "@/components/feature-web-hosting/Features";
 import CountryList from "@/components/feature-web-hosting/CountryList";
 export const metadata = {
-  title: "Features V2 || Jano - Creative Multipurpose React NextJS Template",
+  title: "Features V2 || GetClaims - Creative Multipurpose React NextJS Template",
 };
 const FeaturesV2 = () => {
   return (

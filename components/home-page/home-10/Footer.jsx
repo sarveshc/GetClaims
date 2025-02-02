@@ -7,20 +7,20 @@ const Footer = () => {
       title: "Links",
       links: [
         { label: "Home", href: "/" },
-        { label: "Pricing", href: "/pages-menu/pricing" },
-        { label: "About us", href: "/pages-menu/about-us-v1" },
-        { label: "Service", href: "/pages-menu/service-v1" },
-        { label: "Blog", href: "/blog/blog-v1" },
+       
+        { label: "About us", href: "/pages-menu/about-us-v3" },
+        { label: "Service", href: "/pages-menu/service-v4" },
+        // { label: "Blog", href: "/blog/blog-v1" },
       ],
       classes: "col-lg-2 col-sm-4 ms-auto mb-30",
     },
     {
       title: "Help & Support",
       links: [
-        { label: "FAQ", href: "/pages-menu/faq" },
-        { label: "Blog", href: "/blog/blog-v1" },
-        { label: "Contact Us", href: "/contact" },
-        { label: "Support", href: "/contact" },
+        // { label: "FAQ", href: "/pages-menu/faq" },
+        //{ label: "Blog", href: "/blog/blog-v1" },
+        { label: "Contact Us", href: "contact/contact-v2" },
+        { label: "Support", href: "contact/contact-v2" },
       ],
       classes: "col-lg-3 col-sm-4 mb-30",
     },
@@ -29,16 +29,16 @@ const Footer = () => {
   return (
     <div className="row">
       <div className="col-xl-3 col-lg-2 footer-intro mb-40">
-        <div className="logo">
+        {/* <div className="logo">
           <Link href="/">
             <img src="/images/logo/logo_01.png" alt="" width={95} />
           </Link>
-        </div>
-        <img
+        </div> */}
+        {/* <img
           src="/images/shape/shape_24.svg"
           alt="shape"
           className="mt-60 d-none d-lg-block"
-        />
+        /> */}
       </div>
       {/* End .col-xl-3 */}
 

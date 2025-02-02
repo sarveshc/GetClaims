@@ -9,7 +9,7 @@ import Block from "@/components/about/Block";
 import Counter2 from "@/components/about/Counter2";
 import AboutCeo from "@/components/about/AboutCeo";
 export const metadata = {
-  title: "AboutUs V3 || Jano - Creative Multipurpose React NextJS Template",
+  title: "AboutUs V3 || GetClaims - Creative Multipurpose React NextJS Template",
 };
 const AboutUsV3 = () => {
   return (
@@ -35,8 +35,7 @@ const AboutUsV3 = () => {
               <h2 className="main-title tx-dark fw-bold">About us</h2>
             </div>
             <p className="fs-20 mt-30 lg-mt-20">
-              Agency work with top rated talented people provide qulaity
-              services.
+            At GetClaims, we help you resolve your claims and financial disputes of any nature. Many customers are often dissatisfied with the results of claim settlementsAt GetClaims, we help you resolve your claims and financial disputes of any nature. Many customers are often dissatisfied with the results of claim settlements.
             </p>
           </div>
           {/* End container */}
@@ -78,7 +77,7 @@ const AboutUsV3 = () => {
                 <div className="title-style-one mt-30">
                   <div className="sc-title text-uppercase">Why us?</div>
                   <h2 className="main-title fw-bold tx-dark">
-                    Why <span>choose</span> Jano.
+                    Why <span>choose</span> GetClaims.
                   </h2>
                 </div>{" "}
                 {/* /.title-style-one */}

@@ -10,7 +10,7 @@ import Features from "@/components/feature-sass/Features";
 import Features2 from "@/components/feature-sass/Features2";
 import Hero from "@/components/feature-sass/Hero";
 export const metadata = {
-  title: "Features V1 || Jano - Creative Multipurpose React NextJS Template",
+  title: "Features V1 || GetClaims - Creative Multipurpose React NextJS Template",
 };
 const FeaturesV1 = () => {
   return (
@@ -189,7 +189,7 @@ const FeaturesV1 = () => {
                           style={{ backgroundColor: "#C6FFFF" }}
                         />
                       </span>
-                      get real results with Jano.
+                      get real results with GetClaims.
                     </h2>
                   </div>
                   {/* /.title-style-three */}

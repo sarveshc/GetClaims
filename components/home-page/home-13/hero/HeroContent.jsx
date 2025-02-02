@@ -24,7 +24,7 @@ const HeroContent = () => {
           <img src="/images/icon/icon_91.svg" alt="img" className="ms-3" />
         </Link>
         <div className="mb-25 text-white signIn-btn">
-          Already using jano? <Link href="/login">Sign in</Link>
+          Already using GetClaims? <Link href="/login">Sign in</Link>
         </div>
       </div>
       <h2 className="fw-normal text-white mt-60 mb-5 lg-mt-40">A+ Rating</h2>

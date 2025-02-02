@@ -30,7 +30,7 @@ const Footer = () => {
         { label: "Live chat", url: "/pages-menu/faq" },
         { label: "Self-service", url: "/pages-menu/faq" },
         { label: "Social", url: "/pages-menu/faq" },
-        { label: "Jano Reviews", url: "/pages-menu/faq" },
+        { label: "GetClaims Reviews", url: "/pages-menu/faq" },
       ],
       className: "col-lg-2 col-md-3 col-sm-6 mb-30",
     },

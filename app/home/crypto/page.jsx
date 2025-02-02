@@ -17,7 +17,7 @@ import CopyrightFooter2 from "@/components/footer/CopyrightFooter2";
 import Footer from "@/components/home-page/home-8/Footer";
 import Image from "next/image";
 export const metadata = {
-  title: "Crypto || Jano - Creative Multipurpose React NextJS Template",
+  title: "Crypto || GetClaims - Creative Multipurpose React NextJS Template",
 };
 const crypto = () => {
   return (
@@ -91,7 +91,7 @@ const crypto = () => {
               Trusted <span>Cryptocurrency</span> Platform
             </h2>
             <p className="text-white opacity-50 fs-20 pt-15">
-              jano has a variety of features that make it the best place to
+              GetClaims has a variety of features that make it the best place to
               start trading
             </p>
           </div>

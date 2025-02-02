@@ -3,7 +3,7 @@ import DefaultFooter from "@/components/footer/DefaultFooter";
 import PricingTable from "@/components/pricing/Pricing";
 import Link from "next/link";
 export const metadata = {
-  title: "Pricing || Jano - Creative Multipurpose React NextJS Template",
+  title: "Pricing || GetClaims - Creative Multipurpose React NextJS Template",
 };
 const Pricing = () => {
   return (

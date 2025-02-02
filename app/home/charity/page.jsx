@@ -14,7 +14,7 @@ import IntroVideo from "@/components/home-page/home-4/IntroVideo";
 import Team from "@/components/home-page/home-4/Team";
 import Footer from "@/components/home-page/home-4/footer";
 export const metadata = {
-  title: "N.P Charity || Jano - Creative Multipurpose React NextJS Template",
+  title: "N.P Charity || GetClaims - Creative Multipurpose React NextJS Template",
 };
 const charity = () => {
   return (

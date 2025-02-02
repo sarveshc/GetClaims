@@ -10,7 +10,7 @@ import portfolioData from "@/data/portfolio";
 import PortfolioDetailsTitle from "@/components/portfolio/portfolio-details/PortfolioDetailsTitle";
 export const metadata = {
   title:
-    "Portfolio Details || Jano - Creative Multipurpose React NextJS Template",
+    "Portfolio Details || GetClaims - Creative Multipurpose React NextJS Template",
 };
 const DynamicPortfolioDetails = ({ params }) => {
   const id = params.id;

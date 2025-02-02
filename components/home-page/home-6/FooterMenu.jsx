@@ -33,7 +33,7 @@ const footerData = [
       { label: "Self-service", href: "/blog/3" },
       { label: "Social", href: "/blog/4" },
       { label: "Collaboration", href: "/blog/4" },
-      { label: "Jano Reviews", href: "/blog/5" },
+      { label: "GetClaims Reviews", href: "/blog/5" },
     ],
   },
 ];

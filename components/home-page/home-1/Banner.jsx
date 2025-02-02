@@ -12,7 +12,7 @@ const Banner = () => {
     <div className="top-banner text-center">
       <h2 className="tx-dark mb-20">Top Rated Insurance Agency</h2>
       <p className="text-lg tx-dark opacity-75 mb-30 lg-mb-20">
-        “I couldn’t have asked for a better experience with Jano!”
+        “I couldn’t have asked for a better experience with GetClaims!”
       </p>
       <div className="d-inline-flex align-items-center">
         <ul className="d-flex style-none rating">{stars}</ul>

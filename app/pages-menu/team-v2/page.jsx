@@ -3,7 +3,7 @@ import DefaultFooter from "@/components/footer/DefaultFooter";
 import Team2 from "@/components/team/Team2";
 import CallToAction from "@/components/team/CallToAction";
 export const metadata = {
-  title: "Team V2 || Jano - Creative Multipurpose React NextJS Template",
+  title: "Team V2 || GetClaims - Creative Multipurpose React NextJS Template",
 };
 const TeamV1 = () => {
   return (

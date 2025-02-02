@@ -8,7 +8,7 @@ import FooterContent from "@/components/home-page/home-13/FooterContent";
 import Subscribe from "@/components/home-page/home-13/Subscribe";
 import CopyrightFooter from "@/components/home-page/home-13/CopyrightFooter";
 export const metadata = {
-  title: "Service V3 || Jano - Creative Multipurpose React NextJS Template",
+  title: "Service V3 || GetClaims - Creative Multipurpose React NextJS Template",
 };
 const ServiceV3 = () => {
   return (

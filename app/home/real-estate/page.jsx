@@ -12,7 +12,7 @@ import CallToActions from "@/components/home-page/home-5/CallToActions";
 import Footer from "@/components/home-page/home-5/footer";
 import Link from "next/link";
 export const metadata = {
-  title: "Real Estate || Jano - Creative Multipurpose React NextJS Template",
+  title: "Real Estate || GetClaims - Creative Multipurpose React NextJS Template",
 };
 const RealEstate = () => {
   return (

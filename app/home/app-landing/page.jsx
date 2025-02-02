@@ -16,7 +16,7 @@ import Social from "@/components/home-page/home-7/Social";
 import Link from "next/link";
 import Image from "next/image";
 export const metadata = {
-  title: "App Landing || Jano - Creative Multipurpose React NextJS Template",
+  title: "App Landing || GetClaims - Creative Multipurpose React NextJS Template",
 };
 const AppLanding = () => {
   return (
@@ -173,7 +173,7 @@ const AppLanding = () => {
                     </span>
                   </div>
                   <h2 className="main-title fw-500 tx-dark m0">
-                    Why you choose Jano <span>app?</span>
+                    Why you choose GetClaims <span>app?</span>
                   </h2>
                 </div>
                 {/* /.title-style-four */}

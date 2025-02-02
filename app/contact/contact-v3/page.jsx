@@ -7,7 +7,7 @@ import Header2 from "@/components/header/Header2";
 import BlockContact3 from "@/components/contact/BlockContact3";
 import ContactForm3 from "@/components/contact/ContactForm3";
 export const metadata = {
-  title: "Contact v3 || Jano - Creative Multipurpose React NextJS Template",
+  title: "Contact v3 || GetClaims - Creative Multipurpose React NextJS Template",
 };
 const ContactV3 = () => {
   return (

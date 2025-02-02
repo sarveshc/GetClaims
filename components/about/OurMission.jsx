@@ -16,13 +16,13 @@ const OurMission = () => {
               />
             </div>
             <p className="tx-dark mt-35 lg-mt-30 mb-45 lg-mb-30">
-              Jano combines excellent live video class, Note &amp; Extra class
+              GetClaims combines excellent live video class, Note &amp; Extra class
               that helps you learn quickly.
             </p>
             <h6 className="tx-dark fs-20">
               - Mike Lucas.{" "}
               <span className="fs-18 fw-normal opacity-50">
-                CEO &amp; Founder Jano
+                CEO &amp; Founder GetClaims
               </span>
             </h6>
           </div>

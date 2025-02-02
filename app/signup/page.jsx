@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import SignupForm from "@/components/common/SignupForm";
 export const metadata = {
-  title: "Sign Up || Jano - Creative Multipurpose React NextJS Template",
+  title: "Sign Up || GetClaims - Creative Multipurpose React NextJS Template",
 };
 const SignUp = () => {
   const currentYear = new Date().getFullYear();
@@ -47,7 +47,7 @@ const SignUp = () => {
         </div>
         {/* End form-wrapper */}
 
-        <p className="mt-auto pt-50">Copyright @{currentYear} jano inc.</p>
+        <p className="mt-auto pt-50">Copyright @{currentYear} GetClaims inc.</p>
         <img
           src="/images/assets/ils_11.png"
           alt="illustration"

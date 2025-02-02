@@ -14,7 +14,7 @@ import Service from "@/components/home-page/home-1/Service";
 import Testimonial from "@/components/home-page/home-1/Testimonial";
 import WhyChoose from "@/components/home-page/home-1/WhyChoose";
 export const metadata = {
-  title: "Insurance || Jano - Creative Multipurpose React NextJS Template",
+  title: "Insurance || GetClaims - Creative Multipurpose React NextJS Template",
 };
 const Insurance = () => {
   return (
@@ -287,7 +287,7 @@ const Insurance = () => {
                 </p>
                 <p className="text-white opacity-50 fs-15 m0 d-none d-lg-block">
                   © {new Date().getFullYear()} - {new Date().getFullYear() + 1}{" "}
-                  jano inc.
+                  GetClaims inc.
                 </p>
               </div>
               <Footer />

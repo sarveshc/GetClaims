@@ -7,7 +7,7 @@ import Faq4 from "@/components/faqs/Faq4";
 import Testimonial from "@/components/services/Testimonial";
 import CallToActions from "@/components/services/CallToActions";
 export const metadata = {
-  title: "Service V4 || Jano - Creative Multipurpose React NextJS Template",
+  title: "Service V4 || GetClaims - Creative Multipurpose React NextJS Template",
 };
 const ServiceV4 = () => {
   return (
@@ -33,8 +33,16 @@ const ServiceV4 = () => {
               <h2 className="main-title tx-dark fw-bold">Services</h2>
             </div>
             <p className="fs-20 mt-30 lg-mt-20">
-              Agency work with top rated talented people provide qulaity
-              services.
+            <span className="position-relative d-inline-block">GetClaims</span> for resolving claims and financial disputes of any kind. Many customers often feel dissatisfied with the outcomes of claim settlements.
+
+Our team consists of insurance and legal professionals who provide comprehensive claims solutions to our clients.</p>
+<p className="fs-20 mt-30 lg-mt-20"> With the growing complexity of the insurance industry, consumers sometimes feel misled when their legitimate claims are either rejected or receive minimal settlement amounts.
+
+This often results from a lack of information about how insurance claims are processed.</p>
+<p className="fs-20 mt-30 lg-mt-20">At <span className="position-relative d-inline-block">GetClaims</span>, we offer proper guidance for all your insurance claims and financial dispute-related issues.
+
+We hope this meets your needs! Let me know if you need any further adjustments or assistance.
+
             </p>
           </div>
           {/* End container */}
@@ -60,9 +68,9 @@ const ServiceV4 = () => {
             </div>
             <div className="col-lg-5 ms-auto aos fadeInRight">
               <p className="text-lg text-center text-lg-start md-pt-30 m0">
-                Jano provides alternative asset management solutions to a global
-                client base and manages a significant.
-              </p>
+              
+            At GetClaims, we help you resolve your claims and financial disputes of any nature. 
+            </p>
             </div>
           </div>
         </div>
@@ -87,7 +95,7 @@ const ServiceV4 = () => {
                 <div className="title-style-one">
                   <div className="sc-title text-uppercase">Why us?</div>
                   <h2 className="main-title fw-bold tx-dark">
-                    Why <span>choose</span> Jano.
+                    Why <span>choose</span> GetClaims.
                   </h2>
                 </div>{" "}
                 {/* /.title-style-one */}

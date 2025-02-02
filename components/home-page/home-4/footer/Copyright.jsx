@@ -28,7 +28,7 @@ const Copyright = () => {
         ))}
       </ul>
       <p className="copyright text-center mb-15 text-white order-md-first">
-        © 20022 - {year} jano inc.
+        © 20022 - {year} GetClaims inc.
       </p>
     </div>
   );

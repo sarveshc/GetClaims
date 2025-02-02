@@ -32,7 +32,7 @@ const footerLinks = [
       { label: "Self-service", href: "/pages-menu/faq" },
       { label: "Social", href: "/pages-menu/faq" },
       { label: "Collaboration", href: "/pages-menu/faq" },
-      { label: "Jano Reviews", href: "/pages-menu/faq" },
+      { label: "GetClaims Reviews", href: "/pages-menu/faq" },
     ],
   },
 ];

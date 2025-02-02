@@ -8,7 +8,7 @@ import BannerPost from "@/components/blog/BannerPost";
 import Blog2 from "@/components/blog/Blog2";
 export const metadata = {
   title:
-    "Grid With Sidebar || Jano - Creative Multipurpose React NextJS Template",
+    "Grid With Sidebar || GetClaims - Creative Multipurpose React NextJS Template",
 };
 const GridWithSidebar = () => {
   return (

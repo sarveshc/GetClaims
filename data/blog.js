@@ -260,7 +260,7 @@ module.exports = [
     id: 36,
     imgSrc: "/images/blog/blog_img_27.jpg",
     tag: "Client Story",
-    title: "How Zendesk delivers quality customer service with Jano.",
+    title: "How Zendesk delivers quality customer service with GetClaims.",
     delay: 100,
   },
   {
@@ -275,7 +275,7 @@ module.exports = [
     id: 38,
     imgSrc: "/images/blog/blog_img_29.jpg",
     tag: "Client Story",
-    title: "How Zendesk delivers quality customer service with Jano.",
+    title: "How Zendesk delivers quality customer service with GetClaims.",
     delay: 300,
   },
 ];

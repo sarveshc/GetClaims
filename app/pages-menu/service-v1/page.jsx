@@ -7,7 +7,7 @@ import Faq from "@/components/services/Faq";
 import Partners from "@/components/services/Partners";
 import Link from "next/link";
 export const metadata = {
-  title: "Service V1 || Jano - Creative Multipurpose React NextJS Template",
+  title: "Service V1 || GetClaims - Creative Multipurpose React NextJS Template",
 };
 const ServiceV1 = () => {
   const features = [

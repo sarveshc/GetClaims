@@ -3,7 +3,7 @@ import DefaultFooter from "@/components/footer/DefaultFooter";
 import Blog3 from "@/components/blog/Blog3";
 import Pagination from "@/components/blog/Pagination";
 export const metadata = {
-  title: "Grid Layout || Jano - Creative Multipurpose React NextJS Template",
+  title: "Grid Layout || GetClaims - Creative Multipurpose React NextJS Template",
 };
 const GridLayout = () => {
   return (

@@ -14,7 +14,7 @@ import CallToActions from "@/components/home-page/home-11/CallToActions";
 import Social from "@/components/home-page/home-11/Social";
 import Footer from "@/components/home-page/home-11/Footer";
 export const metadata = {
-  title: "Seo Agency || Jano - Creative Multipurpose React NextJS Template",
+  title: "Seo Agency || GetClaims - Creative Multipurpose React NextJS Template",
 };
 const SeoAgency = () => {
   return (
@@ -110,7 +110,7 @@ const SeoAgency = () => {
 
             <div className="col-xl-5 col-lg-6 ms-auto" data-aos="fade-left">
               <p className="text-lg text-center text-lg-start md-pt-30 m0 ps-xxl-4">
-                Jano provides alternative asset management solutions to a global
+                GetClaims provides alternative asset management solutions to a global
                 client base and manages a significant.
               </p>
             </div>
