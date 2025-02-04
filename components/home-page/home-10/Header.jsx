@@ -34,7 +34,7 @@ const Header = () => {
           <div className="logo order-lg-0">
             <Link href="/" className="d-block">
               <Image
-                src="/images/logo/clame_logo.jpg"
+                src="/images/logo/logo_01.png"
                 alt="logo"
                 width={200}
                 height={70}
