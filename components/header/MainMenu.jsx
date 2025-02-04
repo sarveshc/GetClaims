@@ -196,6 +196,37 @@ const MainMenu = () => {
               ))}
             </ul> */}
           </li>
+          <li className="nav-item dropdown">
+            <a
+              // className="nav-link dropdown-toggle"
+              className={
+                portfolioItems.some((elm) => isActive(elm.link))
+                  ? "nav-link dropdown-toggle active-menu"
+                  : "nav-link "
+              }
+              href="pages-menu/service-v4"
+              role="button"
+              //data-bs-toggle="dropdown"
+              data-bs-auto-close="outside"
+              aria-expanded="false"
+            >
+              IRDAI Guideline
+            </a>
+            {/* <ul className="dropdown-menu">
+              {portfolioItems.map((item, index) => (
+                <li key={index}>
+                  <Link
+                    href={item.link}
+                    className={`dropdown-item ${
+                      isActive(item.link) ? "active" : ""
+                    }`}
+                  >
+                    <span>{item.name}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul> */}
+          </li>
           {/* End li (portfolio) */}
 
           {/* <li className="nav-item dropdown">
@@ -246,7 +277,7 @@ const MainMenu = () => {
             >
               Contact
             </a>
-            <ul className="dropdown-menu">
+            {/* <ul className="dropdown-menu">
               {contactItems.map((contact, index) => (
                 <li key={index}>
                   <Link
@@ -259,7 +290,7 @@ const MainMenu = () => {
                   </Link>
                 </li>
               ))}
-            </ul>
+            </ul> */}
           </li>
           {/* End li (contact) */}
         </ul>

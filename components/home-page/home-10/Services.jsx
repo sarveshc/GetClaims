@@ -4,30 +4,44 @@ const servicesData = [
   {
     bgColor: "rgba(255, 171, 51, 0.18)",
     iconSrc: "/images/icon/icon_01.svg",
-    title: "Initial Claim Assessment.",
+    title: "Misselling of Life Insurance policy",
     description:
-      "Our process begins with a comprehensive review of your rejected claim to understand the reasons for denial and determine the optimal steps to move forward.",
+      "We help in getting the premium refunded in case insurance policy is mis-sold to you.",
   },
   {
     bgColor: "rgba(100, 219, 226, 0.18)",
     iconSrc: "/images/icon/icon_02.svg",
-    title: "Documentation Review and Support.",
+    title: "Claim Rejection",
     description:
-      "Our specialists carefully examine your documents to verify they comply with all necessary standards and assist you in collecting any extra information required for reapplication.",
+      "Any type of claim rejected by the insurance company we will help you in getting the claim.",
   },
   {
     bgColor: "rgba(255, 160, 194, 0.18)",
     iconSrc: "/images/icon/icon_03.svg",
-    title: "Negotiation with Insurers.",
+    title: "Delay in Claim Processing",
     description:
-      "We manage all interactions with insurance companies, leveraging our expertise to negotiate and represent you effectively to reverse the denial.",
+      "We will help you in quick settlement of claim in accordance with IRDIA specified turned around time.",
   },
   {
     bgColor: "rgba(246, 243, 255, 1)",
     iconSrc: "/images/icon/icon_04.svg",
-    title: "Legal Assistance.",
+    title: "Claim short settled",
     description:
-      "When needed, we offer legal assistance to safeguard your rights and ensure that your claim is properly processed through official channels.",
+      "We will help you in getting maximum possible amount in accordance with policy term and conditions.",
+  },
+  {
+    bgColor: "rgba(255, 160, 194, 0.18)",
+    iconSrc: "/images/icon/icon_04.svg",
+    title: "Any type of insurance claim filing",
+    description:
+      "We will help in filling the claim form to be submitted in insurance company.",
+  },
+  {
+    bgColor: "rgba(255, 160, 194, 0.18)",
+    iconSrc: "/images/icon/icon_04.svg",
+    title: "Any type of insurance claim filing",
+    description:
+      "We will help in filling the claim form to be submitted in insurance company.",
   },
 ];
 

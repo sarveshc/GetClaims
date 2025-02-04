@@ -60,8 +60,8 @@ const AgencyModern = () => {
             </div>
             <div className="col-lg-5 ms-auto" data-aos="fade-left">
               <p className="text-lg text-center text-lg-start md-pt-30 m0">
-              At GetClaims, we help you resolve your claims and financial disputes of any nature.
-              Many customers are often dissatisfied with the results of claim settlements.
+              At GetClaims, we assist you in resolving your insurance claims and disputes.
+              Many people are unhappy with the outcomes of their claim settlements.
               </p>
             </div>
           </div>
@@ -84,7 +84,7 @@ const AgencyModern = () => {
         */}
       <div className="fancy-feature-two position-relative pt-225 mt-40 lg-pt-100 sm-pt-60">
         <div className="container">
-          <OurAim />
+          {/* <OurAim /> */}
         </div>
         {/* /.container */}
       </div>

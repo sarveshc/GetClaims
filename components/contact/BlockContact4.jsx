@@ -2,12 +2,12 @@ import Image from "next/image";
 
 const BlockContact4 = () => {
   const addressBlocks = [
-    {
-      icon: "/images/icon/icon_178.svg",
-      title: "Our Address",
-      content: "1012 Pebda Parkway, Mirpur 2 Dhaka, Bangladesh",
-      delay: "100",
-    },
+    // {
+    //   icon: "/images/icon/icon_178.svg",
+    //   title: "Our Address",
+    //   content: "1012 Pebda Parkway, Mirpur 2 Dhaka, Bangladesh",
+    //   delay: "100",
+    // },
     {
       icon: "/images/icon/icon_179.svg",
       title: "Contact Info",
