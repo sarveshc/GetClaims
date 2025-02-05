@@ -7,56 +7,56 @@ const cardData = [
     id: 1,
     iconSrc: "/images/icon/icon_02.svg",
     bgColor: "rgba(100, 219, 226, 0.18)",
-    title: "Proffesional Support by expert.",
+    title: "Misselling of Life Insurance policy",
     description:
-      "Through our Family Office Services, we are able to provide the expertise derived from our beginnings.",
+      "We help in getting the premium refunded in case insurance policy is mis-sold to you.",
     delay: 0,
   },
   {
     id: 2,
     iconSrc: "/images/icon/icon_156.svg",
     bgColor: "rgba(255, 171, 51, 0.18)",
-    title: "Web & Graphics Design.",
+    title: "Claim Rejection",
     description:
-      "The core of our service is based on the objective investment advice we seek to provide supported.",
+      "Any type of claim rejected by the insurance company we will help you in getting the claim.",
     delay: 200,
   },
   {
     id: 3,
     iconSrc: "/images/icon/icon_157.svg",
     bgColor: "rgba(255, 160, 194, 0.18)",
-    title: "Marketing & Affiliate Services.",
+    title: "Delay in Claim Processing",
     description:
-      "Capco’s response is proven by our superb record of driving change through effective portfolio.",
+      "We will help you in quick settlement of claim in accordance with IRDIA specified turned around time.",
     delay: 300,
   },
   {
     id: 4,
     iconSrc: "/images/icon/icon_158.svg",
     bgColor: "rgba(56, 232, 255, 0.1)",
-    title: "Web Development & Design",
+    title: "Claim short settled",
     description:
-      "The core of our service is based on the objective investment advice we seek to provide supported.",
+      "We will help you in getting maximum possible amount in accordance with policy term and conditions.",
     delay: 0,
   },
   {
     id: 5,
     iconSrc: "/images/icon/icon_159.svg",
     bgColor: "rgba(108, 55, 221, 0.1)",
-    title: "Mobile Application Development.",
+    title: "Any type of insurance claim filing",
     description:
-      "The core of our service is based on the objective investment advice we seek to provide supported.",
+      "We will help in filling the claim form to be submitted in insurance company.",
     delay: 200,
   },
-  {
-    id: 6,
-    iconSrc: "/images/icon/icon_160.svg",
-    bgColor: "rgba(68, 255, 0, 0.18)",
-    title: "Content & Article Writing.",
-    description:
-      "The core of our service is based on the objective investment advice we seek to provide supported.",
-    delay: 300,
-  },
+  // {
+  //   id: 6,
+  //   iconSrc: "/images/icon/icon_160.svg",
+  //   bgColor: "rgba(68, 255, 0, 0.18)",
+  //   title: "Content & Article Writing.",
+  //   description:
+  //     "The core of our service is based on the objective investment advice we seek to provide supported.",
+  //   delay: 300,
+  // },
 ];
 
 const Block2 = () => {

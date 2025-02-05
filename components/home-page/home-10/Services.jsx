@@ -30,19 +30,13 @@ const servicesData = [
       "We will help you in getting maximum possible amount in accordance with policy term and conditions.",
   },
   {
-    bgColor: "rgba(255, 160, 194, 0.18)",
-    iconSrc: "/images/icon/icon_04.svg",
+    bgColor: "rgba(108, 55, 221, 0.1)",
+    iconSrc: "/images/icon/icon_159.svg",
     title: "Any type of insurance claim filing",
     description:
       "We will help in filling the claim form to be submitted in insurance company.",
   },
-  {
-    bgColor: "rgba(255, 160, 194, 0.18)",
-    iconSrc: "/images/icon/icon_04.svg",
-    title: "Any type of insurance claim filing",
-    description:
-      "We will help in filling the claim form to be submitted in insurance company.",
-  },
+  
 ];
 
 const Services = () => {
