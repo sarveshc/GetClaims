@@ -12,7 +12,7 @@ const Illustration = () => {
   return (
     <div className="illustration-holder">
       <img
-        src="/images/assets/ils_01.png"
+        src="/images/assets/ils_01.jpeg"
         alt="illustration"
         className="lazy-img main-illustration w-100"
       />
