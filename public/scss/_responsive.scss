@@ -2054,6 +2054,22 @@
     padding-left: 5px;
     padding-right: 5px;
   }
+  .mobile-content.mobile-content {
+    text-align: center;
+  }
+  .mobile-content.mobile-content .getPhone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mobile-content.mobile-content .getPhone svg {
+   margin-right: 10px;
+   width: 30px;
+   
+  }
+  .theme-menu-one .inner-content .right-widget .getPhone {
+    display: none;
+  }
   .theme-basic-footer .form-widget form {
     height: 60px;
   }
@@ -2305,6 +2321,11 @@
   .hero-banner-one .bg-wrapper {
     padding: 150px 0 80px;
   }
+
+  .hero-banner-one .hero-heading {
+    font-size: 20px;
+  }
+
   .fancy-feature-two .img-meta .card-one {
     right: 0;
   }

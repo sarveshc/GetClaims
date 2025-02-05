@@ -1100,7 +1100,9 @@ body .btn-twentySix:hover:after {
 }
 /*^^^^^^^^^^^^^^^^^^^^^ Theme Menu ^^^^^^^^^^^^^^^^^^^^^^^^*/
 .theme-menu-one.theme-main-menu {
-  padding-top: 50px;
+  // padding-top: 50px;
+  background-color: #fff;
+  
 }
 .theme-main-menu {
   position: absolute;
@@ -1643,7 +1645,8 @@ body .btn-twentySix:hover:after {
   background-image: url(../images/assets/bg-1.png);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 240px 0 140px;
+  // padding: 240px 0 140px;
+  padding: 300px 0 0;
   position: relative;
   z-index: 5;
 }
@@ -1710,6 +1713,15 @@ body .btn-twentySix:hover:after {
   width: 40.44%;
   max-width: 750px;
   z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.hero-banner-one .illustration-holder .main-illustration {
+  max-width: 400px;
+}
+.hero-banner-one .hero-heading {
+  font-size: 42px;
+  letter-spacing: unset;
 }
 .hero-banner-one .illustration-holder .shape-one {
   left: 11.5%;
