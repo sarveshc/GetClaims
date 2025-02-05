@@ -189,7 +189,7 @@ We hope this meets your needs! Let me know if you need any further adjustments o
 			============================================== 
 			*/}
       <div className="wrapper position-relative mt-160 lg-mt-100">
-        <div className="container">
+        <div  className="container">
           <div className="row">
             <div className="col-xl-8 col-lg-10 m-auto text-center">
               <div className="title-style-one" data-aos="fade-up">

@@ -346,10 +346,7 @@ const SeoAgency = () => {
               <Footer />
 
               <div className="col-md-3 col-sm-6 mb-30">
-                <h5 className="footer-title tx-dark fw-500">Our Address</h5>
-                <p className="fs-17">
-                  2190 Lojiho Terrace, Mirpur, Equal Licensed in 50 states.
-                </p>
+               
                 <a
                   href="mailto:januinc@company.com"
                   className="email tran3s fs-17"

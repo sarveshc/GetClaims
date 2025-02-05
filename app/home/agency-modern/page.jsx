@@ -188,7 +188,7 @@ const AgencyModern = () => {
 				Wrapper
 			============================================== 
 			*/}
-      <FancyBanner />
+      {/* <FancyBanner /> */}
       {/* /.wrapper */}
 
       {/*
