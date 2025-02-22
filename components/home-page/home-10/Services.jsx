@@ -45,7 +45,7 @@ const Services = () => {
       {servicesData.map((service, index) => (
         <div
           key={index}
-          className={`col-lg-3 col-sm-6`}
+          className={`col-lg-4 col-sm-6`}
           data-aos="fade-up"
           data-aos-delay={`${index * 100}`}
         >

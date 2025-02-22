@@ -342,13 +342,13 @@ const PersonalPortfolio = () => {
 
             <div className="col-lg-4 mb-30 d-flex justify-content-center justify-content-lg-end order-lg-3">
               <a
-                href="mailto:support@GetClaims.com"
+                href="mailto:support@GetClaims.in"
                 className="mail d-flex align-items-center"
               >
                 <span className="icon d-flex align-items-center justify-content-center rounded-circle">
                   <i className="far fa-envelope" />
                 </span>
-                <span>support@GetClaims.com</span>
+                <span>support@GetClaims.in</span>
               </a>
             </div>
             {/* End .col-lg-4 */}

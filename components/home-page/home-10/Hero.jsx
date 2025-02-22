@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="row">
         <div className="col-lg-8 col-md-6">
           <h1 className="hero-heading fw-bold tx-dark">
-          Helping You Claim What's Rightfully <br />  Yours in accordance
+          Helping You Claim What's Rightfully  Yours in accordance
             <span className="position-relative d-inline-block"> with Policy Terms & Conditions.</span>
           </h1>
           <p className="text-sm mb-60 pt-20 pe-xl-5 lg-pt-30 lg-mb-40">
@@ -38,7 +38,7 @@ const Hero = () => {
       </div> */}
       {/* End card-one */}
 
-      <Illustration />
+      {/* <Illustration /> */}
       {/* /.illustration-holder */}
     </div>
   );

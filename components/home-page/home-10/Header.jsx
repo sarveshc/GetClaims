@@ -76,12 +76,12 @@ const Header = () => {
   +91 9999999999 
 </Link>
           
-             <Link
+             {/* <Link
               href="/contact/contact-v2"
               className="contact-btn-one fs-16 fw-500 text-white tran3s d-none d-lg-block"
             >
               Contact us
-            </Link>
+            </Link> */}
           </div>{" "}
           {/* /.right-widget */}
           <MainMenu />

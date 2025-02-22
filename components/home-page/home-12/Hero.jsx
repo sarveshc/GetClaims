@@ -41,10 +41,10 @@ const Hero = () => {
                 </div>
                 <div className="mt-5">
                   <a
-                    href="mailto:hey@GetClaimsdesign.com"
+                    href="mailto:support@@getclaims.in"
                     className="mail-info tran3s"
                   >
-                    hey@GetClaimsdesign.com
+                    support@getclaims.in
                   </a>
                 </div>
               </div>
