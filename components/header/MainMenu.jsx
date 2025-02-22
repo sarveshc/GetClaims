@@ -263,7 +263,7 @@ const MainMenu = () => {
           {/* End li (blog) */}
 
           <li className="nav-item dropdown">
-            {/* <a
+            <a
               className={
                 contactItems.some((elm) => isActive(elm.link))
                   ? "nav-link dropdown-toggle active-menu"
@@ -276,7 +276,7 @@ const MainMenu = () => {
               aria-expanded="false"
             >
               Contact
-            </a> */}
+            </a>
             {/* <ul className="dropdown-menu">
               {contactItems.map((contact, index) => (
                 <li key={index}>
