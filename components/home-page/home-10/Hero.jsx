@@ -38,7 +38,7 @@ const Hero = () => {
       </div> */}
       {/* End card-one */}
 
-      {/* <Illustration /> */}
+      <Illustration />
       {/* /.illustration-holder */}
     </div>
   );

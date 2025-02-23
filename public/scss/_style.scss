@@ -1718,7 +1718,7 @@ body .btn-twentySix:hover:after {
   justify-content: flex-end;
 }
 .hero-banner-one .illustration-holder .main-illustration {
-  max-width: 400px;
+  max-width: 520px;
 }
 .hero-banner-one .hero-heading {
   font-size: 48px;
@@ -1797,6 +1797,12 @@ body .btn-twentySix:hover:after {
 }
 .hero-banner-one .card-one .more-btn:hover {
   color: var(--prime-one);
+}
+@media only screen and (min-width: 1199px) { 
+  .hero-banner-one .bg-wrapper {
+    padding: 100px 0px 50px;
+    margin-top: 130px;
+  }
 }
 /*^^^^^^^^^^^^^^^^^^^^^ Feature Section One ^^^^^^^^^^^^^^^^^^^^^^^^*/
 .fancy-feature-one .inner-content {
