@@ -1652,6 +1652,7 @@ body .btn-twentySix:hover:after {
 }
 .hero-banner-one .hero-heading {
   letter-spacing: -1px;
+     
 }
 .hero-banner-one .hero-heading span {
   z-index: 1;
@@ -1660,7 +1661,7 @@ body .btn-twentySix:hover:after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 10px;
+  bottom: -19px;
   width: 100%;
   height: 18px;
   background: rgba(255, 121, 0, 0.51);
@@ -1720,8 +1721,10 @@ body .btn-twentySix:hover:after {
   max-width: 400px;
 }
 .hero-banner-one .hero-heading {
-  font-size: 42px;
+  font-size: 48px;
   letter-spacing: unset;
+  font-family: 'Nunito', sans-serif;
+  max-width: 720px;
 }
 .hero-banner-one .illustration-holder .shape-one {
   left: 11.5%;

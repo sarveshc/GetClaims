@@ -20,6 +20,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <div className="main-page-wrapper">
+          <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet" />
           {children}
           <ScrollToTop />
         </div>
