@@ -47,19 +47,19 @@ const AgencyModern = () => {
         Feature Section One
         ============================================== 
         */}
-      <div className="fancy-feature-one pt-170 lg-pt-140">
+      <div className="fancy-feature-one pt-50 lg-pt-50">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-6" data-aos="fade-right">
-              <div className="title-style-one text-center text-lg-start">
+            <div className="col-lg-12" data-aos="">
+              <div className="title-style-one text-center ">
                 <h2 className="main-title fw-bold tx-dark m0">
                   Provide <span>Quality</span> Services.
                 </h2>
               </div>
               {/* /.title-style-one */}
             </div>
-            <div className="col-lg-5 ms-auto" data-aos="fade-left">
-              <p className="text-lg text-center text-lg-start md-pt-30 m0">
+            <div className="col-lg-12 ms-auto" data-aos="">
+              <p className="text-lg text-center  md-pt-30 m0">
               At GetClaims, we assist you in resolving your insurance claims and disputes.
               Many people are unhappy with the outcomes of their claim settlements.
               </p>
@@ -68,7 +68,7 @@ const AgencyModern = () => {
         </div>
         {/* End .row */}
 
-        <div className="inner-content pt-110 lg-pt-60 md-pt-30">
+        <div className="inner-content pt-50 lg-pt-60 md-pt-30">
           <div className="row gx-xxl-5">
             <Services />
           </div>
@@ -82,7 +82,7 @@ const AgencyModern = () => {
         Feature Section Two
         ============================================== 
         */}
-      <div className="fancy-feature-two position-relative pt-225 mt-40 lg-pt-100 sm-pt-60">
+      <div style={{display:'none'}} className="fancy-feature-two position-relative pt-50 mt-40 lg-pt-50 sm-pt-60">
         <div className="container">
           {/* <OurAim /> */}
         </div>
@@ -96,8 +96,8 @@ const AgencyModern = () => {
 			=====================================================
 			*/}
       <div
-        className="feedback-section-one position-relative p-30 mt-200 lg-mt-130 "
-        data-aos="fade-up"
+        className="feedback-section-one position-relative p-30 mt-50 lg-mt-50 "
+        data-aos=""
       >
         <div className="bg-wrapper position-relative pt-150 pb-180 lg-pt-100 lg-pb-120">
           <img

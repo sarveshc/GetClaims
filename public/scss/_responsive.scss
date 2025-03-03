@@ -115,8 +115,14 @@
   .hero-banner-twelve .hero-heading {
     font-size: 72px;
   }
+  .card-style-one {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
   .text-lg {
-    font-size: 22px;
+    font-size: 20px;
   }
   .fancy-feature-thirtyFive .top-banner h2 {
     font-size: 58px;
@@ -356,6 +362,12 @@
   }
   .theme-menu-seven .logo {
     min-width: 214px;
+  }
+  .card-style-one {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
   }
 }
 

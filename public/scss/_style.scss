@@ -159,7 +159,8 @@
   overflow-x: hidden;
 }
 body {
-  font-family: "gordita";
+  // font-family: "gordita";
+  font-family: Nunito, sans-serif;
   font-weight: normal;
   font-size: 16px;
   position: relative;
@@ -178,35 +179,42 @@ h5,
 .h6,
 h6 {
   color: var(--heading);
+  font-family: Nunito, sans-serif;
 }
 .h1,
 h1 {
   font-size: 80px;
   line-height: 1.18em; /*done*/
+  font-family: Nunito, sans-serif;
 }
 .h2,
 h2 {
-  font-size: 58px;
+  font-size: 50px;
   line-height: 1.29em;
   letter-spacing: -1px; /*done*/
+  font-family: Nunito, sans-serif;
 }
 .h3,
 h3 {
   font-size: 32px; /*done*/
+  font-family: Nunito, sans-serif;
 }
 .h4,
 h4 {
   font-size: 24px;
   line-height: 1.54em; /*done*/
+  font-family: Nunito, sans-serif;
 }
 .h5,
 h5 {
   font-size: 22px;
   line-height: 1.45em; /*done*/
+  font-family: Nunito, sans-serif;
 }
 .h6,
 h6 {
   font-size: 18px; /*done*/
+  font-family: Nunito, sans-serif;
 }
 p {
   line-height: 1.87em;
@@ -1815,6 +1823,7 @@ body .btn-twentySix:hover:after {
   width: 75px;
   height: 75px;
   border-radius: 15px;
+  padding: 8px;
 }
 .card-style-one h5 a:hover {
   color: var(--prime-one);
@@ -1834,6 +1843,7 @@ body .btn-twentySix:hover:after {
   transform: scale(1, 0.9);
   transform-origin: 0 0;
   transition: all 0.3s ease-in-out;
+  display: none;
 }
 .card-style-one:hover:before {
   opacity: 1;
@@ -10410,6 +10420,70 @@ body .btn-twentySix:hover:after {
 }
 .card-style-twentyFive .icon {
   height: 45px;
+}
+
+/*os-3-c1*/
+.os-3-c1 {
+  background: #DFEAE7;
+}
+.os-3-c2 {
+  background: #F0F4FD;
+}
+.os-3-l {
+  flex: 0 0 auto;
+  display: flex
+;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 200px;
+  padding: 0px 40px;
+}
+.os-3-l img {
+  width: auto !important;
+}
+.os-3 {
+  display: flex
+;
+  background: #DFEAE7;
+  border-radius: 30px;
+  min-height: 210px;
+  margin-bottom: 25px;
+}
+.os-3-r {
+  display: flex
+;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 20px;
+}
+.os-3-l {
+  flex: 0 0 auto;
+  display: flex
+;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 200px;
+}
+.os-3-r {
+  display: flex
+;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 20px;
+}
+.os-3-l img {
+  width: auto !important;
+}
+.os-3-c3 {
+  background: #FBF3F1;
+}
+.os-3-c4 {
+  background: #F5EEF5;
+}
+.os-3-c2 {
+  background: #F0F4FD;
 }
 /*^^^^^^^^^^^^^^^^^^^^^ Feature Section Fifty Seven ^^^^^^^^^^^^^^^^^^^^^^^^*/
 @keyframes ripple {
