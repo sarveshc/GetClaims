@@ -2033,23 +2033,24 @@ body .btn-twentySix:hover:after {
   left: 10%;
   top: -4%;
   animation: jumpFour 3.5s infinite linear;
+  max-width: 65px;
 }
 .feedback-section-one .bg-wrapper .shape-two {
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
   background: #ff8c24;
   border-radius: 15px;
   right: 10%;
-  top: -4%;
+  top: -6%;
   animation: rotated 35s infinite linear;
 }
 .feedback-section-one .bg-wrapper .shape-three {
-  width: 57px;
-  height: 57px;
+  width: 50px;
+  height: 50px;
   background: #17bd37;
   border-radius: 13px;
   left: 13%;
-  bottom: -1%;
+  bottom: -5%;
   animation: rotated 35s infinite linear;
 }
 .slick-arrow-one li {
@@ -2071,14 +2072,14 @@ body .btn-twentySix:hover:after {
   transform: translateX(-18vw);
 }
 .feedback_slider_one .item {
-  padding: 0 20px;
+  padding: 0 10px;
 }
 .feedback-block-one {
   background: #fff;
   border-radius: 15px;
 }
 .feedback-block-one .img-meta {
-  width: 42%;
+  width: 40%;
   max-height: 385px;
 }
 .feedback-block-one .img-meta:before {
@@ -2096,10 +2097,11 @@ body .btn-twentySix:hover:after {
     rgba(255, 255, 255, 0.701752) 43.58%,
     #ffffff 100%
   );
+  display: none;
 }
 .feedback-block-one .text-wrapper {
   width: calc(100% - 42%);
-  padding: 0 25px 50px;
+  padding: 20px 10px;
 }
 .feedback-block-one .text-wrapper .icon {
   width: 55px;

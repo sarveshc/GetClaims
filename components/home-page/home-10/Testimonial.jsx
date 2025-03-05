@@ -7,7 +7,7 @@ import Image from "next/image";
 const Testimonial = () => {
   const data = [
     {
-      imgSrc: "/images/media/img_02.png",
+      imgSrc: "/images/icon/ic_02.png",
       backgroundColor: "#825EFF",
       rating: "Very solid, 8.3 out 10",
       text: "We’v 9,000 agents across are country, Find agents near your neighborhood.",
@@ -15,7 +15,7 @@ const Testimonial = () => {
       country: "USA",
     },
     {
-      imgSrc: "/images/media/img_03.png",
+      imgSrc: "/images/icon/ic_02.png",
       backgroundColor: "#08CE97",
       rating: "Very solid, 7.2 out 10",
       text: "We’v 9,000 agents across are country, Find agents near your neighborhood.",
@@ -23,7 +23,7 @@ const Testimonial = () => {
       country: "USA",
     },
     {
-      imgSrc: "/images/media/img_02.png",
+      imgSrc: "/images/icon/ic_02.png",
       backgroundColor: "#FF8A3A",
       rating: "Very solid, 9.1 out 10",
       text: "We’v 9,000 agents across are country, Find agents near your neighborhood.",
@@ -31,7 +31,7 @@ const Testimonial = () => {
       country: "USA",
     },
     {
-      imgSrc: "/images/media/img_03.png",
+      imgSrc: "/images/icon/ic_02.png",
       backgroundColor: "#08CE97",
       rating: "Very solid, 10 out 10",
       text: "We’v 9,000 agents across are country, Find agents near your neighborhood.",
@@ -43,10 +43,9 @@ const Testimonial = () => {
   const settings = {
     dots: false,
     infinite: true,
-    autoPlay: true,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToScroll: 3,
     responsive: [
       {
         breakpoint: 1024,
@@ -67,16 +66,16 @@ const Testimonial = () => {
   return (
     <>
       <div className="container">
-        <div className="row align-items-center">
-          <div className="col-lg-6 col-md-7">
+        <div className="row align-items-center mb-20">
+          <div className="col-lg-8 col-md-7">
             <div className="title-style-one text-center text-md-start">
-              <h2 className="main-title fw-bold tx-dark m0">
+              <h3 className="main-title testiTitle fw-bold tx-dark">
                 What’s <span>Our Client</span> Say About us.
-              </h2>
+              </h3>
             </div>
             {/* /.title-style-one */}
           </div>
-          <div className="col-lg-6 col-md-5 ms-auto d-flex justify-content-center justify-content-sm-end">
+          <div className="col-lg-4 col-md-5 ms-auto d-flex justify-content-center justify-content-sm-end">
             <ul className="slider-arrows slick-arrow-one d-flex justify-content-center style-none mb-30">
               <li
                 className="prev_f1 slick-arrow rounded-circle text-center fs-20 tran3s"
@@ -93,26 +92,23 @@ const Testimonial = () => {
             </ul>
           </div>
         </div>
-      </div>
-      {/* /.container */}
-
-      <div className="inner-content mt-100 lg-mt-60">
+        <div className="testiSlider lg-mt-60">
         <div className="feedback_slider_one custom">
           <Slider {...settings} ref={sliderRef} arrows={false}>
             {data.map((item, index) => (
               <div className="item" key={index}>
-                <div className="feedback-block-one pt-45 align-items-end d-sm-flex">
+                <div className="feedback-block-one align-items-center d-sm-flex">
                   <div className="img-meta position-relative">
                     <Image
-                      width={297}
-                      height={397}
+                      width={89}
+                      height={89}
                       src={item.imgSrc}
                       alt="img"
                       className="m-auto"
                     />
                   </div>
-                  <div className="text-wrapper">
-                    <div
+                  <div className="text-wrapper pt-20">
+                    {/* <div
                       className="icon d-flex align-items-center justify-content-center rounded-circle mb-15"
                       style={{ backgroundColor: item.backgroundColor }}
                     >
@@ -122,15 +118,15 @@ const Testimonial = () => {
                         src="/images/icon/icon_07.svg"
                         alt="img"
                       />
-                    </div>
-                    <div className="rating h3 fw-bold tx-dark">
+                    </div> */}
+                    {/* <div className="rating h3 fw-bold tx-dark">
                       {item.rating}
-                    </div>
-                    <p className="text-lg pt-35 pb-20">{item.text}</p>
-                    <h6>
+                    </div> */}
+                    <p className="text-sm">{item.text}</p>
+                    {/* <h6>
                       {item.author},{" "}
                       <span className="opacity-25">{item.country}</span>
-                    </h6>
+                    </h6> */}
                   </div>
                 </div>
               </div>
@@ -139,6 +135,10 @@ const Testimonial = () => {
         </div>
         {/* /.feedback_slider_one */}
       </div>
+      </div>
+      {/* /.container */}
+
+      
       {/* /.inner-content */}
     </>
   );

@@ -48,7 +48,7 @@ const FancyBlock = () => {
   return (
     <div className="row">
       <div className="col-xl-5 col-lg-6 ms-auto order-lg-last">
-        <div className="block-style-one md-mb-60" data-aos="fade-left">
+        <div className="block-style-one md-mb-60" data-aos="">
           <div className="title-style-one">
             <h2 className="main-title fw-bold tx-dark m0">{data.title}</h2>
           </div>
@@ -68,7 +68,7 @@ const FancyBlock = () => {
 
       <div
         className="col-xl-6 col-lg-5 col-md-8 col-sm-10 order-lg-first"
-        data-aos="fade-right"
+        data-aos=""
       >
         <div className="img-meta-two d-inline-block position-relative pb-50">
           {images.map((image, index) => (

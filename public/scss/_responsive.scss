@@ -49,6 +49,8 @@
   .card-style-twentyThree ul li {
     font-size: 17px;
   }
+
+
 }
 /*(max-width: 1399px)*/
 
@@ -368,6 +370,27 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
+  }
+
+  /*testiSlider*/
+  .testiSlider {
+    margin-left: -10px;
+    margin-right:-10px;
+  }
+
+  .testiTitle {
+    font-size: 40px;
+  }
+  .feedback-section-one .slick-arrow-one li {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+ .feedback-section-one  .slick-arrow-one li .bi {
+    font-size: 16px;
+  }
+  .fancy-feature-one h5 {
+    font-size: 20px;
   }
 }
 

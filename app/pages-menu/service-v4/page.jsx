@@ -169,15 +169,16 @@ We hope this meets your needs! Let me know if you need any further adjustments o
               <div className="col-lg-6 col-md-7 m-auto">
                 <div className="title-style-one text-center">
                   <h2 className="main-title fw-bold tx-dark m0">
-                    What’s <span>Our Client</span> Say About us.
+                    What’sss <span>Our Client</span> Say About us.
                   </h2>
                 </div>
                 {/* /.title-style-one */}
               </div>
             </div>
-          </div>
-          {/* /.container */}
+            {/* /.container */}
           <Testimonial />
+          </div>
+          
         </div>
         {/* /.bg-wrapper */}
       </div>
