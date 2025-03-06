@@ -69,8 +69,10 @@ const AgencyModern = () => {
         {/* End .row */}
 
         <div className="inner-content pt-50 lg-pt-60 md-pt-30">
+        <div className="container">
           <div className="row gx-xxl-5">
             <Services />
+          </div>
           </div>
         </div>
         {/* /.inner-content */}
@@ -99,7 +101,7 @@ const AgencyModern = () => {
         className="feedback-section-one position-relative p-30 mt-50 lg-mt-50 "
         data-aos=""
       >
-        <div className="bg-wrapper position-relative pt-150 pb-180 lg-pt-100 lg-pb-120">
+        <div className="bg-wrapper position-relative pt-50 pb-80 lg-pt-50 lg-pb-80">
           <img
             src="/images/shape/shape_14.svg"
             alt="img"
@@ -118,7 +120,7 @@ const AgencyModern = () => {
 				Feature Section Two
 			============================================== 
 			*/}
-      <div className="fancy-feature-two position-relative pt-250 lg-pt-120">
+      <div className="fancy-feature-two position-relative pt-100 lg-pt-100">
         <div className="container">
           <FancyBlock />
         </div>
@@ -131,7 +133,7 @@ const AgencyModern = () => {
 				Card Style Two
 			=====================================================
 			*/}
-      <div className="wrapper pt-110 lg-pt-80">
+      <div className="wrapper pt-50 lg-pt-50">
         <div className="container">
           <div className="row justify-content-between">
             <FancyBlock2 />
@@ -145,7 +147,7 @@ const AgencyModern = () => {
 				Blog Section One
 			=====================================================
 			*/}
-      <div className="blog-section-one p-30 mt-180 lg-mt-120">
+      <div className="blog-section-one p-30 mt-50 lg-mt-50">
         <div className="bg-wrapper pt-140 pb-170 lg-pt-100 lg-pb-100 position-relative">
           <div className="shapes shape-one" />
           <img
