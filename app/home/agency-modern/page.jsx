@@ -11,6 +11,7 @@ import Testimonial from "@/components/home-page/home-10/Testimonial";
 import FancyBanner from "@/components/home-page/home-10/FancyBanner";
 import CallToActions from "@/components/home-page/home-10/CallToActions";
 import Footer from "@/components/home-page/home-10/Footer";
+import TestimonialLarge from "@/components/home-page/home-10/TestimonialLarge";
 export const metadata = {
   title: "Agency Modern || GetClaims - Creative Multipurpose React NextJS Template",
 };
@@ -110,6 +111,25 @@ const AgencyModern = () => {
           <div className="shapes shape-two" />
           <div className="shapes shape-three" />
           <Testimonial />
+        </div>
+        {/* /.bg-wrapper */}
+      </div>
+
+      <div
+      
+        className="feedback-section-one position-relative p-30 mt-80 lg-mt-80 "
+        data-aos=""
+       
+      >
+        <div className="bg-wrapper position-relative pt-50 pb-80 lg-pt-50 lg-pb-80" style={{background:'#d9fbff'}} >
+          <img
+            src="/images/shape/shape_14.svg"
+            alt="img"
+            className="lazy-img shapes shape-one"
+          />
+          <div className="shapes shape-two" />
+          <div className="shapes shape-three" />
+          <TestimonialLarge />
         </div>
         {/* /.bg-wrapper */}
       </div>

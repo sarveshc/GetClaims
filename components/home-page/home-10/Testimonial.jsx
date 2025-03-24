@@ -70,7 +70,7 @@ const Testimonial = () => {
           <div className="col-lg-8 col-md-7">
             <div className="title-style-one text-center text-md-start">
               <h3 className="main-title testiTitle fw-bold tx-dark">
-                What’s <span>Our Client</span> Say About us.
+                Lorem ipsum <span>dolor sit</span> elit.
               </h3>
             </div>
             {/* /.title-style-one */}
@@ -135,6 +135,9 @@ const Testimonial = () => {
         </div>
         {/* /.feedback_slider_one */}
       </div>
+
+     
+
       </div>
       {/* /.container */}
 
