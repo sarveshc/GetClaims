@@ -77,7 +77,7 @@ const TestimonialLarge = () => {
             <li><i className="fas fa-star fa-sm"></i></li>
             <li><i className="fas fa-star fa-sm"></i></li>
             <li><i className="fas fa-star fa-sm"></i></li>
-            <li><i className="far fa-star fa-sm"></i></li>
+            <li><i className="fas fa-star fa-sm"></i></li>
           </ul>
         </div>
         <div className="carousel-item">
