@@ -12,6 +12,7 @@ import FancyBanner from "@/components/home-page/home-10/FancyBanner";
 import CallToActions from "@/components/home-page/home-10/CallToActions";
 import Footer from "@/components/home-page/home-10/Footer";
 import TestimonialLarge from "@/components/home-page/home-10/TestimonialLarge";
+import TimeLine from "@/components/common/TimeLine";
 export const metadata = {
   title: "Agency Modern || GetClaims - Creative Multipurpose React NextJS Template",
 };
@@ -34,11 +35,11 @@ const AgencyModern = () => {
         <div className="bg-wrapper" data-aos="fade">
           <Hero />
           {/* /.container */}
-          <img
+          {/* <img
             src="/images/shape/shape_08.svg"
             alt="illustration"
             className="lazy-img shapes shape-eight"
-          />
+          /> */}
         </div>
       </div>
       {/* /.hero-banner-one */}
@@ -140,11 +141,11 @@ const AgencyModern = () => {
 				Feature Section Two
 			============================================== 
 			*/}
-      <div className="fancy-feature-two position-relative pt-100 lg-pt-100">
+      {/* <div className="fancy-feature-two position-relative pt-100 lg-pt-100">
         <div className="container">
           <FancyBlock />
-        </div>
-        {/* /.container */}
+        </div> */}
+        {/* /.container 
       </div>
       {/* /.fancy-feature-two */}
 
@@ -168,7 +169,7 @@ const AgencyModern = () => {
 			=====================================================
 			*/}
       <div className="blog-section-one p-30 mt-50 lg-mt-50">
-        <div className="bg-wrapper pt-140 pb-170 lg-pt-100 lg-pb-100 position-relative">
+        <div className="bg-wrapper pt-40 pb-40 lg-pt-100 lg-pb-100 position-relative">
           <div className="shapes shape-one" />
           <img
             src="/images/shape/shape_16.svg"
@@ -178,26 +179,27 @@ const AgencyModern = () => {
           <div className="shapes shape-three" />
 
           <div className="container">
-            <div className="row align-items-center">
+            <TimeLine/>
+            {/* <div className="row align-items-center">
               <div className="col-lg-6 col-sm-7">
                 <div className="title-style-one text-center text-sm-start xs-mb-30">
                   <h2 className="main-title fw-bold tx-dark m0">
                     Inside <span>story</span> of our company.
                   </h2>
                 </div>
-                {/* /.title-style-one */}
+                {/* /.title-style-one *
               </div>
               <div className="col-lg-6 col-sm-5 ms-auto d-flex justify-content-center justify-content-sm-end">
                 <Link href="/blog/blog-v1" className="btn-one fw-500">
                   Go to Blog
                 </Link>
               </div>
-            </div>
+            </div> 
             {/* End .row */}
 
-            <div className="row pt-50 lg-pt-30">
+            {/* <div className="row pt-50 lg-pt-30">
               <Blog />
-            </div>
+            </div> */}
           </div>
           {/* /.container */}
         </div>
