@@ -16,6 +16,7 @@ const TimeLine = () => {
         .mainTimeline {
     position: relative
 }
+    
 
 .mainTimeline:before {
     content: "";
