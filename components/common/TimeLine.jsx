@@ -4,11 +4,11 @@ import React from 'react'
 
 const TimeLine = () => {
     const experiences = [
-        { year: "1", duration: "Step", title: "Reach out to us" },
-        { year: "2", duration: "Step", title: "Share case documents" },
-        { year: "3", duration: "Step", title: "Case Acceptance" },
-        { year: "4", duration: "Step", title: "Registration" },
-        { year: "5", duration: "Step", title: "Complaint Resolution" },
+        { year: "1", duration: "Step", title: "Reach out to us", desc: "Tell us about your insurance issue. Our team is here to listen, guide you, and offer the right help to begin the resolution process." },
+        { year: "2", duration: "Step", title: "Share case documents", desc: "Submit policy papers, communication, and any claim-related documents so we can review and understand your case clearly and thoroughly." },
+        { year: "3", duration: "Step", title: "Case Acceptance", desc: "Our experts will evaluate your case details, and if it qualifies, we’ll officially take it up and proceed with the next legal steps." },
+        { year: "4", duration: "Step", title: "Registration", desc: "Once your case is accepted, we’ll register it in our system and assign a dedicated team to manage and follow through efficiently." },
+        { year: "5", duration: "Step", title: "Complaint Resolution", desc:"We actively pursue your case with the insurer to resolve the issue fairly and ensure you get what you’re rightly entitled to." },
       ];
   return (
     <div>
@@ -267,12 +267,13 @@ const TimeLine = () => {
         <div class="col-lg-12 col-md-12">
             <div class="title-style-one text-center text-md-start">
                 <h3 class="main-title text-center testiTitle fw-bold tx-dark">
-                    What’ss <span>Our Client</span> Say About us.
+                
+                How We <span>Help You</span> Step by Step.
                 </h3>
             </div>
             <div class="col-lg-12 ms-auto aos-init" data-aos="">
-                <p class="text-lg text-center  md-pt-30 m0">
-                    At GetClaims, we assist you in resolving your insurance claims and disputes. Many people are unhappy with the outcomes of their claim settlements.
+                <p class="text-lg text-center  md-pt-30 mb-20">
+                At GetClaims, we make insurance claim support simple and effective. Our clear process ensures you’re guided at every important stage.
                     </p>
             </div>
             </div>
@@ -292,8 +293,7 @@ const TimeLine = () => {
               <div className="timelineContent">
                 <h5 className="title">{exp.title}</h5>
                 <p className="description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur ex sit amet massa scelerisque scelerisque.
-                </p>
+                {exp.desc}</p>
               </div>
             </div>
           ))}

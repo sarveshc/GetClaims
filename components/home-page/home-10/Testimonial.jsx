@@ -7,34 +7,90 @@ import Image from "next/image";
 const Testimonial = () => {
   const data = [
     {
-      imgSrc: "/images/icon/ic_02.png",
+      imgSrc: "/images/icon/testimonial/testi_01.gif",
       backgroundColor: "#825EFF",
       rating: "Very solid, 8.3 out 10",
-      text: "We’v 9,000 agents across are country, Find agents near your neighborhood.",
+      text: "Were you sold a policy without being informed of the risks involved?",
       author: "Martin Jonas",
       country: "USA",
     },
     {
-      imgSrc: "/images/icon/ic_02.png",
+      imgSrc: "/images/icon/testimonial/testi_02.gif",
       backgroundColor: "#08CE97",
       rating: "Very solid, 7.2 out 10",
-      text: "We’v 9,000 agents across are country, Find agents near your neighborhood.",
+      text: "Did the agent fail to explain the terms and conditions of your policy?",
       author: "Martin Jonas",
       country: "USA",
     },
     {
-      imgSrc: "/images/icon/ic_02.png",
+      imgSrc: "/images/icon/testimonial/testi_03.gif",
       backgroundColor: "#FF8A3A",
       rating: "Very solid, 9.1 out 10",
-      text: "We’v 9,000 agents across are country, Find agents near your neighborhood.",
+      text: "Were you misled into buying a policy that doesn’t suit your financial goals?",
       author: "Martin Jonas",
       country: "USA",
     },
     {
-      imgSrc: "/images/icon/ic_02.png",
+      imgSrc: "/images/icon/testimonial/testi_05.gif",
       backgroundColor: "#08CE97",
       rating: "Very solid, 10 out 10",
-      text: "We’v 9,000 agents across are country, Find agents near your neighborhood.",
+      text: "Was your policy switched without your consent?",
+      author: "Martin Jonas",
+      country: "USA",
+    },
+    {
+      imgSrc: "/images/icon/testimonial/testi_06.gif",
+      backgroundColor: "#08CE97",
+      rating: "Very solid, 10 out 10",
+      text: "Did your insurer deny your claim citing “non-disclosure” even though you were honest?",
+      author: "Martin Jonas",
+      country: "USA",
+    },
+    {
+      imgSrc: "/images/icon/testimonial/testi_07.gif",
+      backgroundColor: "#08CE97",
+      rating: "Very solid, 10 out 10",
+      text: "Were you pressured into buying an insurance policy by your bank?",
+      author: "Martin Jonas",
+      country: "USA",
+    },
+    {
+      imgSrc: "/images/icon/testimonial/testi_08.gif",
+      backgroundColor: "#08CE97",
+      rating: "Very solid, 10 out 10",
+      text: "Was your maturity benefit lower than what was promised?",
+      author: "Martin Jonas",
+      country: "USA",
+    },
+    {
+      imgSrc: "/images/icon/testimonial/testi_09.gif",
+      backgroundColor: "#08CE97",
+      rating: "Very solid, 10 out 10",
+      text: "Have you been waiting months for a refund after policy cancellation?",
+      author: "Martin Jonas",
+      country: "USA",
+    },
+    {
+      imgSrc: "/images/icon/testimonial/testi_10.gif",
+      backgroundColor: "#08CE97",
+      rating: "Very solid, 10 out 10",
+      text: "Were you told your policy was tax-saving but later found it wasn’t eligible?",
+      author: "Martin Jonas",
+      country: "USA",
+    },
+    {
+      imgSrc: "/images/icon/testimonial/testi_11.gif",
+      backgroundColor: "#08CE97",
+      rating: "Very solid, 10 out 10",
+      text: "Did you receive policy documents with incorrect or missing details?",
+      author: "Martin Jonas",
+      country: "USA",
+    },
+    {
+      imgSrc: "/images/icon/testimonial/testi_12.gif",
+      backgroundColor: "#08CE97",
+      rating: "Very solid, 10 out 10",
+      text: "Was your policy renewed automatically without your permission?",
       author: "Martin Jonas",
       country: "USA",
     },
@@ -65,12 +121,14 @@ const Testimonial = () => {
 
   return (
     <>
+    
       <div className="container">
         <div className="row align-items-center mb-20">
           <div className="col-lg-8 col-md-7">
             <div className="title-style-one text-center text-md-start">
               <h3 className="main-title testiTitle fw-bold tx-dark">
-                Lorem ipsum <span>dolor sit</span> elit.
+              
+              Hidden <span>Truths</span> of Your Policy.
               </h3>
             </div>
             {/* /.title-style-one */}
