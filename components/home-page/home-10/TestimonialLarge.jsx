@@ -35,7 +35,7 @@ const TestimonialLarge = () => {
           <div className="col-lg-12 col-md-12">
             <div className="title-style-one text-center text-md-start">
               <h3 className="main-title text-center testiTitle fw-bold tx-dark">
-                What’ss <span>Our Client</span> Say About us.
+                What’s <span>Our Client</span> Say About us.
               </h3>
             </div>
             {/* /.title-style-one */}
