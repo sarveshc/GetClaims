@@ -15,8 +15,7 @@ const TimeLine = () => {
          <style jsx>{`
         .mainTimeline {
     position: relative
-}
-    
+}    
 
 .mainTimeline:before {
     content: "";
