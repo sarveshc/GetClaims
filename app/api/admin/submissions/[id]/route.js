@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 // GET  /api/admin/submissions/[id] — full detail
 // PATCH /api/admin/submissions/[id] — update status
 import { NextResponse } from "next/server";

@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 /**
  * /api/contact — Contact Form Submission Handler
  *

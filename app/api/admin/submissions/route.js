@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 // GET /api/admin/submissions
 // Returns paginated, filtered list of all submissions (admin only)
 import { NextResponse } from "next/server";

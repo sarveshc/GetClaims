@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 // GET /api/admin/export — download all submissions as CSV
 import { NextResponse } from "next/server";
 import { getServerSession } from "next-auth/next";
