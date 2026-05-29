@@ -3,7 +3,13 @@ import ContactForm2 from "@/components/contact/ContactForm2";
 import Footer from "@/components/home-page/home-10/Footer";
 import Header from "@/components/home-page/home-10/Header";
 export const metadata = {
-  title: "Contact v2 || GetClaims - Creative Multipurpose React NextJS Template",
+  title: "Contact Us | GetClaims — Insurance Claim Assistance",
+  description:
+    "Submit your insurance claim rejection or dispute to GetClaims. Our experts fight for your rightful claim — No Win, No Fee. Upload your documents and get a free consultation.",
+  openGraph: {
+    title: "Contact Us | GetClaims",
+    description: "Submit your insurance claim dispute. Free consultation. No Win, No Fee.",
+  },
 };
 const ContactV2 = () => {
   return (

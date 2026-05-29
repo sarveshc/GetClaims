@@ -1,0 +1,74 @@
+// GetClaims — Prisma Database Schema
+// Run: npx prisma migrate dev --name init
+// Run: npx prisma generate
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  // directUrl is used for migrations (Neon requires this)
+  directUrl = env("DATABASE_URL")
+}
+
+// ─────────────────────────────────────────────────────────
+// Contact Submissions — every form submission from the
+// Contact Us page is saved here
+// ─────────────────────────────────────────────────────────
+model ContactSubmission {
+  id            String     @id @default(cuid())
+  referenceNo   String     @unique
+
+  // Personal Details
+  fullName      String
+  mobile        String
+  email         String
+  city          String
+  state         String
+
+  // Claim Details
+  insurerName   String
+  policyNumber  String?
+  insuranceType String     // health | life | motor | home | travel | other
+  complaintType String     // claim_rejection | delayed_claim | short_settlement |
+                            // mis_selling | policy_cancellation | non_disclosure | other
+  claimAmount   Float?
+  description   String
+
+  // Metadata
+  consent       Boolean    @default(true)
+  status        String     @default("new")
+                            // new | contacted | in_review | accepted | resolved | closed
+
+  // Relations
+  documents     Document[]
+
+  createdAt     DateTime   @default(now())
+  updatedAt     DateTime   @updatedAt
+
+  @@index([mobile])
+  @@index([email])
+  @@index([status])
+  @@index([createdAt])
+}
+
+// ─────────────────────────────────────────────────────────
+// Documents — uploaded files linked to a submission
+// URLs point to Vercel Blob storage
+// ─────────────────────────────────────────────────────────
+model Document {
+  id           String            @id @default(cuid())
+  submissionId String
+  submission   ContactSubmission @relation(fields: [submissionId], references: [id], onDelete: Cascade)
+
+  documentType String   // rejection_letter | policy_doc | other
+  fileName     String
+  fileUrl      String   // Vercel Blob public URL
+  fileSize     Int      // bytes
+
+  uploadedAt   DateTime @default(now())
+
+  @@index([submissionId])
+}
