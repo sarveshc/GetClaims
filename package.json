@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.11.6",
-    "@prisma/client": "^7.8.0",
+    "@prisma/client": "^5.22.0",
     "@vercel/blob": "^2.4.0",
     "aos": "^2.3.4",
     "bootstrap": "^5.2.3",
@@ -20,7 +20,7 @@
     "next": "^14.2.13",
     "next-auth": "^4.24.14",
     "photoswipe": "^5.4.3",
-    "prisma": "^7.8.0",
+    "prisma": "^5.22.0",
     "react": "^18",
     "react-circular-progressbar": "^2.1.0",
     "react-countup": "^6.5.0",
