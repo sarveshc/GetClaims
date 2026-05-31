@@ -35,7 +35,7 @@ const AboutUsV3 = () => {
               <h2 className="main-title tx-dark fw-bold">About us</h2>
             </div>
             <p className="fs-20 mt-30 lg-mt-20">
-            At GetClaims, we help you resolve your claims and financial disputes of any nature. Many customers are often dissatisfied with the results of claim settlementsAt GetClaims, we help you resolve your claims and financial disputes of any nature. Many customers are often dissatisfied with the results of claim settlements.
+              At GetClaims, we help resolve claims and financial disputes of every nature with expert guidance and professional support. Many customers often feel dissatisfied with claim settlement outcomes due to lack of clarity, unfair deductions, delays, or unjustified rejections. Our team works to ensure your concerns are properly addressed and helps you secure a fair and rightful resolution.
             </p>
           </div>
           {/* End container */}
