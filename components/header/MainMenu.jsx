@@ -179,37 +179,6 @@ const MainMenu = () => {
               data-bs-auto-close="outside"
               aria-expanded="false"
             >
-              Services
-            </a>
-            {/* <ul className="dropdown-menu">
-              {portfolioItems.map((item, index) => (
-                <li key={index}>
-                  <Link
-                    href={item.link}
-                    className={`dropdown-item ${
-                      isActive(item.link) ? "active" : ""
-                    }`}
-                  >
-                    <span>{item.name}</span>
-                  </Link>
-                </li>
-              ))}
-            </ul> */}
-          </li>
-          <li className="nav-item dropdown">
-            <a
-              // className="nav-link dropdown-toggle"
-              className={
-                portfolioItems.some((elm) => isActive(elm.link))
-                  ? "nav-link dropdown-toggle active-menu"
-                  : "nav-link "
-              }
-              href="pages-menu/service-v4"
-              role="button"
-              //data-bs-toggle="dropdown"
-              data-bs-auto-close="outside"
-              aria-expanded="false"
-            >
               IRDAI Guideline
             </a>
             {/* <ul className="dropdown-menu">
@@ -261,6 +230,16 @@ const MainMenu = () => {
             </ul>
           </li> */}
           {/* End li (blog) */}
+
+          <li className="nav-item">
+            <a
+              className={isActive("/pages-menu/pricing") ? "nav-link active-menu" : "nav-link"}
+              href="/pages-menu/pricing"
+            >
+              Pricing
+            </a>
+          </li>
+          {/* End li (pricing) */}
 
           <li className="nav-item dropdown">
             <a

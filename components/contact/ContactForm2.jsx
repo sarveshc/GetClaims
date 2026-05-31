@@ -202,7 +202,7 @@ function SuccessScreen({ referenceNo }) {
 
       {/* WhatsApp CTA */}
       <a
-        href="https://wa.me/91XXXXXXXXXX?text=Hi, I just submitted my case. Reference: ${referenceNo}"
+        href={`https://wa.me/91XXXXXXXXXX?text=Hi, I just submitted my case. Reference: ${referenceNo}`}
         target="_blank"
         rel="noopener noreferrer"
         style={{
@@ -535,9 +535,6 @@ const ContactForm2 = () => {
                   <option key={t.value} value={t.value}>{t.label}</option>
                 ))}
               </select>
-              {errors.insuranceType && (
-                <p className="field-error" style={{ margin: "5px 0 0", fontSize: "12px", color: "#dc3545" }}>{errors.insuranceType}</p>
-              )}
             </Field>
           </div>
           <div className="col-md-6">
@@ -553,9 +550,6 @@ const ContactForm2 = () => {
                   <option key={c.value} value={c.value}>{c.label}</option>
                 ))}
               </select>
-              {errors.complaintType && (
-                <p className="field-error" style={{ margin: "5px 0 0", fontSize: "12px", color: "#dc3545" }}>{errors.complaintType}</p>
-              )}
             </Field>
           </div>
           <div className="col-md-6">

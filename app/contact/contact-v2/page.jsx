@@ -36,7 +36,7 @@ const ContactV2 = () => {
               <h2 className="main-title tx-dark fw-bold">Contact Us</h2>
             </div>
             <p className="fs-20 mt-30 lg-mt-20">
-              Get our all info and also can message us directly from here
+              Submit your claim details and documents below. Our experts will review your case and contact you within 24 hours — free of charge.
             </p>
           </div>
           {/* End container */}

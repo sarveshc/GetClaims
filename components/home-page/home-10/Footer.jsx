@@ -9,7 +9,7 @@ const Footer = () => {
         { label: "Home", href: "/" },
        
         { label: "About us", href: "/pages-menu/about-us-v3" },
-        { label: "Service", href: "/pages-menu/service-v4" },
+        { label: "Pricing", href: "/pages-menu/pricing" },
         // { label: "Blog", href: "/blog/blog-v1" },
       ],
       classes: "col-lg-2 col-sm-4 ms-auto mb-30",
