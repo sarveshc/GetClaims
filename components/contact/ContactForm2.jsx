@@ -364,23 +364,39 @@ const ContactForm2 = () => {
 
     setIsLoading(true);
 
-    try {
-      const allFiles = [
-        ...filesByType.rejection_letter.map((f) => ({ file: f, type: "rejection_letter" })),
-        ...filesByType.policy_doc.map((f)       => ({ file: f, type: "policy_doc" })),
-        ...filesByType.other.map((f)            => ({ file: f, type: "other" })),
-      ];
+    // ── Phase 1: Upload files (separate try-catch for specific errors) ──────
+    const allFiles = [
+      ...filesByType.rejection_letter.map((f) => ({ file: f, type: "rejection_letter" })),
+      ...filesByType.policy_doc.map((f)       => ({ file: f, type: "policy_doc" })),
+      ...filesByType.other.map((f)            => ({ file: f, type: "other" })),
+    ];
 
-      const uploadedDocs = [];
+    const uploadedDocs = [];
 
-      if (allFiles.length > 0) {
+    if (allFiles.length > 0) {
+      try {
         for (let i = 0; i < allFiles.length; i++) {
           setUploadStep(`Uploading document ${i + 1} of ${allFiles.length}…`);
           const result = await uploadFile(allFiles[i].file, allFiles[i].type);
           uploadedDocs.push(result);
         }
+      } catch (uploadErr) {
+        console.error("File upload error:", uploadErr);
+        setIsLoading(false);
+        setUploadStep("");
+        // Show the server's specific message if available, otherwise a generic one
+        const msg = uploadErr?.message || "";
+        if (msg.toLowerCase().includes("not configured") || msg.toLowerCase().includes("storage")) {
+          setServerError("Document upload is currently unavailable. Please remove the attached files and submit your case — you can email documents to support@getclaims.in separately.");
+        } else {
+          setServerError(`Document upload failed: ${msg || "Please check your files and try again, or remove them and submit without documents."}`);
+        }
+        return;
       }
+    }
 
+    // ── Phase 2: Submit form data + blob URLs ────────────────────────────────
+    try {
       setUploadStep("Saving your case…");
       const response = await fetch("/api/contact", {
         method: "POST",
@@ -388,7 +404,13 @@ const ContactForm2 = () => {
         body: JSON.stringify({ ...formData, documents: uploadedDocs }),
       });
 
-      const result = await response.json();
+      // Safely parse JSON — Vercel may return an HTML error page on hard crashes
+      let result;
+      try {
+        result = await response.json();
+      } catch {
+        throw new Error(`Server error (HTTP ${response.status}). Please try again in a moment.`);
+      }
 
       if (result.success) {
         setReferenceNo(result.referenceNo);
@@ -401,7 +423,7 @@ const ContactForm2 = () => {
       }
     } catch (err) {
       console.error("Form submission error:", err);
-      setServerError("Network error. Please check your connection and try again.");
+      setServerError(err.message || "Unable to submit. Please check your connection and try again.");
     } finally {
       setIsLoading(false);
       setUploadStep("");

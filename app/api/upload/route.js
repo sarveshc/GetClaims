@@ -18,14 +18,27 @@ import { handleUpload } from "@vercel/blob/client";
 import { NextResponse } from "next/server";
 
 export async function POST(request) {
-  const body = await request.json();
+  // Guard: BLOB_READ_WRITE_TOKEN must be set in Vercel → Settings → Env Vars
+  if (!process.env.BLOB_READ_WRITE_TOKEN) {
+    console.error("BLOB_READ_WRITE_TOKEN is not set — file upload disabled");
+    return NextResponse.json(
+      { error: "File storage is not configured on this server. Please submit your case without documents, or contact support@getclaims.in directly." },
+      { status: 503 }
+    );
+  }
+
+  let body;
+  try {
+    body = await request.json();
+  } catch {
+    return NextResponse.json({ error: "Invalid request body" }, { status: 400 });
+  }
 
   try {
     const jsonResponse = await handleUpload({
       body,
       request,
       onBeforeGenerateToken: async (pathname) => {
-        // Validate file type and size before generating an upload token
         return {
           allowedContentTypes: [
             "image/jpeg",
@@ -34,12 +47,10 @@ export async function POST(request) {
             "application/pdf",
           ],
           maximumSizeInBytes: 10 * 1024 * 1024, // 10 MB per file
-          // Optionally add token payload (e.g. user session) for onUploadCompleted
           tokenPayload: JSON.stringify({ pathname }),
         };
       },
-      onUploadCompleted: async ({ blob, tokenPayload }) => {
-        // Optional: log or save metadata when each upload completes
+      onUploadCompleted: async ({ blob }) => {
         console.log("Blob upload completed:", blob.url);
       },
     });
@@ -48,7 +59,7 @@ export async function POST(request) {
   } catch (error) {
     console.error("Upload handler error:", error);
     return NextResponse.json(
-      { error: error.message },
+      { error: error.message || "File upload failed" },
       { status: 400 }
     );
   }
