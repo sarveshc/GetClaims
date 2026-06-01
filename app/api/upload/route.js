@@ -18,8 +18,9 @@ import { handleUpload } from "@vercel/blob/client";
 import { NextResponse } from "next/server";
 
 export async function POST(request) {
-  // Guard: BLOB_READ_WRITE_TOKEN must be set in Vercel → Settings → Env Vars
-  if (!process.env.BLOB_READ_WRITE_TOKEN) {
+  // Guard: BLOB_READ_WRITE_TOKEN must be set (and not the placeholder value)
+  const blobToken = process.env.BLOB_READ_WRITE_TOKEN || "";
+  if (!blobToken || blobToken.includes("xxxxxxxx")) {
     console.error("BLOB_READ_WRITE_TOKEN is not set — file upload disabled");
     return NextResponse.json(
       { error: "File storage is not configured on this server. Please submit your case without documents, or contact support@getclaims.in directly." },
