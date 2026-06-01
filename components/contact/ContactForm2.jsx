@@ -41,6 +41,35 @@ const INITIAL_FORM = {
   claimAmount: "", description: "", consent: false,
 };
 
+// ── Field wrapper — defined at MODULE level so its identity never changes
+// between renders. Receives errors as an explicit prop.
+// (Defining components inside another component causes them to be treated as
+//  a new type on every render, forcing unmount/remount and losing focus.)
+function Field({ name, label, required, children, errors }) {
+  return (
+    <div className="input-group-meta form-group mb-25">
+      <label className="d-block">
+        {label}
+        {required && <span style={{ color: "#dc3545" }}> *</span>}
+      </label>
+      {children}
+      {errors[name] && (
+        <p
+          className="field-error"
+          style={{ margin: "5px 0 0", fontSize: "12px", color: "#dc3545" }}
+        >
+          {errors[name]}
+        </p>
+      )}
+    </div>
+  );
+}
+
+// ── inputStyle — module-level pure function, no closure over state
+function inputStyle(name, errors) {
+  return { borderColor: errors[name] ? "#dc3545" : undefined };
+}
+
 // ── File Upload Box sub-component ─────────────────────────────────────────────
 function FileUploadBox({ label, subLabel, docType, required, multiple, files, onSelect, onRemove, error }) {
   const inputRef = useRef(null);
@@ -58,7 +87,7 @@ function FileUploadBox({ label, subLabel, docType, required, multiple, files, on
       ? Array.from(e.target.files)
       : [e.target.files[0]];
     onSelect(selected, docType);
-    e.target.value = ""; // reset so same file can be re-added
+    e.target.value = "";
   };
 
   const fileList = Array.isArray(files) ? files : (files ? [files] : []);
@@ -98,7 +127,7 @@ function FileUploadBox({ label, subLabel, docType, required, multiple, files, on
           <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5m-13.5-9L12 3m0 0l4.5 4.5M12 3v13.5" />
         </svg>
         <p style={{ margin: "0 0 4px", fontSize: "13px", color: "#374151", fontWeight: 500 }}>
-          Click to upload or drag & drop
+          Click to upload or drag &amp; drop
         </p>
         <p style={{ margin: 0, fontSize: "11px", color: "#9ca3af" }}>
           PDF, JPG or PNG — max 10 MB {multiple ? "(multiple files allowed)" : ""}
@@ -232,7 +261,7 @@ const ContactForm2 = () => {
   const [errors, setErrors] = useState({});
   const [fileErrors, setFileErrors] = useState({});
   const [isLoading, setIsLoading] = useState(false);
-  const [uploadStep, setUploadStep] = useState(""); // progress label
+  const [uploadStep, setUploadStep] = useState("");
   const [serverError, setServerError] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const [referenceNo, setReferenceNo] = useState("");
@@ -266,10 +295,8 @@ const ContactForm2 = () => {
 
     setFilesByType((prev) => {
       if (docType === "rejection_letter" || docType === "policy_doc") {
-        // Single file allowed
         return { ...prev, [docType]: [valid[0]] };
       }
-      // Multiple files for "other"
       return { ...prev, [docType]: [...prev[docType], ...valid] };
     });
   };
@@ -330,7 +357,6 @@ const ContactForm2 = () => {
     setServerError("");
 
     if (!validateForm()) {
-      // Scroll to first error
       const firstErr = document.querySelector(".field-error");
       if (firstErr) firstErr.scrollIntoView({ behavior: "smooth", block: "center" });
       return;
@@ -339,7 +365,6 @@ const ContactForm2 = () => {
     setIsLoading(true);
 
     try {
-      // Step 1 — Upload all files to Vercel Blob
       const allFiles = [
         ...filesByType.rejection_letter.map((f) => ({ file: f, type: "rejection_letter" })),
         ...filesByType.policy_doc.map((f)       => ({ file: f, type: "policy_doc" })),
@@ -356,15 +381,11 @@ const ContactForm2 = () => {
         }
       }
 
-      // Step 2 — Submit form data + blob URLs to API
       setUploadStep("Saving your case…");
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          ...formData,
-          documents: uploadedDocs,
-        }),
+        body: JSON.stringify({ ...formData, documents: uploadedDocs }),
       });
 
       const result = await response.json();
@@ -390,23 +411,6 @@ const ContactForm2 = () => {
   // ── Render Success ────────────────────────────────────────────────────────────
   if (submitted) return <SuccessScreen referenceNo={referenceNo} />;
 
-  // ── Input helper ──────────────────────────────────────────────────────────────
-  const Field = ({ name, label, required, children }) => (
-    <div className="input-group-meta form-group mb-25">
-      <label className="d-block">{label}{required && <span style={{ color: "#dc3545" }}> *</span>}</label>
-      {children}
-      {errors[name] && (
-        <p className="field-error" style={{ margin: "5px 0 0", fontSize: "12px", color: "#dc3545" }}>
-          {errors[name]}
-        </p>
-      )}
-    </div>
-  );
-
-  const inputStyle = (name) => ({
-    borderColor: errors[name] ? "#dc3545" : undefined,
-  });
-
   // ── Render Form ───────────────────────────────────────────────────────────────
   return (
     <form onSubmit={handleSubmit} noValidate>
@@ -422,19 +426,19 @@ const ContactForm2 = () => {
 
         <div className="row">
           <div className="col-md-6">
-            <Field name="fullName" label="Full Name" required>
+            <Field name="fullName" label="Full Name" required errors={errors}>
               <input
                 type="text"
                 name="fullName"
                 value={formData.fullName}
                 onChange={handleChange}
                 placeholder="e.g. Rajesh Kumar"
-                style={inputStyle("fullName")}
+                style={inputStyle("fullName", errors)}
               />
             </Field>
           </div>
           <div className="col-md-6">
-            <Field name="mobile" label="Mobile Number" required>
+            <Field name="mobile" label="Mobile Number" required errors={errors}>
               <input
                 type="tel"
                 name="mobile"
@@ -442,41 +446,45 @@ const ContactForm2 = () => {
                 onChange={handleChange}
                 placeholder="10-digit mobile number"
                 maxLength={10}
-                style={inputStyle("mobile")}
+                style={inputStyle("mobile", errors)}
               />
             </Field>
           </div>
           <div className="col-md-6">
-            <Field name="email" label="Email Address" required>
+            <Field name="email" label="Email Address" required errors={errors}>
               <input
                 type="email"
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
                 placeholder="yourname@email.com"
-                style={inputStyle("email")}
+                style={inputStyle("email", errors)}
               />
             </Field>
           </div>
           <div className="col-md-6">
-            <Field name="city" label="City" required>
+            <Field name="city" label="City" required errors={errors}>
               <input
                 type="text"
                 name="city"
                 value={formData.city}
                 onChange={handleChange}
                 placeholder="e.g. Mumbai"
-                style={inputStyle("city")}
+                style={inputStyle("city", errors)}
               />
             </Field>
           </div>
           <div className="col-md-6">
-            <Field name="state" label="State" required>
+            <Field name="state" label="State" required errors={errors}>
               <select
                 name="state"
                 value={formData.state}
                 onChange={handleChange}
-                style={{ ...inputStyle("state"), width: "100%", height: "55px", padding: "0 16px", borderRadius: "8px", border: `1px solid ${errors.state ? "#dc3545" : "#d1d5db"}`, fontSize: "14px", color: formData.state ? "#1a1a2e" : "#9ca3af", background: "#fff" }}
+                style={{
+                  width: "100%", height: "55px", padding: "0 16px", borderRadius: "8px",
+                  border: `1px solid ${errors.state ? "#dc3545" : "#d1d5db"}`,
+                  fontSize: "14px", color: formData.state ? "#1a1a2e" : "#9ca3af", background: "#fff",
+                }}
               >
                 <option value="">Select State</option>
                 {INDIAN_STATES.map((s) => (
@@ -500,19 +508,19 @@ const ContactForm2 = () => {
 
         <div className="row">
           <div className="col-md-6">
-            <Field name="insurerName" label="Insurance Company Name" required>
+            <Field name="insurerName" label="Insurance Company Name" required errors={errors}>
               <input
                 type="text"
                 name="insurerName"
                 value={formData.insurerName}
                 onChange={handleChange}
                 placeholder="e.g. Star Health Insurance"
-                style={inputStyle("insurerName")}
+                style={inputStyle("insurerName", errors)}
               />
             </Field>
           </div>
           <div className="col-md-6">
-            <Field name="policyNumber" label="Policy Number">
+            <Field name="policyNumber" label="Policy Number" errors={errors}>
               <input
                 type="text"
                 name="policyNumber"
@@ -523,12 +531,16 @@ const ContactForm2 = () => {
             </Field>
           </div>
           <div className="col-md-6">
-            <Field name="insuranceType" label="Type of Insurance" required>
+            <Field name="insuranceType" label="Type of Insurance" required errors={errors}>
               <select
                 name="insuranceType"
                 value={formData.insuranceType}
                 onChange={handleChange}
-                style={{ width: "100%", height: "55px", padding: "0 16px", borderRadius: "8px", border: `1px solid ${errors.insuranceType ? "#dc3545" : "#d1d5db"}`, fontSize: "14px", color: formData.insuranceType ? "#1a1a2e" : "#9ca3af", background: "#fff" }}
+                style={{
+                  width: "100%", height: "55px", padding: "0 16px", borderRadius: "8px",
+                  border: `1px solid ${errors.insuranceType ? "#dc3545" : "#d1d5db"}`,
+                  fontSize: "14px", color: formData.insuranceType ? "#1a1a2e" : "#9ca3af", background: "#fff",
+                }}
               >
                 <option value="">Select Type</option>
                 {INSURANCE_TYPES.map((t) => (
@@ -538,12 +550,16 @@ const ContactForm2 = () => {
             </Field>
           </div>
           <div className="col-md-6">
-            <Field name="complaintType" label="Nature of Complaint" required>
+            <Field name="complaintType" label="Nature of Complaint" required errors={errors}>
               <select
                 name="complaintType"
                 value={formData.complaintType}
                 onChange={handleChange}
-                style={{ width: "100%", height: "55px", padding: "0 16px", borderRadius: "8px", border: `1px solid ${errors.complaintType ? "#dc3545" : "#d1d5db"}`, fontSize: "14px", color: formData.complaintType ? "#1a1a2e" : "#9ca3af", background: "#fff" }}
+                style={{
+                  width: "100%", height: "55px", padding: "0 16px", borderRadius: "8px",
+                  border: `1px solid ${errors.complaintType ? "#dc3545" : "#d1d5db"}`,
+                  fontSize: "14px", color: formData.complaintType ? "#1a1a2e" : "#9ca3af", background: "#fff",
+                }}
               >
                 <option value="">Select Complaint Type</option>
                 {COMPLAINT_TYPES.map((c) => (
@@ -553,7 +569,7 @@ const ContactForm2 = () => {
             </Field>
           </div>
           <div className="col-md-6">
-            <Field name="claimAmount" label="Claim Amount (₹)">
+            <Field name="claimAmount" label="Claim Amount (₹)" errors={errors}>
               <input
                 type="number"
                 name="claimAmount"
@@ -566,14 +582,19 @@ const ContactForm2 = () => {
           </div>
         </div>
 
-        <Field name="description" label="Briefly Describe Your Issue" required>
+        <Field name="description" label="Briefly Describe Your Issue" required errors={errors}>
           <textarea
             name="description"
             value={formData.description}
             onChange={handleChange}
             rows={4}
             placeholder="Please describe what happened — when was the claim filed, why was it rejected or delayed, and any other relevant details…"
-            style={{ ...inputStyle("description"), resize: "vertical", minHeight: "110px", width: "100%", padding: "14px 16px", borderRadius: "8px", border: `1px solid ${errors.description ? "#dc3545" : "#d1d5db"}`, fontSize: "14px", fontFamily: "inherit" }}
+            style={{
+              resize: "vertical", minHeight: "110px", width: "100%",
+              padding: "14px 16px", borderRadius: "8px",
+              border: `1px solid ${errors.description ? "#dc3545" : "#d1d5db"}`,
+              fontSize: "14px", fontFamily: "inherit",
+            }}
           />
         </Field>
       </div>
@@ -640,11 +661,14 @@ const ContactForm2 = () => {
           />
           <span style={{ fontSize: "13px", color: "#374151", lineHeight: "1.5" }}>
             I agree to be contacted by the GetClaims team regarding my case via call, WhatsApp, or email.
-            I understand that initial consultation is <strong>free of charge</strong>. <span style={{ color: "#dc3545" }}>*</span>
+            I understand that initial consultation is <strong>free of charge</strong>.{" "}
+            <span style={{ color: "#dc3545" }}>*</span>
           </span>
         </label>
         {errors.consent && (
-          <p className="field-error" style={{ margin: "6px 0 0 26px", fontSize: "12px", color: "#dc3545" }}>{errors.consent}</p>
+          <p className="field-error" style={{ margin: "6px 0 0 26px", fontSize: "12px", color: "#dc3545" }}>
+            {errors.consent}
+          </p>
         )}
       </div>
 
