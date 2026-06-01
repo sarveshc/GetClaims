@@ -263,6 +263,7 @@ const ContactForm2 = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [uploadStep, setUploadStep] = useState("");
   const [serverError, setServerError] = useState("");
+  const [uploadWarning, setUploadWarning] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const [referenceNo, setReferenceNo] = useState("");
 
@@ -363,8 +364,9 @@ const ContactForm2 = () => {
     }
 
     setIsLoading(true);
+    setUploadWarning("");
 
-    // ── Phase 1: Upload files (separate try-catch for specific errors) ──────
+    // ── Phase 1: Upload files (graceful — failure warns but does not block) ─
     const allFiles = [
       ...filesByType.rejection_letter.map((f) => ({ file: f, type: "rejection_letter" })),
       ...filesByType.policy_doc.map((f)       => ({ file: f, type: "policy_doc" })),
@@ -382,16 +384,12 @@ const ContactForm2 = () => {
         }
       } catch (uploadErr) {
         console.error("File upload error:", uploadErr);
-        setIsLoading(false);
-        setUploadStep("");
-        // Show the server's specific message if available, otherwise a generic one
-        const msg = uploadErr?.message || "";
-        if (msg.toLowerCase().includes("not configured") || msg.toLowerCase().includes("storage")) {
-          setServerError("Document upload is currently unavailable. Please remove the attached files and submit your case — you can email documents to support@getclaims.in separately.");
-        } else {
-          setServerError(`Document upload failed: ${msg || "Please check your files and try again, or remove them and submit without documents."}`);
-        }
-        return;
+        // Do NOT block submission — warn and continue without docs
+        setUploadWarning(
+          "Documents could not be uploaded and will not be attached to your case. " +
+          "Your case will still be submitted. You can send documents separately to support@getclaims.in."
+        );
+        // uploadedDocs stays empty; submission proceeds below
       }
     }
 
@@ -693,6 +691,16 @@ const ContactForm2 = () => {
           </p>
         )}
       </div>
+
+      {/* ── Upload Warning (amber) ────────────────────────────────────────── */}
+      {uploadWarning && (
+        <div style={{
+          background: "#fffbeb", border: "1px solid #fcd34d", borderRadius: "8px",
+          padding: "12px 16px", marginBottom: "16px",
+        }}>
+          <p style={{ margin: 0, fontSize: "13px", color: "#92400e" }}>⚠ {uploadWarning}</p>
+        </div>
+      )}
 
       {/* ── Server Error ──────────────────────────────────────────────────── */}
       {serverError && (
