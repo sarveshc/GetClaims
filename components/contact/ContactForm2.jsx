@@ -334,22 +334,34 @@ const ContactForm2 = () => {
     return Object.keys(newErrors).length === 0;
   };
 
-  // ── Upload a single file to Vercel Blob ───────────────────────────────────────
+  // ── Upload a single file to Vercel Blob (30s hard timeout) ──────────────────
   const uploadFile = async (file, docType) => {
     const sanitized = file.name.replace(/[^a-zA-Z0-9._-]/g, "_");
     const filename = `claims/${docType}/${Date.now()}-${sanitized}`;
 
-    const blob = await upload(filename, file, {
-      access: "public",
-      handleUploadUrl: "/api/upload",
-    });
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), 30_000); // 30s max per file
 
-    return {
-      type: docType,
-      name: file.name,
-      url: blob.url,
-      size: file.size,
-    };
+    try {
+      const blob = await upload(filename, file, {
+        access: "public",
+        handleUploadUrl: "/api/upload",
+        abortSignal: controller.signal,
+      });
+      return {
+        type: docType,
+        name: file.name,
+        url:  blob.url,
+        size: file.size,
+      };
+    } catch (err) {
+      if (err?.name === "AbortError" || controller.signal.aborted) {
+        throw new Error(`Upload timed out for "${file.name}". Please try a smaller file or submit without documents.`);
+      }
+      throw err;
+    } finally {
+      clearTimeout(timer);
+    }
   };
 
   // ── Submit ────────────────────────────────────────────────────────────────────
