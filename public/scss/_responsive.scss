@@ -2028,6 +2028,11 @@
     padding-right: 12px;
     padding-left: 12px;
   }
+  /* Shrink logo on mobile so the fixed header doesn't consume too much vertical space */
+  .theme-main-menu .logo img {
+    max-width: 120px !important;
+    height: auto !important;
+  }
   .theme-main-menu .login-btn-three {
     max-width: 45px;
     height: 45px;
@@ -2543,7 +2548,7 @@
     font-size: 15px;
   }
   .inner-banner-three .bg-wrapper {
-    padding: 90px 0 38px;  /* reduced ~25% from 120px/50px */
+    padding: 110px 0 38px;
   }
   .team-block-three:before {
     display: none;
@@ -3104,9 +3109,6 @@
   }
   .hero-banner-one .hero-heading {
     font-size: 28px;
-  }
-  .hero-banner-one .bg-wrapper {
-    padding-top: 120px;
   }
   /* Services cards — stack icon above text on tiny screens */
   .os-3 {

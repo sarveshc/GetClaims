@@ -45,36 +45,6 @@ const servicesData = [
 const Services = () => {
   return (
     <>
-    <div className="row d-flex justify-content-between">
-      {servicesData.map((service, index) => (
-        <div key={index} className="col-lg-2 col-md-4 col-sm-6">
-          <div className="card-style-one position-relative mt-40">
-            <div
-              className="icon d-flex align-items-center justify-content-center"
-              style={{ backgroundColor: service.bgColor }}
-            >
-              <img src={service.iconSrc} alt="icon" className="lazy-img" />
-            </div>
-            <h5 className="fw-500 mt-35 mb-25">
-              <Link
-                href="/pages-menu/service-details"
-                className="tran3s tx-dark"
-              >
-                {service.title}
-              </Link>
-            </h5>
-            {/* <p className="mb-25">{service.description}</p> */}
-            {/* <Link href="/pages-menu/service-details">
-              <img
-                src="/images/icon/icon_05.svg"
-                alt="icon"
-                className="lazy-img"
-              />
-            </Link> */}
-          </div>
-        </div>
-      ))}
-    </div>
     <div className="row">
           <div className="col-md-5">
             <div className="os-3 os os-3-c1">
