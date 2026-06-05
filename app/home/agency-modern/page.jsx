@@ -53,24 +53,24 @@ const AgencyModern = () => {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-12" data-aos="">
-              <div className="title-style-one text-center">
+              <div className="title-style-one">
                 <h2 className="main-title fw-bold tx-dark m0">
-                  GetClaims – <span>Resolving</span> Insurance Claims &amp; Financial Disputes
+                  <span>Resolving</span> Insurance Claims &amp; Financial Disputes
                 </h2>
               </div>
               {/* /.title-style-one */}
             </div>
-            <div className="col-lg-10 m-auto" data-aos="">
-              <p className="text-lg text-center md-pt-30 mb-20">
+            <div className="col-lg-10" data-aos="">
+              <p className="text-lg md-pt-30 mb-20">
                 At GetClaims, we specialize in resolving insurance claims and financial disputes of all kinds. Many customers often feel dissatisfied with claim settlement outcomes, especially when genuine claims are rejected or settled for amounts lower than expected.
               </p>
-              <p className="text-lg text-center mb-20">
+              <p className="text-lg mb-20">
                 Our team of experienced insurance and legal professionals provides end-to-end claim assistance and dispute resolution support, ensuring that clients receive the guidance and representation they need.
               </p>
-              <p className="text-lg text-center mb-20">
+              <p className="text-lg mb-20">
                 With the increasing complexity of the insurance industry, policyholders are often left confused about claim procedures and settlement practices. This lack of clarity can lead to unfair outcomes and unnecessary financial stress.
               </p>
-              <p className="text-lg text-center m0">
+              <p className="text-lg m0">
                 At GetClaims, we bridge this information gap by offering expert guidance, transparent support, and practical solutions for all insurance claim and financial dispute matters. Our goal is to help clients understand their rights, navigate the claims process effectively, and work toward fair and justified resolutions.
               </p>
             </div>

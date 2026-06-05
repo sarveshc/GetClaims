@@ -165,38 +165,7 @@ const MainMenu = () => {
           </li>
           {/* End li (pages) */}
 
-          <li className="nav-item dropdown">
-            <a
-              // className="nav-link dropdown-toggle"
-              className={
-                portfolioItems.some((elm) => isActive(elm.link))
-                  ? "nav-link active-menu"
-                  : "nav-link"
-              }
-              href="pages-menu/service-v4"
-              role="button"
-              //data-bs-toggle="dropdown"
-              data-bs-auto-close="outside"
-              aria-expanded="false"
-            >
-              IRDAI Guideline
-            </a>
-            {/* <ul className="dropdown-menu">
-              {portfolioItems.map((item, index) => (
-                <li key={index}>
-                  <Link
-                    href={item.link}
-                    className={`dropdown-item ${
-                      isActive(item.link) ? "active" : ""
-                    }`}
-                  >
-                    <span>{item.name}</span>
-                  </Link>
-                </li>
-              ))}
-            </ul> */}
-          </li>
-          {/* End li (portfolio) */}
+          {/* IRDAI Guideline menu item removed */}
 
           {/* <li className="nav-item dropdown">
             <a
