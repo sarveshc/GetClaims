@@ -42,7 +42,7 @@ const AboutCeo = () => {
           <Image
             width={501}
             height={620}
-            style={{ objectFit: "cover", borderRadius: "12px" }}
+            style={{ maxWidth: "100%", height: "auto", objectFit: "cover", borderRadius: "12px" }}
             src="/images/media/getclaims_family.svg"
             alt="GetClaims — Family protected by insurance claim experts"
             className="lazy-img"

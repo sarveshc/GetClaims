@@ -245,7 +245,7 @@ const MainMenu = () => {
         {/* End ul */}
 
         {/* Mobile Content */}
-        <div className="mobile-content 99 d-block d-lg-none">
+        <div className="mobile-content d-block d-lg-none">
         <Link className="getPhone mt-70" href="">
   <svg 
     enableBackground="new 0 0 40 40" 
@@ -282,7 +282,7 @@ const MainMenu = () => {
           
           <div className="d-flex flex-column align-items-center justify-content-center mt-20">
             <Link
-              href="/contact/contact-v1"
+              href="/contact/contact-v2"
               className="btn-twentyOne fw-500 tran3s"
             >
               Contact us
