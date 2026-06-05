@@ -43,8 +43,8 @@ const AboutCeo = () => {
             width={501}
             height={620}
             style={{ objectFit: "cover", borderRadius: "12px" }}
-            src="/images/media/getclaims_about.svg"
-            alt="GetClaims — Insurance Claim Experts"
+            src="/images/media/getclaims_family.svg"
+            alt="GetClaims — Family protected by insurance claim experts"
             className="lazy-img"
             unoptimized
           />

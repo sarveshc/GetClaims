@@ -1,0 +1,218 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 501 620" width="501" height="620">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#c8f0ec"/>
+      <stop offset="100%" stop-color="#a8e4de"/>
+    </radialGradient>
+    <radialGradient id="circleGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#fff8f0"/>
+      <stop offset="100%" stop-color="#fde8cc"/>
+    </radialGradient>
+    <radialGradient id="skinDad" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#f0c090"/>
+      <stop offset="100%" stop-color="#d4956a"/>
+    </radialGradient>
+    <radialGradient id="skinChild" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#f5c89a"/>
+      <stop offset="100%" stop-color="#e0a070"/>
+    </radialGradient>
+    <filter id="softShadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#1a8a84" flood-opacity="0.15"/>
+    </filter>
+    <filter id="cardShadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.10"/>
+    </filter>
+    <filter id="glow">
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#2D8B8E" flood-opacity="0.3"/>
+    </filter>
+    <clipPath id="mainCircle">
+      <circle cx="240" cy="295" r="188"/>
+    </clipPath>
+  </defs>
+
+  <!-- ── Background ─────────────────────────────────────────────────────── -->
+  <rect width="501" height="620" fill="url(#bgGrad)" rx="16"/>
+
+  <!-- Decorative teal wave bottom-left -->
+  <ellipse cx="-20" cy="580" rx="140" ry="80" fill="#2D8B8E" opacity="0.18"/>
+  <!-- Decorative shape bottom-right -->
+  <ellipse cx="530" cy="560" rx="100" ry="60" fill="#2D8B8E" opacity="0.12"/>
+
+  <!-- ── Top-left: Green arrow / "resolved" swirl ───────────────────────── -->
+  <g transform="translate(38,68)">
+    <circle cx="0" cy="0" r="28" fill="#2D8B8E" opacity="0.15"/>
+    <!-- Arrow swirl -->
+    <path d="M-10 8 Q-14 -14 4 -16 Q18 -17 16 -4" fill="none" stroke="#2D8B8E" stroke-width="3" stroke-linecap="round"/>
+    <!-- Arrowhead -->
+    <polyline points="10,-8 16,-4 12,4" stroke="#2D8B8E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <!-- Small checkmark below -->
+    <circle cx="0" cy="18" r="9" fill="#2D8B8E" opacity="0.25"/>
+    <polyline points="-4,18 -1,21 6,13" stroke="#2D8B8E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+
+  <!-- ── Top-right: Teal umbrella (brand icon) ─────────────────────────── -->
+  <g transform="translate(415,62)" filter="url(#glow)">
+    <!-- Umbrella dome -->
+    <path d="M-42 10 Q-42 -38 0 -38 Q42 -38 42 10 Z" fill="#2D8B8E"/>
+    <!-- White ribs -->
+    <line x1="0" y1="10" x2="-30" y2="-24" stroke="white" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+    <line x1="0" y1="10" x2="-12" y2="-36" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+    <line x1="0" y1="10" x2="14"  y2="-36" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+    <line x1="0" y1="10" x2="32"  y2="-22" stroke="white" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+    <!-- Handle -->
+    <path d="M0 10 L2 38 Q2 44 -4 44 Q-10 44 -10 38" fill="none" stroke="#2D8B8E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- ── Main circle background ─────────────────────────────────────────── -->
+  <circle cx="240" cy="295" r="196" fill="white" opacity="0.35" filter="url(#softShadow)"/>
+  <circle cx="240" cy="295" r="188" fill="url(#circleGrad)"/>
+
+  <!-- ══════════════════════════════════════════════════════════════════════
+       FAMILY ILLUSTRATION — Father (left) + Daughter (right)
+       Both looking at phone, smiling, celebratory moment
+       ══════════════════════════════════════════════════════════════════════ -->
+
+  <!-- ── DAD ────────────────────────────────────────────────────────────── -->
+  <!-- Dad body / kurta (warm sand/olive) -->
+  <ellipse cx="195" cy="390" rx="52" ry="70" fill="#c8a882"/>
+  <!-- Dad torso / kurta -->
+  <path d="M143 370 Q143 310 195 305 Q247 310 247 370 L247 460 Q220 470 195 470 Q170 470 143 460 Z" fill="#d4a96a"/>
+  <!-- Kurta collar V -->
+  <path d="M185 308 L195 330 L205 308" fill="none" stroke="#b8924a" stroke-width="2" opacity="0.6"/>
+  <!-- Kurta buttons line -->
+  <line x1="195" y1="330" x2="195" y2="420" stroke="#b8924a" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- Dad left arm reaching to hold phone -->
+  <path d="M143 370 Q110 380 98 410 Q94 425 105 430 Q115 430 118 415 Q130 395 150 385Z" fill="#d4956a"/>
+  <!-- Dad right arm around daughter -->
+  <path d="M247 360 Q275 350 285 380 Q288 400 278 408 Q268 412 262 395 Q255 375 245 370Z" fill="#d4956a"/>
+
+  <!-- Dad neck -->
+  <rect x="183" y="290" width="24" height="22" rx="10" fill="#d4956a"/>
+
+  <!-- Dad head -->
+  <ellipse cx="195" cy="270" rx="38" ry="42" fill="url(#skinDad)"/>
+
+  <!-- Dad hair (dark, short) -->
+  <path d="M157 258 Q157 228 195 225 Q233 228 233 258 Q233 240 195 238 Q157 240 157 258Z" fill="#2a1a0e"/>
+  <!-- Dad beard (short, dark) -->
+  <path d="M163 285 Q163 300 195 302 Q227 300 227 285 Q220 295 195 296 Q170 295 163 285Z" fill="#3a2010" opacity="0.7"/>
+
+  <!-- Dad eyes (happy, slightly squinted smiling) -->
+  <!-- Left eye -->
+  <ellipse cx="180" cy="263" rx="6" ry="5" fill="white"/>
+  <ellipse cx="181" cy="264" rx="3.5" ry="3.5" fill="#2a1a0e"/>
+  <!-- Right eye -->
+  <ellipse cx="210" cy="263" rx="6" ry="5" fill="white"/>
+  <ellipse cx="211" cy="264" rx="3.5" ry="3.5" fill="#2a1a0e"/>
+  <!-- Smile / laugh crinkles at eyes -->
+  <path d="M172 256 Q176 253 180 255" fill="none" stroke="#b87850" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+  <path d="M210 255 Q214 253 218 256" fill="none" stroke="#b87850" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- Dad nose -->
+  <path d="M192 270 Q190 278 188 282 Q192 285 198 282 Q196 278 194 270Z" fill="#c07848" opacity="0.5"/>
+
+  <!-- Dad big smile (open, joyful) -->
+  <path d="M178 290 Q195 306 212 290" fill="none" stroke="#8B4513" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Teeth -->
+  <path d="M180 291 Q195 304 210 291 Q205 300 195 301 Q185 300 180 291Z" fill="white" opacity="0.9"/>
+
+  <!-- ── PHONE in dad's hand ────────────────────────────────────────────── -->
+  <g transform="translate(112,390) rotate(-15)">
+    <!-- Phone body -->
+    <rect x="0" y="0" width="44" height="72" rx="6" fill="#1a1a2e"/>
+    <!-- Phone screen -->
+    <rect x="3" y="6" width="38" height="56" rx="4" fill="#0d6efd" opacity="0.85"/>
+    <!-- Big ✓ on screen -->
+    <polyline points="10,32 18,42 34,22" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <!-- "APPROVED" text on screen -->
+    <rect x="6" y="46" width="32" height="10" rx="2" fill="#059669" opacity="0.9"/>
+    <text x="22" y="54" font-family="Arial,sans-serif" font-size="6" font-weight="700" fill="white" text-anchor="middle">APPROVED</text>
+    <!-- Home button -->
+    <circle cx="22" cy="66" r="3" fill="#333" opacity="0.6"/>
+  </g>
+
+  <!-- ── DAUGHTER ────────────────────────────────────────────────────────── -->
+  <!-- Daughter body / salwar kameez (warm orange-red) -->
+  <path d="M268 395 Q268 345 308 338 Q348 345 348 395 L348 480 Q328 490 308 490 Q288 490 268 480 Z" fill="#e07840"/>
+  <!-- Kameez embroidery hint -->
+  <ellipse cx="308" cy="360" rx="14" ry="10" fill="none" stroke="#c06030" stroke-width="1.5" opacity="0.5"/>
+  <circle cx="308" cy="360" r="4" fill="#c86030" opacity="0.4"/>
+
+  <!-- Daughter left arm (pointing excitedly at phone) -->
+  <path d="M268 375 Q245 368 218 380 Q212 385 215 393 Q220 400 228 396 Q252 385 270 382Z" fill="#e0a070"/>
+  <!-- Pointing finger -->
+  <path d="M215 393 Q208 388 204 384 Q202 381 206 379 Q210 380 214 385Z" fill="#e0a070"/>
+
+  <!-- Daughter right arm -->
+  <path d="M348 370 Q368 362 375 385 Q377 398 368 402 Q360 404 355 390 Q350 378 345 372Z" fill="#e0a070"/>
+
+  <!-- Daughter neck -->
+  <rect x="297" y="322" width="22" height="20" rx="9" fill="#e0a070"/>
+
+  <!-- Daughter head -->
+  <ellipse cx="308" cy="300" rx="36" ry="40" fill="url(#skinChild)"/>
+
+  <!-- Daughter hair (long, dark, flowing) -->
+  <path d="M272 295 Q272 260 308 256 Q344 260 344 295 Q344 270 308 267 Q272 270 272 295Z" fill="#1a0e06"/>
+  <!-- Hair sides falling -->
+  <path d="M272 295 Q268 330 272 360 Q280 370 284 360 Q280 330 276 298Z" fill="#1a0e06"/>
+  <path d="M344 295 Q348 330 344 360 Q336 370 332 360 Q336 330 340 298Z" fill="#1a0e06"/>
+
+  <!-- Daughter eyes (wide, delighted) -->
+  <!-- Left eye -->
+  <ellipse cx="294" cy="294" rx="7" ry="7.5" fill="white"/>
+  <ellipse cx="295" cy="295" rx="4.5" ry="4.5" fill="#1a0e06"/>
+  <ellipse cx="296" cy="293" rx="1.5" ry="1.5" fill="white" opacity="0.8"/>
+  <!-- Right eye -->
+  <ellipse cx="322" cy="294" rx="7" ry="7.5" fill="white"/>
+  <ellipse cx="323" cy="295" rx="4.5" ry="4.5" fill="#1a0e06"/>
+  <ellipse cx="324" cy="293" rx="1.5" ry="1.5" fill="white" opacity="0.8"/>
+
+  <!-- Daughter nose -->
+  <path d="M305 302 Q304 308 303 312 Q307 314 313 312 Q312 308 311 302Z" fill="#c88060" opacity="0.4"/>
+
+  <!-- Daughter big open smile / laugh -->
+  <path d="M292 316 Q308 334 324 316" fill="none" stroke="#8B4513" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M294 318 Q308 332 322 318 Q317 328 308 328 Q299 328 294 318Z" fill="white" opacity="0.9"/>
+  <!-- Laugh cheeks -->
+  <ellipse cx="285" cy="308" rx="9" ry="6" fill="#e87070" opacity="0.3"/>
+  <ellipse cx="331" cy="308" rx="9" ry="6" fill="#e87070" opacity="0.3"/>
+
+  <!-- ══════════════════════════════════════════════════════════════════════
+       BOTTOM: Trust / emotion cards
+       ══════════════════════════════════════════════════════════════════════ -->
+
+  <!-- Card: "Claim Resolved" floating top of circle -->
+  <g filter="url(#cardShadow)" transform="translate(310,130)">
+    <rect x="0" y="0" width="150" height="56" rx="14" fill="white"/>
+    <circle cx="28" cy="28" r="18" fill="#d1fae5"/>
+    <polyline points="20,28 25,34 38,20" stroke="#059669" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <text x="52" y="22" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#059669">CLAIM</text>
+    <text x="52" y="36" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#059669">RESOLVED ✓</text>
+    <text x="52" y="50" font-family="Arial,sans-serif" font-size="8" fill="#6b7280">in 45 days</text>
+  </g>
+
+  <!-- Card: Amount recovered -->
+  <g filter="url(#cardShadow)" transform="translate(22,130)">
+    <rect x="0" y="0" width="138" height="56" rx="14" fill="white"/>
+    <circle cx="26" cy="28" r="18" fill="#eff6ff"/>
+    <text x="26" y="33" font-family="Arial,sans-serif" font-size="14" font-weight="800" fill="#0d6efd" text-anchor="middle">₹</text>
+    <text x="50" y="22" font-family="Arial,sans-serif" font-size="12" font-weight="800" fill="#0d6efd">₹4.8 Lakh</text>
+    <text x="50" y="36" font-family="Arial,sans-serif" font-size="9" fill="#6b7280">Recovered for</text>
+    <text x="50" y="48" font-family="Arial,sans-serif" font-size="9" fill="#6b7280">this family</text>
+  </g>
+
+  <!-- Bottom emotional tagline bar -->
+  <g filter="url(#cardShadow)" transform="translate(28,528)">
+    <rect x="0" y="0" width="445" height="72" rx="16" fill="white"/>
+    <!-- Quote mark -->
+    <text x="20" y="48" font-family="Georgia,serif" font-size="52" fill="#0d6efd" opacity="0.15">"</text>
+    <text x="50" y="30" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#1a1a2e">We got our rightful claim — thanks to GetClaims.</text>
+    <text x="50" y="48" font-family="Arial,sans-serif" font-size="11" fill="#6b7280">— Verified Client, Delhi  </text>
+    <!-- Stars -->
+    <text x="50" y="63" font-family="Arial,sans-serif" font-size="11" fill="#FAA61B">★★★★★</text>
+    <text x="108" y="63" font-family="Arial,sans-serif" font-size="9" fill="#6b7280">Health Insurance Claim</text>
+  </g>
+
+</svg>
