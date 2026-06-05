@@ -62,8 +62,8 @@ const MainMenu = () => {
                 menuItems.some((menu) =>
                   menu.items.some((elm) => isActive(elm.link))
                 )
-                  ? "nav-link dropdown-toggle active-menu"
-                  : "nav-link dropdown-toggle"
+                  ? "nav-link active-menu"
+                  : "nav-link"
               }
 
               // style={{color:'green'}}
@@ -117,8 +117,8 @@ const MainMenu = () => {
                 // ) ||
                 isActive("/pages-menu/pricing") ||
                 isActive("/pages-menu/testimonials")
-                  ? "nav-link dropdown-toggle active-menu"
-                  : "nav-link "
+                  ? "nav-link active-menu"
+                  : "nav-link"
               }
               href="/pages-menu/about-us-v3"
                role="button"
@@ -170,8 +170,8 @@ const MainMenu = () => {
               // className="nav-link dropdown-toggle"
               className={
                 portfolioItems.some((elm) => isActive(elm.link))
-                  ? "nav-link dropdown-toggle active-menu"
-                  : "nav-link "
+                  ? "nav-link active-menu"
+                  : "nav-link"
               }
               href="pages-menu/service-v4"
               role="button"
@@ -245,8 +245,8 @@ const MainMenu = () => {
             <a
               className={
                 contactItems.some((elm) => isActive(elm.link))
-                  ? "nav-link dropdown-toggle active-menu"
-                  : "nav-link "
+                  ? "nav-link active-menu"
+                  : "nav-link"
               }
               href="/contact/contact-v2"
               role="button"

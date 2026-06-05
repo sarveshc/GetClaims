@@ -49,7 +49,7 @@ const AboutUsV3 = () => {
         Feature Section Two
         ============================================== 
         */}
-      <div className="fancy-feature-two position-relative pt-150 lg-pt-90">
+      <div className="fancy-feature-two position-relative pt-60 lg-pt-50">
         <div className="container">
           <div className="row align-items-center">
             <AboutCeo />

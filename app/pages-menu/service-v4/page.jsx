@@ -55,7 +55,7 @@ We hope this meets your needs! Let me know if you need any further adjustments o
 				Feature Section One
 			============================================== 
 			*/}
-      <div className="fancy-feature-one pt-120 lg-pt-90">
+      <div className="fancy-feature-one pt-60 lg-pt-50">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6 aos fadeInLeft">

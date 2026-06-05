@@ -10007,7 +10007,7 @@ body .btn-twentySix:hover:after {
 .inner-banner-three .bg-wrapper {
   background: url(../images/assets/bg-16.svg) no-repeat center;
   background-size: cover;
-  padding: 150px 0 108px;
+  padding: 112px 0 80px;  /* reduced ~25% from 150px/108px */
   position: relative;
   z-index: 1;
 }
