@@ -6,7 +6,8 @@ export const dynamic = "force-dynamic";
  * 1. Validates required fields
  * 2. Generates unique reference number (GC-YYYY-XXXXX)
  * 3. Saves submission + documents to Neon Postgres via Prisma
- * 4. Fires emails (max 7s window) — does NOT block success response
+ * 4. Awaits emails with a 7s deadline (nodemailer timeouts: 5s connect, 5s greeting)
+ *    — emails failing never blocks the success response
  * 5. Returns { success: true, referenceNo }
  */
 
@@ -20,15 +21,15 @@ import {
 // ── Validate required fields ───────────────────────────────────────────────
 function validate(body) {
   const required = {
-    fullName:     "Full Name",
-    mobile:       "Mobile Number",
-    email:        "Email Address",
-    city:         "City",
-    state:        "State",
-    insurerName:  "Insurance Company",
-    insuranceType:"Type of Insurance",
-    complaintType:"Nature of Complaint",
-    description:  "Description",
+    fullName:      "Full Name",
+    mobile:        "Mobile Number",
+    email:         "Email Address",
+    city:          "City",
+    state:         "State",
+    insurerName:   "Insurance Company",
+    insuranceType: "Type of Insurance",
+    complaintType: "Nature of Complaint",
+    description:   "Description",
   };
 
   const errors = {};
@@ -49,8 +50,8 @@ function validate(body) {
 async function generateReferenceNo() {
   const year = new Date().getFullYear();
   for (let i = 0; i < 10; i++) {
-    const n    = Math.floor(Math.random() * 90000) + 10000;
-    const ref  = `GC-${year}-${n}`;
+    const n      = Math.floor(Math.random() * 90000) + 10000;
+    const ref    = `GC-${year}-${n}`;
     const exists = await prisma.contactSubmission.findUnique({ where: { referenceNo: ref } });
     if (!exists) return ref;
   }
@@ -61,7 +62,7 @@ async function generateReferenceNo() {
 export async function POST(request) {
   // ── Guard: DATABASE_URL must be set ────────────────────────────────────
   if (!process.env.DATABASE_URL) {
-    console.error("DATABASE_URL is not set");
+    console.error("[contact] DATABASE_URL is not set");
     return NextResponse.json(
       { success: false, error: "Database is not configured. Please contact support@getclaims.in directly." },
       { status: 503 }
@@ -120,25 +121,51 @@ export async function POST(request) {
       },
       include: { documents: true },
     });
+    console.log(`[contact] Submission saved: ${submission.referenceNo}`);
   } catch (dbError) {
-    console.error("Database error:", dbError.message);
+    console.error("[contact] Database error:", dbError.message);
     return NextResponse.json(
       { success: false, error: "Could not save your submission. Please try again or call us directly." },
       { status: 500 }
     );
   }
 
-  // ── Send emails — race against a 7s timeout so we never block the response
-  // Vercel serverless functions have a 10s limit; DB save uses ~2-3s already.
-  const emailDeadline = new Promise((resolve) => setTimeout(resolve, 7000));
-  Promise.race([
-    Promise.allSettled([
-      sendAcknowledgementEmail(submission),
-      sendAdminNotificationEmail(submission),
-    ]),
-    emailDeadline,
-  ]).catch((err) => console.error("Email dispatch error:", err));
-  // Note: deliberately NOT awaiting — response goes out immediately after DB save
+  // ── Send emails — AWAITED with 7s hard deadline ─────────────────────────
+  // We await (not fire-and-forget) so Vercel doesn't freeze the function
+  // before emails can send. nodemailer timeouts: 5s connect + 5s greeting,
+  // so a blocked SMTP server fails fast and won't exceed the 7s deadline.
+  // Total budget: DB ~2s + emails up to 7s = ~9s (within Vercel's 10s limit).
+  try {
+    const TIMEOUT_MS = 7000;
+    const deadline   = new Promise((resolve) =>
+      setTimeout(() => resolve([{ status: "timed-out" }]), TIMEOUT_MS)
+    );
+
+    const results = await Promise.race([
+      Promise.allSettled([
+        sendAcknowledgementEmail(submission),
+        sendAdminNotificationEmail(submission),
+      ]),
+      deadline,
+    ]);
+
+    // Log every outcome so errors are visible in Vercel function logs
+    if (Array.isArray(results)) {
+      results.forEach((r, i) => {
+        const label = i === 0 ? "ack-email" : "admin-email";
+        if (r.status === "timed-out") {
+          console.warn(`[contact] ${label}: timed out after ${TIMEOUT_MS}ms`);
+        } else if (r.status === "fulfilled") {
+          console.log(`[contact] ${label}: ${JSON.stringify(r.value)}`);
+        } else {
+          console.error(`[contact] ${label} rejected:`, r.reason);
+        }
+      });
+    }
+  } catch (emailErr) {
+    // Should never reach here (allSettled never rejects), but log just in case
+    console.error("[contact] Unexpected email error:", emailErr.message);
+  }
 
   return NextResponse.json({
     success:     true,
