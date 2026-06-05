@@ -97,7 +97,7 @@ const PricingPage = () => {
       </div>
 
       {/* ── No Win No Fee Hero ──────────────────────────────────────── */}
-      <div className="pt-80 pb-60 lg-pt-60">
+      <div className="pt-20 pb-60 lg-pt-20">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-xl-8 col-lg-10 text-center">

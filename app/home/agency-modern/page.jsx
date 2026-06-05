@@ -49,7 +49,7 @@ const AgencyModern = () => {
         Feature Section One
         ============================================== 
         */}
-      <div className="fancy-feature-one pt-50 lg-pt-50">
+      <div className="fancy-feature-one pt-20 lg-pt-20">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-12" data-aos="">

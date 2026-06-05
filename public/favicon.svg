@@ -3,6 +3,7 @@
   <rect width="64" height="64" rx="12" fill="#ffffff"/>
 
   <!-- Umbrella dome — orange, 4 panels separated by white ribs -->
+  <!-- Full dome arc from left (8,34) to right (56,34), peak at (32,8) -->
   <path d="M8 34 Q8 8 32 8 Q56 8 56 34 Z" fill="#FAA61B"/>
 
   <!-- White rib 1: far left panel divider -->
