@@ -2,26 +2,12 @@ import Image from "next/image";
 
 const BlockContact4 = () => {
   const addressBlocks = [
-    // {
-    //   icon: "/images/icon/icon_178.svg",
-    //   title: "Our Address",
-    //   content: "1012 Pebda Parkway, Mirpur 2 Dhaka, Bangladesh",
-    //   delay: "100",
-    // },
     {
-      icon: "/images/icon/icon_179.svg",
-      title: "Contact Info",
-      content: "Open a chat or give us call at",
-      link: "tel:310.841.5500",
-      delay: "200",
-    },
-    {
-      icon: "/images/icon/icon_180.svg",
-      title: "Live Support",
-      content: "live chat service",
-      link: "www.GetClaimslivechat.com",
-      delay: "300",
-    },
+       icon: "/images/icon/icon_178.svg",
+       title: "Our Address",
+       content: "Aspirelabs Accelerator B 37 Sector 1 Noida 201301",
+       delay: "100",
+     },
   ];
 
   return (

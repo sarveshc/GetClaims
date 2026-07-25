@@ -9,8 +9,8 @@ const BlockContact2 = () => {
         <>
           Mon – Sat, 9 AM – 7 PM
           <br />
-          <a href="tel:+91XXXXXXXXXX" className="call" style={{ fontWeight: 600 }}>
-            +91 8046810500 
+          <a href="tel:+918046810500" className="call" style={{ fontWeight: 600 }}>
+            +91 80468-10500 
           </a>
           <br />
           <a
