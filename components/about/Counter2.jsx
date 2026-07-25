@@ -5,27 +5,7 @@ import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 
 const data = [
-  {
-    count: 0.35,
-    label: "Job done successfully",
-    unit: "k",
-    delay: "100",
-    factor: 10, // Adjust this factor based on your precision needs
-  },
-  {
-    count: 20,
-    label: "3,280 avg rating",
-    unit: "billion",
-    delay: "200",
-    factor: 1,
-  },
-  {
-    count: 30,
-    label: "Volunteer",
-    unit: "k+",
-    delay: "300",
-    factor: 1,
-  },
+  
 ];
 
 const Counter2 = () => {

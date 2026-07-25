@@ -139,37 +139,7 @@ const AboutUsV3 = () => {
         Team Section Four
         =====================================================
         */}
-      <div className="team-section-four mt-150 lg-mt-90">
-        <div className="container">
-          <div className="row align-items-end">
-            <div className="col-xxl-6 col-md-7" data-aos="fade-right">
-              <div className="title-style-one text-center text-md-start">
-                <div className="sc-title text-uppercase">OUR TEAM</div>
-                <h2 className="main-title fw-bold tx-dark m0">
-                  We’ve talented expert to help you
-                </h2>
-              </div>{" "}
-              {/* /.title-style-one */}
-            </div>
-            <div
-              className="col-xxl-6 col-md-5 text-center text-md-end"
-              data-aos="fade-left"
-            >
-              <a href="#" className="btn-one fw-500 sm-mt-30">
-                View full team
-              </a>
-            </div>
-          </div>{" "}
-          {/* /.row */}
-          <div className="wrapper border-bottom pt-80 lg-pt-50">
-            <div className="row gx-xxl-5">
-              <Team5 />
-            </div>
-            {/* /.row */}
-          </div>
-        </div>
-        {/* /.container */}
-      </div>
+     
       {/* /.team-section-four */}
 
       {/*
@@ -177,22 +147,7 @@ const AboutUsV3 = () => {
         Feedback Section One
         =====================================================
         */}
-      <div
-        className="feedback-section-one position-relative p-30 mt-200 lg-mt-130 "
-        data-aos="fade-up"
-      >
-        <div className="bg-wrapper position-relative pt-150 pb-180 lg-pt-100 lg-pb-120">
-          <img
-            src="/images/shape/shape_14.svg"
-            alt="img"
-            className="lazy-img shapes shape-one"
-          />
-          <div className="shapes shape-two" />
-          <div className="shapes shape-three" />
-          <Testimonial />
-        </div>
-        {/* /.bg-wrapper */}
-      </div>
+     
       {/* /.feedback-section-one */}
 
       {/* 
@@ -201,34 +156,7 @@ const AboutUsV3 = () => {
         ============================================== 
         */}
       <div className="wrapper position-relative mt-160 lg-mt-100">
-        <div className="container">
-          <div className="row">
-            <div className="col-xl-8 col-lg-10 m-auto text-center">
-              <div className="title-style-one" data-aos="fade-up">
-                <h2 className="main-title fw-bold tx-dark m0">
-                  Ready to take plan? It’s just a matter of{" "}
-                  <span>one clike</span>
-                </h2>
-              </div>{" "}
-              {/* /.title-style-one */}
-              <p
-                className="text-lg tx-dark pt-40 pb-35 lg-pt-30 lg-pb-20"
-                data-aos="fade-up"
-                data-aos-delay="100"
-              >
-                Try it risk free — we don’t charge cancellation fees.
-              </p>
-              <a
-                href="#"
-                className="btn-two fs-18 fw-500"
-                data-aos="fade-up"
-                data-aos-delay="200"
-              >
-                Purchase Now
-              </a>
-            </div>
-          </div>
-        </div>
+        
         <Image
           width={8}
           height={8}

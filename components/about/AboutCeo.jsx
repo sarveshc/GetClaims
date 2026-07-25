@@ -22,7 +22,7 @@ const AboutCeo = () => {
           </p>
           <p className="fs-18 mb-10 pt-30 lg-pt-20">
             <span className="fw-500 tx-dark">
-              Trusted by 5,000+ policyholders — from health to motor to life insurance claims.
+              Trusted by 100+ policyholders — from health to motor to life insurance claims.
             </span>
           </p>
 
@@ -89,16 +89,8 @@ const AboutCeo = () => {
           />
 
           {/* Floating testimonial card */}
-          <div className="card-one" data-aos="fade-up" data-aos-delay="250">
-            <div className="icon d-flex align-items-center justify-content-center rounded-circle">
-              <Image
-                width={24}
-                height={18}
-                src="/images/icon/icon_06.svg"
-                alt=""
-                className="lazy-img"
-              />
-            </div>
+          <div  className="card-one" data-aos="fade-up" data-aos-delay="250">
+            
             <div className="name fs-18 fw-500 tx-dark mb-10">
               — Verified Client,{" "}
               <span className="opacity-50">Mumbai</span>

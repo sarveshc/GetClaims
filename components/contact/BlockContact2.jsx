@@ -10,11 +10,11 @@ const BlockContact2 = () => {
           Mon – Sat, 9 AM – 7 PM
           <br />
           <a href="tel:+91XXXXXXXXXX" className="call" style={{ fontWeight: 600 }}>
-            +91 XXXXXXXXXX
+            +91 8046810500 
           </a>
           <br />
           <a
-            href="https://wa.me/91XXXXXXXXXX?text=Hi, I need help with my insurance claim"
+            href="https://wa.me/919650571623?text=Hi, I need help with my insurance claim"
             target="_blank"
             rel="noopener noreferrer"
             style={{
@@ -53,18 +53,7 @@ const BlockContact2 = () => {
         </>
       ),
     },
-    {
-      icon: "/images/icon/icon_161.svg",
-      title: "No Win, No Fee",
-      content: (
-        <>
-          Initial consultation is completely
-          <br />
-          <strong style={{ color: "#0d6efd" }}>free of charge.</strong> We only
-          charge a success fee if your claim is resolved.
-        </>
-      ),
-    },
+    
   ];
 
   return (
@@ -108,10 +97,8 @@ const BlockContact2 = () => {
           Why Choose GetClaims?
         </p>
         {[
-          "✅ 500+ Claims Successfully Resolved",
-          "✅ IRDAI-backed complaint process",
-          "✅ Expert team with 15+ years experience",
-          "✅ No Win, No Fee guarantee",
+          "✅ 100+ Claims Successfully Resolved",
+          "✅ Expert team with 15+ years experience",          
         ].map((point, i) => (
           <p
             key={i}

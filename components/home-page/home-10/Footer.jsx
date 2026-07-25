@@ -66,7 +66,7 @@ const Footer = () => {
         </a>
         <br />
         <a href="tel:+7576994478" className="mobile tran3s fs-20 mt-20 mb-30">
-          +91 9999-99999
+          +91  80468-10500  
         </a>
 
         <Social />

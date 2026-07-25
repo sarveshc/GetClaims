@@ -76,31 +76,7 @@ const RealEstate = () => {
         Team Section Three
         =====================================================
         */}
-      <div className="team-section-three position-relative pt-40 md-pt-20">
-        <div className="container">
-          <div className="row align-items-center">
-            <div
-              className="col-xxl-8 col-md-7 col-sm-9 m-auto"
-              data-aos="fade-up"
-            >
-              <div className="title-style-five text-center pb-50 lg-pb-20">
-                <h2 className="main-title fw-500 tx-dark">
-                  We’ve talented expert to help you
-                </h2>
-              </div>
-              {/* /.title-style-five */}
-            </div>
-          </div>
-          {/* /.row */}
-        </div>
-        {/* /.container */}
-        <div className="pe-3 ps-3 ps-xxl-5 pe-xxl-5">
-          <div className="row">
-            <Team4 />
-          </div>
-        </div>
-        <div className="line-bg-wrapper" />
-      </div>
+      
       {/* /.team-section-three */}
 
       {/*

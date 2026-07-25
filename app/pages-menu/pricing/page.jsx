@@ -19,15 +19,15 @@ const steps = [
   },
   {
     num: "02",
-    title: "Case Filing & Follow-up",
-    desc: "We prepare and file your complaint with the insurance company, IRDAI Grievance Cell, or Insurance Ombudsman and handle all correspondence on your behalf.",
-    highlight: "No upfront cost",
+    title: "Case Acceptance, Filing & Follow-up",
+    desc: "On acceptance of the case we draft complaint on your behalf for We prepare and file your complaint with the insurance company, IRDAI Grievance Cell and Insurance Ombudsman. We help in your claim with our knowledge of Insurance Business, Policy terms and Conditions and IRDAI Regulations.",
+    highlight: "Case Acceptance Fee of Rs 2000",
     color: "#0d6efd",
   },
   {
     num: "03",
     title: "Resolution & Success Fee",
-    desc: "Once your claim is successfully settled, a pre-agreed success fee (percentage of the settled amount) is charged. If we don't win, you pay nothing.",
+    desc: "Once your claim is successfully settled, a pre-agreed success fee is charged. If we don't win, you pay nothing.",
     highlight: "Pay only on success",
     color: "#059669",
   },
@@ -37,10 +37,7 @@ const included = [
   "Free initial case assessment",
   "Document review and gap analysis",
   "Drafting of complaint letters",
-  "IRDAI Grievance Cell filing",
   "Insurance Ombudsman representation",
-  "Insurer follow-up and negotiations",
-  "Regular case status updates",
   "Legal escalation support (if required)",
   "No hidden charges at any stage",
 ];
@@ -48,7 +45,7 @@ const included = [
 const faqs = [
   {
     q: "What is the 'No Win, No Fee' model?",
-    a: "It means you pay us nothing upfront. We only charge a success fee — a percentage of the claim amount that is ultimately settled or awarded in your favour. If your case is not resolved, you owe us nothing.",
+    a: "It means you pay us nothing upfront ( Nominal Case Acceptance Fee which will be adjusted from Final Payment ). We only charge a success fee — a percentage of the claim amount that is ultimately settled or awarded in your favour. If your case is not resolved, you owe us nothing.",
   },
   {
     q: "How much is the success fee?",
@@ -64,7 +61,7 @@ const faqs = [
   },
   {
     q: "How long does the process take?",
-    a: "Simple cases resolved at the insurer level typically take 4–8 weeks. IRDAI Grievance Cell complaints are resolved within 30–45 days. Insurance Ombudsman cases may take 2–4 months. We keep you updated throughout.",
+    a: "Simple cases resolved at the insurer level typically take 4–8 weeks. Insurance Ombudsman cases may take 4–6 months. We keep you updated throughout.",
   },
   {
     q: "What if my case requires legal action?",
@@ -89,9 +86,7 @@ const PricingPage = () => {
                 Simple, Transparent Pricing
               </h2>
             </div>
-            <p className="fs-20 mt-30 lg-mt-20">
-              Zero upfront cost. We only get paid when you win.
-            </p>
+           
           </div>
         </div>
       </div>
@@ -136,45 +131,8 @@ const PricingPage = () => {
                   No Win,{" "}
                   <span style={{ color: "#60a5fa" }}>No Fee</span>
                 </h2>
-                <p
-                  style={{
-                    fontSize: "18px",
-                    color: "#cbd5e1",
-                    lineHeight: "1.7",
-                    maxWidth: "560px",
-                    margin: "0 auto 32px",
-                  }}
-                >
-                  We bear the cost of pursuing your claim. You pay absolutely
-                  nothing unless we successfully resolve your case.
-                </p>
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    gap: "12px",
-                    flexWrap: "wrap",
-                  }}
-                >
-                  {["₹0 Upfront", "No Hidden Fees", "Pay Only on Success"].map(
-                    (tag) => (
-                      <span
-                        key={tag}
-                        style={{
-                          background: "rgba(255,255,255,0.12)",
-                          border: "1px solid rgba(255,255,255,0.2)",
-                          color: "#fff",
-                          padding: "8px 20px",
-                          borderRadius: "20px",
-                          fontSize: "14px",
-                          fontWeight: 600,
-                        }}
-                      >
-                        ✓ {tag}
-                      </span>
-                    )
-                  )}
-                </div>
+               
+               
               </div>
             </div>
           </div>
@@ -299,7 +257,7 @@ const PricingPage = () => {
               </h2>
               <p style={{ color: "#6b7280", fontSize: "15px", lineHeight: "1.7" }}>
                 From the first consultation to the final settlement, every step
-                is handled by our team at no upfront cost to you. You focus on
+                is handled by our team. You focus on
                 recovery — we focus on your claim.
               </p>
               <Link
@@ -401,12 +359,7 @@ const PricingPage = () => {
                     About the Success Fee
                   </h4>
                   <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.7", margin: 0 }}>
-                    Our success fee typically ranges between <strong>10% – 20%</strong> of
-                    the claim amount that is finally settled or awarded in your favour.
-                    The exact percentage is agreed with you in writing before we begin
-                    work — completely transparent, no surprises. For complex cases
-                    requiring legal proceedings, additional terms will be discussed
-                    and agreed separately.
+                    You only pay a pre-agreed success fee if your claim is settled successfully. Lose the case, and there's nothing to pay.
                   </p>
                 </div>
               </div>

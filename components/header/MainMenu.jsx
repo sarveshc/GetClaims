@@ -277,7 +277,7 @@ const MainMenu = () => {
       />
     </g>
   </svg> 
-  +91 9999999999 
+  +91 80468-10500  
 </Link>
           
           <div className="d-flex flex-column align-items-center justify-content-center mt-20">

@@ -6,7 +6,7 @@ const blocksData = [
     id: 1,
     iconSrc: "/images/icon/icon_152.svg",
     title: "Quality Service",
-    content: "Elit esse cillum dolore eu fugiat nulla pariatur",
+    
     dataAos: "fade-up",
     dataAosDelay: "",
   },
@@ -14,7 +14,7 @@ const blocksData = [
     id: 2,
     iconSrc: "/images/icon/icon_153.svg",
     title: "24x7 Support",
-    content: "Elit esse cillum dolore eu fugiat nulla pariatur",
+    
     dataAos: "fade-up",
     dataAosDelay: "100",
   },
@@ -22,7 +22,7 @@ const blocksData = [
     id: 3,
     iconSrc: "/images/icon/icon_154.svg",
     title: "Great Pricing",
-    content: "Elit esse cillum dolore eu fugiat nulla pariatur",
+    
     dataAos: "fade-up",
     dataAosDelay: "200",
   },
@@ -30,7 +30,7 @@ const blocksData = [
     id: 4,
     iconSrc: "/images/icon/icon_155.svg",
     title: "100% Trusted",
-    content: "Elit esse cillum dolore eu fugiat nulla pariatur",
+    
     dataAos: "fade-up",
     dataAosDelay: "300",
   },
