@@ -115,8 +115,7 @@ const MainMenu = () => {
                 // pagesItems.some((menu) =>
                 //   menu.subItems.some((elm) => isActive(elm.link))
                 // ) ||
-                isActive("/pricing") ||
-                isActive("/pages-menu/testimonials")
+                isActive("/about")
                   ? "nav-link active-menu"
                   : "nav-link"
               }
@@ -213,7 +212,7 @@ const MainMenu = () => {
           <li className="nav-item dropdown">
             <a
               className={
-                contactItems.some((elm) => isActive(elm.link))
+                isActive("/contact")
                   ? "nav-link active-menu"
                   : "nav-link"
               }
