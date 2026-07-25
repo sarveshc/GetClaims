@@ -372,9 +372,9 @@ const SeoAgency = () => {
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://themeforest.net/user/ib-themes"
+                  href="mailto:2026@gridtech.in"
                 >
-                  ib-themes
+                  2026@gridtech.in
                 </a>
               </p>
             </div>

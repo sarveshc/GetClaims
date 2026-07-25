@@ -68,11 +68,11 @@ const Footer = () => {
               Copyright © {new Date().getFullYear()}{" "}
               <a
                 style={{ color: "inherit" }}
-                href="https://themeforest.net/user/ib-themes"
+                href="mailto:2026@gridtech.in"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                ib-themes
+                2026@gridtech.in
               </a>
               inc.
             </p>
