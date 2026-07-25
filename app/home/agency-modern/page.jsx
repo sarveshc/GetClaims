@@ -243,14 +243,7 @@ const AgencyModern = () => {
             <Footer />
             <div className="bottom-footer">
               <p className="copyright text-center m0">
-                © {new Date().getFullYear()}
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="mailto:2026@gridtech.in"
-                >
-                  2026@gridtech.in
-                </a>
+                © 2026@gridtech.in
               </p>
             </div>
           </div>

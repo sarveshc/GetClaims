@@ -77,16 +77,7 @@ const Sidebar = () => {
       </ul>
 
       <p className="pt-10 fs-15">
-        Copyright © {new Date().getFullYear()}{" "}
-        <a
-          style={{ color: "inherit" }}
-          href="mailto:2026@gridtech.in"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          2026@gridtech.in
-        </a>{" "}
-        inc.
+        © 2026@gridtech.in
       </p>
     </div>
   );

@@ -459,15 +459,7 @@ const PricingPage = () => {
             <Footer />
             <div className="bottom-footer">
               <p className="copyright text-center m0">
-                © {new Date().getFullYear()}{" "}
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://getclaims.in"
-                >
-                  GetClaims
-                </a>
-                . All rights reserved.
+                © 2026@gridtech.in
               </p>
             </div>
           </div>
