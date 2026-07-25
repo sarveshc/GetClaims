@@ -115,12 +115,12 @@ const MainMenu = () => {
                 // pagesItems.some((menu) =>
                 //   menu.subItems.some((elm) => isActive(elm.link))
                 // ) ||
-                isActive("/pages-menu/pricing") ||
+                isActive("/pricing") ||
                 isActive("/pages-menu/testimonials")
                   ? "nav-link active-menu"
                   : "nav-link"
               }
-              href="/pages-menu/about-us-v3"
+              href="/about"
                role="button"
               // data-bs-toggle="dropdown"
               // data-bs-auto-close="outside"
@@ -202,8 +202,8 @@ const MainMenu = () => {
 
           <li className="nav-item">
             <a
-              className={isActive("/pages-menu/pricing") ? "nav-link active-menu" : "nav-link"}
-              href="/pages-menu/pricing"
+              className={isActive("/pricing") ? "nav-link active-menu" : "nav-link"}
+              href="/pricing"
             >
               Pricing
             </a>
@@ -217,7 +217,7 @@ const MainMenu = () => {
                   ? "nav-link active-menu"
                   : "nav-link"
               }
-              href="/contact/contact-v2"
+              href="/contact"
               role="button"
               //data-bs-toggle="dropdown"
               data-bs-auto-close="outside"
@@ -282,7 +282,7 @@ const MainMenu = () => {
           
           <div className="d-flex flex-column align-items-center justify-content-center mt-20">
             <Link
-              href="/contact/contact-v2"
+              href="/contact"
               className="btn-twentyOne fw-500 tran3s"
             >
               Contact us

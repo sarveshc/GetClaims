@@ -8,8 +8,8 @@ const Footer = () => {
       links: [
         { label: "Home", href: "/" },
        
-        { label: "About us", href: "/pages-menu/about-us-v3" },
-        { label: "Pricing", href: "/pages-menu/pricing" },
+        { label: "About us", href: "/about" },
+        { label: "Pricing", href: "/pricing" },
         // { label: "Blog", href: "/blog/blog-v1" },
       ],
       classes: "col-lg-2 col-sm-4 ms-auto mb-30",
@@ -19,8 +19,8 @@ const Footer = () => {
       links: [
         // { label: "FAQ", href: "/pages-menu/faq" },
         //{ label: "Blog", href: "/blog/blog-v1" },
-        { label: "Contact Us", href: "contact/contact-v2" },
-        { label: "Support", href: "contact/contact-v2" },
+        { label: "Contact Us", href: "/contact" },
+        { label: "Support", href: "/contact" },
       ],
       classes: "col-lg-3 col-sm-4 mb-30",
     },

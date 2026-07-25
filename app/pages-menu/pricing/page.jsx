@@ -261,7 +261,7 @@ const PricingPage = () => {
                 recovery — we focus on your claim.
               </p>
               <Link
-                href="/contact/contact-v2"
+                href="/contact"
                 className="btn-one fw-500 mt-30 d-inline-block"
               >
                 Start Your Free Consultation
