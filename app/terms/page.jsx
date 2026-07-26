@@ -18,7 +18,7 @@ const sections = [
   },
   {
     title: "3. No Win, No Fee Model",
-    body: `GetClaims operates on a No Win, No Fee basis. This means:\n\n• A nominal Case Acceptance Fee of ₹2,000 is charged upon acceptance of your case. This amount will be adjusted against the final success fee upon resolution.\n• A success fee — typically between 10% and 20% of the settled or awarded claim amount — is charged only when your case is resolved in your favour.\n• The exact success fee percentage will be agreed with you in writing before we begin work. No fee will be charged if your case is not resolved successfully.\n• The Case Acceptance Fee is non-refundable if you withdraw from the process after case acceptance.`,
+    body: `GetClaims operates on a No Win, No Fee basis. This means:\n\n• A nominal Case Acceptance Fee of ₹2,000 is charged upon acceptance of your case. This amount will be adjusted against the final success fee upon resolution.\n• A success fee — is charged only when your case is resolved in your favour.\n• The exact success fee percentage will be agreed with you in writing before we begin work. No fee will be charged if your case is not resolved successfully.\n• The Case Acceptance Fee is non-refundable if you withdraw from the process after case acceptance.`,
   },
   {
     title: "4. Scope of Services",
