@@ -1,30 +1,44 @@
 export const dynamic = "force-dynamic";
 
-function check(val) {
-  if (!val) return "❌ NOT SET";
-  if (val.startsWith('"') || val.startsWith("'")) return "⚠️ SET but starts with quote character";
-  if (val !== val.trim()) return "⚠️ SET but has leading/trailing whitespace";
-  return "✅ SET";
+import nodemailer from "nodemailer";
+import prisma from "@/lib/prisma";
+
+async function testSmtp() {
+  try {
+    const port = parseInt(process.env.SMTP_PORT || "587", 10);
+    const transporter = nodemailer.createTransport({
+      host: process.env.SMTP_HOST,
+      port,
+      secure: port === 465,
+      requireTLS: port !== 465,
+      auth: { user: process.env.SMTP_USER, pass: process.env.SMTP_PASS },
+      connectionTimeout: 5000,
+      greetingTimeout: 5000,
+    });
+    await transporter.verify();
+    return "✅ Connected successfully";
+  } catch (err) {
+    return `❌ Failed: ${err.message}`;
+  }
+}
+
+async function testDb() {
+  try {
+    const count = await prisma.contactSubmission.count();
+    const withDocs = await prisma.contactSubmission.count({
+      where: { documents: { some: {} } },
+    });
+    return { total_submissions: count, submissions_with_documents: withDocs };
+  } catch (err) {
+    return `❌ DB error: ${err.message}`;
+  }
 }
 
 export async function GET() {
+  const [smtpResult, dbResult] = await Promise.all([testSmtp(), testDb()]);
+
   return Response.json({
-    auth: {
-      ADMIN_EMAIL:     check(process.env.ADMIN_EMAIL),
-      ADMIN_PASSWORD:  check(process.env.ADMIN_PASSWORD),
-      NEXTAUTH_SECRET: check(process.env.NEXTAUTH_SECRET),
-      NEXTAUTH_URL:    process.env.NEXTAUTH_URL || "❌ NOT SET",
-    },
-    smtp: {
-      SMTP_HOST: check(process.env.SMTP_HOST),
-      SMTP_PORT: process.env.SMTP_PORT || "❌ NOT SET",
-      SMTP_USER: check(process.env.SMTP_USER),
-      SMTP_PASS: check(process.env.SMTP_PASS),
-      FROM_NAME: check(process.env.FROM_NAME),
-    },
-    storage: {
-      BLOB_READ_WRITE_TOKEN: check(process.env.BLOB_READ_WRITE_TOKEN),
-      DATABASE_URL:          check(process.env.DATABASE_URL),
-    },
+    smtp_connection: smtpResult,
+    database: dbResult,
   });
 }
