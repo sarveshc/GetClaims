@@ -21,6 +21,7 @@ const Footer = () => {
         //{ label: "Blog", href: "/blog/blog-v1" },
         { label: "Contact Us", href: "/contact" },
         { label: "Support", href: "/contact" },
+        { label: "Terms & Conditions", href: "/terms" },
       ],
       classes: "col-lg-3 col-sm-4 mb-30",
     },
