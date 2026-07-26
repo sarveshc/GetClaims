@@ -1,22 +1,20 @@
 export const dynamic = "force-dynamic";
 
-import nodemailer from "nodemailer";
+import { Resend } from "resend";
 import prisma from "@/lib/prisma";
 
-async function testSmtp() {
+async function testResend() {
+  if (!process.env.RESEND_API_KEY) return "❌ RESEND_API_KEY not set";
   try {
-    const port = parseInt(process.env.SMTP_PORT || "587", 10);
-    const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST,
-      port,
-      secure: port === 465,
-      requireTLS: port !== 465,
-      auth: { user: process.env.SMTP_USER, pass: process.env.SMTP_PASS },
-      connectionTimeout: 5000,
-      greetingTimeout: 5000,
+    const resend = new Resend(process.env.RESEND_API_KEY);
+    const { data, error } = await resend.emails.send({
+      from:    "GetClaims <support@getclaims.in>",
+      to:      [process.env.ADMIN_EMAIL || "support@getclaims.in"],
+      subject: "GetClaims — Email Test",
+      html:    "<p>Email system is working correctly via Resend.</p>",
     });
-    await transporter.verify();
-    return "✅ Connected successfully";
+    if (error) return `❌ Resend error: ${error.message}`;
+    return `✅ Test email sent (id: ${data.id})`;
   } catch (err) {
     return `❌ Failed: ${err.message}`;
   }
@@ -35,10 +33,10 @@ async function testDb() {
 }
 
 export async function GET() {
-  const [smtpResult, dbResult] = await Promise.all([testSmtp(), testDb()]);
+  const [emailResult, dbResult] = await Promise.all([testResend(), testDb()]);
 
   return Response.json({
-    smtp_connection: smtpResult,
+    email: emailResult,
     database: dbResult,
   });
 }
