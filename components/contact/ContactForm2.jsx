@@ -1,6 +1,5 @@
 "use client";
 import { useState, useRef } from "react";
-import { upload } from "@vercel/blob/client";
 
 // ── Static data ───────────────────────────────────────────────────────────────
 const INSURANCE_TYPES = [
@@ -334,34 +333,34 @@ const ContactForm2 = () => {
     return Object.keys(newErrors).length === 0;
   };
 
-  // ── Upload a single file to Vercel Blob (30s hard timeout) ──────────────────
+  // ── Upload a single file to S3 via pre-signed URL ────────────────────────────
   const uploadFile = async (file, docType) => {
-    const sanitized = file.name.replace(/[^a-zA-Z0-9._-]/g, "_");
-    const filename = `claims/${docType}/${Date.now()}-${sanitized}`;
+    // Step 1: get pre-signed PUT URL from server
+    const res = await fetch("/api/upload", {
+      method:  "POST",
+      headers: { "Content-Type": "application/json" },
+      body:    JSON.stringify({ filename: file.name, contentType: file.type, fileSize: file.size, docType }),
+    });
 
-    const controller = new AbortController();
-    const timer = setTimeout(() => controller.abort(), 30_000); // 30s max per file
-
-    try {
-      const blob = await upload(filename, file, {
-        access: "public",
-        handleUploadUrl: "/api/upload",
-        abortSignal: controller.signal,
-      });
-      return {
-        type: docType,
-        name: file.name,
-        url:  blob.url,
-        size: file.size,
-      };
-    } catch (err) {
-      if (err?.name === "AbortError" || controller.signal.aborted) {
-        throw new Error(`Upload timed out for "${file.name}". Please try a smaller file or submit without documents.`);
-      }
-      throw err;
-    } finally {
-      clearTimeout(timer);
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({}));
+      throw new Error(err.error || "Failed to prepare upload.");
     }
+
+    const { uploadUrl, fileUrl } = await res.json();
+
+    // Step 2: PUT file directly to S3
+    const uploadRes = await fetch(uploadUrl, {
+      method:  "PUT",
+      body:    file,
+      headers: { "Content-Type": file.type },
+    });
+
+    if (!uploadRes.ok) {
+      throw new Error(`S3 upload failed for "${file.name}" (${uploadRes.status}).`);
+    }
+
+    return { type: docType, name: file.name, url: fileUrl, size: file.size };
   };
 
   // ── Submit ────────────────────────────────────────────────────────────────────
