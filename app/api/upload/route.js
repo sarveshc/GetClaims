@@ -29,13 +29,13 @@ const ALLOWED_TYPES = [
 const MAX_SIZE = 10 * 1024 * 1024; // 10 MB
 
 function getS3Client() {
-  const { AWS_REGION, AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY } = process.env;
-  if (!AWS_REGION || !AWS_ACCESS_KEY_ID || !AWS_SECRET_ACCESS_KEY) return null;
+  const { S3_REGION, S3_ACCESS_KEY_ID, S3_SECRET_ACCESS_KEY } = process.env;
+  if (!S3_REGION || !S3_ACCESS_KEY_ID || !S3_SECRET_ACCESS_KEY) return null;
   return new S3Client({
-    region: AWS_REGION,
+    region: S3_REGION,
     credentials: {
-      accessKeyId:     AWS_ACCESS_KEY_ID,
-      secretAccessKey: AWS_SECRET_ACCESS_KEY,
+      accessKeyId:     S3_ACCESS_KEY_ID,
+      secretAccessKey: S3_SECRET_ACCESS_KEY,
     },
   });
 }
@@ -49,9 +49,9 @@ export async function POST(request) {
     );
   }
 
-  const bucket = process.env.AWS_S3_BUCKET;
+  const bucket = process.env.S3_BUCKET;
   if (!bucket) {
-    return NextResponse.json({ error: "AWS_S3_BUCKET is not set." }, { status: 503 });
+    return NextResponse.json({ error: "S3_BUCKET is not set." }, { status: 503 });
   }
 
   let body;
@@ -84,7 +84,7 @@ export async function POST(request) {
     });
 
     const uploadUrl = await getSignedUrl(s3, command, { expiresIn: 300 }); // 5 min
-    const fileUrl   = `https://${bucket}.s3.${process.env.AWS_REGION}.amazonaws.com/${key}`;
+    const fileUrl   = `https://${bucket}.s3.${process.env.S3_REGION}.amazonaws.com/${key}`;
 
     return NextResponse.json({ uploadUrl, fileUrl });
   } catch (err) {
