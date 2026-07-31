@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic";
 // Submission Detail Page (Server Component)
 import { getServerSession } from "next-auth/next";
 import { redirect, notFound } from "next/navigation";

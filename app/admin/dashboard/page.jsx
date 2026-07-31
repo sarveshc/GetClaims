@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic";
 // Admin Dashboard — Stats Overview (Server Component)
 import { getServerSession } from "next-auth/next";
 import { redirect }         from "next/navigation";
