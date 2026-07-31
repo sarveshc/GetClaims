@@ -21,7 +21,7 @@ const steps = [
     num: "02",
     title: "Case Acceptance, Filing & Follow-up",
     desc: "On acceptance of the case we draft complaint on your behalf for We prepare and file your complaint with the insurance company, IRDAI Grievance Cell and Insurance Ombudsman. We help in your claim with our knowledge of Insurance Business, Policy terms and Conditions and IRDAI Regulations.",
-    highlight: "Case Acceptance Fee of Rs 2000",
+    highlight: "Case Acceptance Fee of Rs 5000",
     color: "#0d6efd",
   },
   {
