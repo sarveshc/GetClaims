@@ -89,6 +89,13 @@ export async function POST(request) {
     return NextResponse.json({ uploadUrl, fileUrl });
   } catch (err) {
     console.error("S3 pre-sign error:", err);
-    return NextResponse.json({ error: "Failed to generate upload URL." }, { status: 500 });
+    return NextResponse.json({
+      error: "Failed to generate upload URL.",
+      detail: err.message,
+      code:   err.Code || err.code || err.name,
+      region: process.env.S3_REGION,
+      bucket: process.env.S3_BUCKET,
+      keyId:  process.env.S3_ACCESS_KEY_ID?.slice(0, 8) + "...",
+    }, { status: 500 });
   }
 }
