@@ -1,23 +1,23 @@
 const FancyBlock2 = () => {
   const cardsData = [
-    {
-      icon: "/images/icon/icon_09.svg",
-      title: "Quality Design",
-      subtitle: "We do focus on quality not quantity.",
-      delay: "100",
-    },
-    {
-      icon: "/images/icon/icon_10.svg",
-      title: "Expert Support",
-      subtitle: "Expert ready to help you anytime.",
-      delay: "200",
-    },
-    {
-      icon: "/images/icon/icon_11.svg",
-      title: "Mobile Friendly",
-      subtitle: "All design compitable with mobile.",
-      delay: "300",
-    },
+    // {
+    //   icon: "/images/icon/icon_09.svg",
+    //   title: "Quality Design",
+    //   subtitle: "We do focus on quality not quantity.",
+    //   delay: "100",
+    // },
+    // {
+    //   icon: "/images/icon/icon_10.svg",
+    //   title: "Expert Support",
+    //   subtitle: "Expert ready to help you anytime.",
+    //   delay: "200",
+    // },
+    // {
+    //   icon: "/images/icon/icon_11.svg",
+    //   title: "Mobile Friendly",
+    //   subtitle: "All design compitable with mobile.",
+    //   delay: "300",
+    // },
   ];
 
   return (

@@ -162,13 +162,13 @@ const AgencyModern = () => {
 				Card Style Two
 			=====================================================
 			*/}
-      <div className="wrapper pt-50 lg-pt-50">
+      {/* <div  className="wrapper pt-50 lg-pt-50">
         <div className="container">
           <div className="row justify-content-between">
             <FancyBlock2 />
           </div>
         </div>
-      </div>
+      </div> */}
       {/* /.wrapper */}
 
       {/*
