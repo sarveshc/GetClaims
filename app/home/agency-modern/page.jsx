@@ -54,9 +54,9 @@ const AgencyModern = () => {
           <div className="row align-items-center">
             <div className="col-lg-12" data-aos="">
               <div className="title-style-one">
-                <h2 className="main-title fw-bold tx-dark m0">
+                <h1 className="main-title fw-bold tx-dark m0" style={{ fontSize: "clamp(32px, 4vw, 50px)" }}>
                   <span>Resolving</span> Insurance Claims &amp; Financial Disputes
-                </h2>
+                </h1>
               </div>
               {/* /.title-style-one */}
             </div>

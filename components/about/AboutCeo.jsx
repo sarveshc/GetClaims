@@ -54,14 +54,14 @@ const AboutCeo = () => {
             width={132}
             height={126}
             src="/images/shape/shape_09.svg"
-            alt=""
+            alt="Decorative shape top right"
             className="lazy-img shapes shape-one"
           />
           <Image
             width={8}
             height={8}
             src="/images/shape/shape_10.svg"
-            alt=""
+            alt="Decorative dot"
             className="lazy-img shapes shape-two"
           />
           <div className="shapes shape-three" />
@@ -69,14 +69,14 @@ const AboutCeo = () => {
             width={8}
             height={8}
             src="/images/shape/shape_11.svg"
-            alt=""
+            alt="Decorative dot"
             className="lazy-img shapes shape-four"
           />
           <Image
             width={810}
             height={10}
             src="/images/shape/shape_12.svg"
-            alt=""
+            alt="Decorative line"
             className="lazy-img shapes shape-five"
           />
           <div className="shapes shape-six" />
@@ -84,7 +84,7 @@ const AboutCeo = () => {
             width={18}
             height={16}
             src="/images/shape/shape_13.svg"
-            alt=""
+            alt="Decorative cross"
             className="lazy-img shapes shape-seven"
           />
 

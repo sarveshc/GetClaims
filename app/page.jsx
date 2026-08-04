@@ -1,10 +1,41 @@
 //import Insurance from "./home/insurance/page";
 import AgencyModern from "./home/agency-modern/page";
+
 export const metadata = {
-  title: "GetClaims || No Win, No Fee | Claim Specialists",
+  metadataBase: new URL('https://getclaims.in'),
+  title: "GetClaims — Resolve Your Insurance Claim",
+  description: "GetClaims helps resolve insurance claim rejections, delays, and disputes. Free consultation. No win, no fee.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "GetClaims — Resolve Your Insurance Claim",
+    description: "GetClaims helps resolve insurance claim rejections, delays, and disputes. Free consultation. No win, no fee.",
+    url: "https://getclaims.in",
+    siteName: "GetClaims",
+    type: "website",
+  },
 };
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "GetClaims",
+  url: "https://getclaims.in",
+  logo: "https://getclaims.in/favicon.svg",
+  description: "GetClaims helps resolve insurance claim rejections, delays, and disputes. Free consultation. No win, no fee.",
+};
+
 const MainRoot = () => {
-  return <AgencyModern />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <AgencyModern />
+    </>
+  );
 };
 
 export default MainRoot;

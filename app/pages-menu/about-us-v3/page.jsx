@@ -8,12 +8,37 @@ import Team5 from "@/components/team/Team5";
 import Block from "@/components/about/Block";
 import Counter2 from "@/components/about/Counter2";
 import AboutCeo from "@/components/about/AboutCeo";
+
 export const metadata = {
-  title: "AboutUs V3 || GetClaims - Creative Multipurpose React NextJS Template",
+  title: "About Us | GetClaims",
+  description: "GetClaims is a team of insurance and legal experts dedicated to helping policyholders across India resolve rejected, delayed, or underpaid claims.",
+  alternates: {
+    canonical: "/about",
+  },
+  openGraph: {
+    title: "About Us | GetClaims",
+    description: "GetClaims is a team of insurance and legal experts dedicated to helping policyholders across India resolve rejected, delayed, or underpaid claims.",
+    url: "https://getclaims.in/about",
+    siteName: "GetClaims",
+    type: "website",
+  },
 };
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  name: "About Us | GetClaims",
+  url: "https://getclaims.in/about",
+  description: "GetClaims is a team of insurance and legal experts dedicated to helping policyholders across India resolve rejected, delayed, or underpaid claims.",
+};
+
 const AboutUsV3 = () => {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* <!-- 
       =============================================
       Theme Default Menu
@@ -32,7 +57,7 @@ const AboutUsV3 = () => {
         >
           <div className="container">
             <div className="title-style-five">
-              <h2 className="main-title tx-dark fw-bold">About us</h2>
+              <h1 className="main-title tx-dark fw-bold">About us</h1>
             </div>
             <p className="fs-20 mt-30 lg-mt-20">
               At GetClaims, we help resolve claims and financial disputes of every nature with expert guidance and professional support. Many customers often feel dissatisfied with claim settlement outcomes due to lack of clarity, unfair deductions, delays, or unjustified rejections. Our team works to ensure your concerns are properly addressed and helps you secure a fair and rightful resolution.

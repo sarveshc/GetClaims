@@ -3,17 +3,35 @@ import ContactForm2 from "@/components/contact/ContactForm2";
 import Footer from "@/components/home-page/home-10/Footer";
 import Header from "@/components/home-page/home-10/Header";
 export const metadata = {
-  title: "Contact Us | GetClaims — Insurance Claim Assistance",
+  title: "Contact Us | GetClaims",
   description:
     "Submit your insurance claim rejection or dispute to GetClaims. Our experts fight for your rightful claim — No Win, No Fee. Upload your documents and get a free consultation.",
+  alternates: {
+    canonical: "/contact",
+  },
   openGraph: {
     title: "Contact Us | GetClaims",
     description: "Submit your insurance claim dispute. Free consultation. No Win, No Fee.",
+    url: "https://getclaims.in/contact",
+    siteName: "GetClaims",
+    type: "website",
   },
 };
 const ContactV2 = () => {
+  const contactJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    name: "Contact Us | GetClaims",
+    url: "https://getclaims.in/contact",
+    description: "Submit your insurance claim rejection or dispute to GetClaims.",
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(contactJsonLd) }}
+      />
       {/* <!-- 
       =============================================
       Theme Default Menu
@@ -33,7 +51,7 @@ const ContactV2 = () => {
         >
           <div className="container">
             <div className="title-style-five">
-              <h2 className="main-title tx-dark fw-bold">Contact Us</h2>
+              <h1 className="main-title tx-dark fw-bold">Contact Us</h1>
             </div>
             <p className="fs-20 mt-30 lg-mt-20">
               Submit your claim details and documents below. Our experts will review your case and contact you within 24 hours — free of charge.

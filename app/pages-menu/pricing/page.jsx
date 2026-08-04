@@ -7,6 +7,16 @@ export const metadata = {
   title: "Pricing | GetClaims — No Win, No Fee",
   description:
     "GetClaims charges zero upfront fees. We work on a No Win, No Fee basis — you only pay a success fee when your insurance claim is resolved in your favour.",
+  alternates: {
+    canonical: "/pricing",
+  },
+  openGraph: {
+    title: "Pricing | GetClaims — No Win, No Fee",
+    description: "GetClaims charges zero upfront fees. We work on a No Win, No Fee basis.",
+    url: "https://getclaims.in/pricing",
+    siteName: "GetClaims",
+    type: "website",
+  },
 };
 
 const steps = [
@@ -70,8 +80,25 @@ const faqs = [
 ];
 
 const PricingPage = () => {
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.q,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.a,
+      },
+    })),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <Header />
 
       {/* ── Banner ───────────────────────────────────────────────────── */}
@@ -82,9 +109,9 @@ const PricingPage = () => {
         >
           <div className="container">
             <div className="title-style-five">
-              <h2 className="main-title tx-dark fw-bold">
+              <h1 className="main-title tx-dark fw-bold">
                 Simple, Transparent Pricing
-              </h2>
+              </h1>
             </div>
            
           </div>

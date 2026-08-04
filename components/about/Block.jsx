@@ -52,7 +52,7 @@ const Block = () => {
                 width={45}
                 height={42}
                 src={block.iconSrc}
-                alt="icon"
+                alt={`${block.title} icon`}
                 className="lazy-img mh-100"
               />
             </div>
