@@ -43,7 +43,7 @@ const MainMenu = () => {
                   src="/images/logo/logo_01.png"
                   alt="logo"
                   width={95}
-                  height={30}
+                  height={45}
                 />
               </Link>
             </div>
@@ -245,7 +245,7 @@ const MainMenu = () => {
 
         {/* Mobile Content */}
         <div className="mobile-content d-block d-lg-none">
-        <Link className="getPhone mt-70" href="">
+        <Link className="getPhone mt-70" href="tel:+918046810500">
   <svg 
     enableBackground="new 0 0 40 40" 
     height="40px" 

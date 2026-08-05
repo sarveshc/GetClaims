@@ -16,6 +16,20 @@ export const metadata = {
     url: "https://getclaims.in/pricing",
     siteName: "GetClaims",
     type: "website",
+    images: [
+      {
+        url: "https://getclaims.in/images/assets/og.jpg",
+        width: 1731,
+        height: 909,
+        alt: "GetClaims — Insurance Claims Not Settled? We Can Help.",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Pricing | GetClaims — No Win, No Fee",
+    description: "GetClaims charges zero upfront fees. We work on a No Win, No Fee basis.",
+    images: ["https://getclaims.in/images/assets/twitter.jpg"],
   },
 };
 

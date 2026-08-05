@@ -21,6 +21,20 @@ export const metadata = {
     url: "https://getclaims.in/about",
     siteName: "GetClaims",
     type: "website",
+    images: [
+      {
+        url: "https://getclaims.in/images/assets/og.jpg",
+        width: 1731,
+        height: 909,
+        alt: "GetClaims — Insurance Claims Not Settled? We Can Help.",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Us | GetClaims",
+    description: "GetClaims is a team of insurance and legal experts dedicated to helping policyholders across India resolve rejected, delayed, or underpaid claims.",
+    images: ["https://getclaims.in/images/assets/twitter.jpg"],
   },
 };
 

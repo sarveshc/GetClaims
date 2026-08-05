@@ -46,6 +46,13 @@ select option {
     color: var(--prime-two) !important;
 }
 
+// --prime-two (#ff733b) on the white nav bar background is ~2.7:1 contrast,
+// below WCAG AA's 4.5:1 minimum for normal-weight text. Darken just the
+// active nav-link state without touching --prime-two used elsewhere.
+.theme-main-menu .navbar-nav .nav-link.active-menu {
+    color: #b34700 !important;
+}
+
 .theme-menu-three {
     .active-menu {
         color: var(--prime-three) !important;

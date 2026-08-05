@@ -37,12 +37,12 @@ const Header = () => {
                 src="/images/logo/logo_01.png"
                 alt="logo"
                 width={200}
-                height={90}
+                height={94}
               />
             </Link>
           </div>
           <div className="right-widget ms-auto d-flex align-items-center order-lg-3">
-          <Link className="getPhone" href="">
+          <Link className="getPhone" href="tel:+918046810500">
   <svg 
     enableBackground="new 0 0 40 40" 
     height="40px" 

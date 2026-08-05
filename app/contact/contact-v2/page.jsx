@@ -15,6 +15,20 @@ export const metadata = {
     url: "https://getclaims.in/contact",
     siteName: "GetClaims",
     type: "website",
+    images: [
+      {
+        url: "https://getclaims.in/images/assets/og.jpg",
+        width: 1731,
+        height: 909,
+        alt: "GetClaims — Insurance Claims Not Settled? We Can Help.",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Us | GetClaims",
+    description: "Submit your insurance claim dispute. Free consultation. No Win, No Fee.",
+    images: ["https://getclaims.in/images/assets/twitter.jpg"],
   },
 };
 const ContactV2 = () => {

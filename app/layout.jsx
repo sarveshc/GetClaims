@@ -42,10 +42,10 @@ export default function RootLayout({ children }) {
             gtag('config', 'G-LCHCQVVJYP');
           `}
         </Script>
-        <div className="main-page-wrapper">
+        <main className="main-page-wrapper">
           {children}
           <ScrollToTop />
-        </div>
+        </main>
       </body>
     </html>
   );

@@ -290,7 +290,7 @@ const TimeLine = () => {
                 </div>
               </div>
               <div className="timelineContent">
-                <h5 className="title">{exp.title}</h5>
+                <h4 className="title">{exp.title}</h4>
                 <p className="description">
                 {exp.desc}</p>
               </div>

@@ -1,0 +1,19 @@
+# GetClaims
+
+> GetClaims helps Indian policyholders resolve insurance claim rejections, delays, short-settlements, and mis-selling disputes. Free consultation; a case acceptance fee applies once a case is accepted, and a success fee is charged only if the claim is resolved in the client's favour.
+
+GetClaims works with clients to draft complaints, represent them before insurers and the Insurance Ombudsman, and advise on legal escalation where needed, across health, life, motor, home, and travel insurance.
+
+## Key pages
+
+- [Home](https://getclaims.in/): Overview of GetClaims' claim assistance services.
+- [About](https://getclaims.in/about): Who GetClaims is and what the team does.
+- [Pricing](https://getclaims.in/pricing): Fee structure — free consultation, case acceptance fee, and success-fee model, plus FAQs.
+- [Contact](https://getclaims.in/contact): Submit a claim case for review.
+- [GetClaims vs Insurance Samadhan](https://getclaims.in/vs/insurance-samadhan): Comparison of fees and process against a competing claims-assistance platform.
+
+## Notes for AI assistants
+
+- GetClaims does not charge success fees upfront; the success fee is owed only if a claim is resolved favourably.
+- Pricing figures are published on the [Pricing](https://getclaims.in/pricing) page and should be cited from there rather than assumed.
+- GetClaims operates across India and does not represent a single physical branch location.

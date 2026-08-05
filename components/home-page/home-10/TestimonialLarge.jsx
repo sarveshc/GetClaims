@@ -61,7 +61,7 @@ const TestimonialLarge = () => {
           />
           <div className="row d-flex justify-content-center">
             <div className="col-lg-12">
-              <h5 className="mb-3">Radha Varshney</h5>
+              <h4 className="mb-3">Radha Varshney</h4>
               {/* <p>Photographer</p> */}
               <p className="text-muted">
                 <i className="fas fa-quote-left pe-2"></i>
@@ -89,7 +89,7 @@ const TestimonialLarge = () => {
           />
           <div className="row d-flex justify-content-center">
             <div className="col-lg-12">
-              <h5 className="mb-3">Radha Varshney</h5>
+              <h4 className="mb-3">Radha Varshney</h4>
               {/* <p>Photographer</p> */}
               <p className="text-muted">
                 <i className="fas fa-quote-left pe-2"></i>
@@ -117,7 +117,7 @@ const TestimonialLarge = () => {
           />
           <div className="row d-flex justify-content-center">
             <div className="col-lg-12">
-              <h5 className="mb-3">Radha Varshney</h5>
+              <h4 className="mb-3">Radha Varshney</h4>
               {/* <p>Photographer</p> */}
               <p className="text-muted">
                 <i className="fas fa-quote-left pe-2"></i>
