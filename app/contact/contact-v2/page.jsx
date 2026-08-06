@@ -81,6 +81,7 @@ const ContactV2 = () => {
                     className="form-style-three md-mb-60"
                     data-aos="fade-right"
                   >
+                    <h2 className="fs-24 fw-bold tx-dark mb-30">Submit Your Case</h2>
                     <ContactForm2 />
                   </div>
                   {/* /.form-style-three */}
@@ -91,6 +92,7 @@ const ContactV2 = () => {
                   className="col-xl-4 col-lg-5  ms-auto"
                   data-aos="fade-left"
                 >
+                  <h2 className="fs-24 fw-bold tx-dark mb-30">Get in Touch</h2>
                   <BlockContact2 />
                 </div>
                 {/* End col-xl-4 */}

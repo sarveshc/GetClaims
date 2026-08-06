@@ -3,6 +3,7 @@
 import Aos from "aos";
 import { useEffect } from "react";
 import Script from "next/script";
+import { Nunito } from "next/font/google";
 import "aos/dist/aos.css";
 import "../styles/index.scss";
 import ScrollToTop from "@/components/common/ScrollTop";
@@ -10,6 +11,13 @@ import ScrollToTop from "@/components/common/ScrollTop";
 if (typeof window !== "undefined") {
   require("bootstrap/dist/js/bootstrap");
 }
+
+const nunito = Nunito({
+  subsets: ["latin"],
+  weight: "variable",
+  style: ["normal", "italic"],
+  display: "swap",
+});
 
 export default function RootLayout({ children }) {
   useEffect(() => {
@@ -20,13 +28,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet" />
         {/* favicon — umbrella matching logo; ?v=2 forces browsers to re-fetch */}
         <link rel="icon" href="/favicon.svg?v=2" type="image/svg+xml" sizes="any" />
         <link rel="shortcut icon" href="/favicon.svg?v=2" />
         <meta name="theme-color" content="#FAA61B" />
       </head>
-      <body>
+      <body className={nunito.className}>
         <Script
           strategy="afterInteractive"
           src={`https://www.googletagmanager.com/gtag/js?id=G-LCHCQVVJYP`}

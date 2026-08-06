@@ -49,7 +49,7 @@ const Services = () => {
     <div className="row">
           <div className="col-md-5">
             <div className="os-3 os os-3-c1">
-              <div className="os-3-l"><img src="/images/icon/ic_02.png" alt="Claim rejection" /></div>
+              <div className="os-3-l"><img src="/images/icon/ic_02.webp" alt="Claim rejection" width={90} height={90} /></div>
               <div className="os-3-r">
                 <h3>Claim Rejection</h3>
                 <p className="os-4">Any type of claim rejected by the insurance company we will help you in getting the claim....</p>
@@ -59,7 +59,7 @@ const Services = () => {
           </div>
           <div className="col-md-7">
             <div className="os-3 os-3-c2">
-              <div className="os-3-l"><img src="/images/icon/ic_03.png" alt="Delay in Claim Process" /></div>
+              <div className="os-3-l"><img src="/images/icon/ic_03.webp" alt="Delay in Claim Process" width={90} height={90} /></div>
               <div className="os-3-r">
                 <h3>Delay in Claim Processing </h3>
                 <p className="os-4">We will help you in quick settlement of claim in accordance with IRDIA specified turned around time.</p>
@@ -69,7 +69,7 @@ const Services = () => {
           </div>
           <div className="col-md-7">
             <div className="os-3 os-3-c3">
-              <div className="os-3-l"><img src="/images/icon/ic_01.png" alt="Mis-selling of Insurance" /></div>
+              <div className="os-3-l"><img src="/images/icon/ic_01.webp" alt="Mis-selling of Insurance" width={90} height={90} /></div>
               <div className="os-3-r">
                 <h3>Mis-selling</h3>
                 <p className="os-4">We help in getting the premium refunded in case insurance policy is mis-sold to you.</p>
@@ -79,7 +79,7 @@ const Services = () => {
           </div>
           <div className="col-md-5">
             <div className="os-3 os-3-c4">
-              <div className="os-3-l"><img src="/images/icon/ic_04.png" alt="Claim short settled" /></div>
+              <div className="os-3-l"><img src="/images/icon/ic_04.webp" alt="Claim short settled" width={90} height={90} /></div>
               <div className="os-3-r">
                 <h3>Claim short-settled</h3>
                 <p className="os-4">We will help you in getting maximum possible amount in accordance with policy term and conditions.</p>

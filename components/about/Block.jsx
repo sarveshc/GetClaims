@@ -5,36 +5,35 @@ const blocksData = [
   {
     id: 1,
     iconSrc: "/images/icon/icon_152.svg",
-    title: "Quality Service",
-    
+    title: "Free Case Review",
+    content: "Every case starts with a no-cost assessment of your policy and claim documents before you commit to anything.",
     dataAos: "fade-up",
     dataAosDelay: "",
   },
   {
     id: 2,
     iconSrc: "/images/icon/icon_153.svg",
-    title: "24x7 Support",
-    
+    title: "No Win, No Fee",
+    content: "A nominal case acceptance fee is adjusted against your final payment. Our success fee is only due once your claim is resolved.",
     dataAos: "fade-up",
     dataAosDelay: "100",
   },
   {
     id: 3,
     iconSrc: "/images/icon/icon_154.svg",
-    title: "Great Pricing",
-    
+    title: "Ombudsman Representation",
+    content: "We draft and file complaints with your insurer, the IRDAI Grievance Cell, and the Insurance Ombudsman on your behalf.",
     dataAos: "fade-up",
     dataAosDelay: "200",
   },
   {
     id: 4,
     iconSrc: "/images/icon/icon_155.svg",
-    title: "100% Trusted",
-    
+    title: "Responsive Support",
+    content: "Reach us by phone or WhatsApp Mon–Sat, 9 AM–7 PM, or email — we reply to every message within 24 hours.",
     dataAos: "fade-up",
     dataAosDelay: "300",
   },
-  // Add more blocks as needed
 ];
 
 const Block = () => {
@@ -56,7 +55,7 @@ const Block = () => {
                 className="lazy-img mh-100"
               />
             </div>
-            <h4 className="fw-bold tx-dark mt-30 mb-15">{block.title}</h4>
+            <h3 className="fw-bold tx-dark mt-30 mb-15" style={{ fontSize: "20px" }}>{block.title}</h3>
             <p className="fs-18">{block.content}</p>
           </div>
           {/* /.card-style-twentyFour */}

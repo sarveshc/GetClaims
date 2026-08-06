@@ -121,7 +121,9 @@ const AboutUsV3 = () => {
                 </div>{" "}
                 {/* /.title-style-one */}
                 <p className="text-lg mt-40 lg-mt-20">
-                  We helping our client to fullfill their needs with our expert.
+                  From your first call to the final settlement, we handle the
+                  paperwork, the correspondence, and the escalation — so you
+                  know exactly where your case stands at every stage.
                 </p>
                 <Image
                   width={73}
@@ -174,20 +176,123 @@ const AboutUsV3 = () => {
       {/* /.fancy-feature-fiftyFour */}
 
       {/*
-        =====================================================
-        Team Section Four
-        =====================================================
+        =============================================
+        Our Process
+        ==============================================
         */}
-     
-      {/* /.team-section-four */}
+      <div className="pt-100 pb-80 lg-pt-60 lg-pb-60">
+        <div className="container">
+          <div className="text-center mb-60 lg-mb-40">
+            <div className="sc-title text-uppercase">How It Works</div>
+            <h2 className="main-title fw-bold tx-dark" style={{ fontSize: "clamp(22px, 4vw, 36px)" }}>
+              How We Help You, Step by Step
+            </h2>
+          </div>
+          <div className="row gx-4 gy-4">
+            {[
+              {
+                num: "01",
+                title: "Reach Out to Us",
+                desc: "Call, WhatsApp, or submit your case online. Tell us what happened with your claim — this first consultation is completely free.",
+              },
+              {
+                num: "02",
+                title: "Share Your Documents",
+                desc: "Send us your policy papers, the insurer's rejection or settlement letter, and any correspondence related to your claim.",
+              },
+              {
+                num: "03",
+                title: "Case Acceptance",
+                desc: "Our team reviews your policy terms and the insurer's reasoning. If your case qualifies, we take it on and agree the fee upfront.",
+              },
+              {
+                num: "04",
+                title: "Filing & Escalation",
+                desc: "We draft and file your complaint with the insurer, the IRDAI Grievance Cell, and — if needed — the Insurance Ombudsman.",
+              },
+              {
+                num: "05",
+                title: "Resolution",
+                desc: "We follow through until your claim is resolved, keeping you updated at every stage. Our success fee only applies once it's settled.",
+              },
+            ].map((step) => (
+              <div className="col-lg-4 col-md-6" key={step.num}>
+                <div
+                  style={{
+                    background: "#fff",
+                    border: "1px solid #e5e7eb",
+                    borderRadius: "16px",
+                    padding: "32px 28px",
+                    height: "100%",
+                    boxShadow: "0 4px 20px rgba(0,0,0,0.06)",
+                  }}
+                >
+                  <div style={{ fontSize: "40px", fontWeight: 800, color: "#f1f5f9", lineHeight: 1, marginBottom: "14px" }}>
+                    {step.num}
+                  </div>
+                  <h3 style={{ fontSize: "18px", fontWeight: 700, color: "#1a1a2e", marginBottom: "10px" }}>
+                    {step.title}
+                  </h3>
+                  <p style={{ fontSize: "14px", color: "#6b7280", lineHeight: "1.7", margin: 0 }}>
+                    {step.desc}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+      {/* /.Our Process */}
 
       {/*
-        =====================================================
-        Feedback Section One
-        =====================================================
+        =============================================
+        What We Handle
+        ==============================================
         */}
-     
-      {/* /.feedback-section-one */}
+      <div className="pt-40 pb-80 lg-pt-20 lg-pb-60" style={{ background: "#f8faff" }}>
+        <div className="container">
+          <div className="text-center mb-60 lg-mb-40">
+            <div className="sc-title text-uppercase">Our Coverage</div>
+            <h2 className="main-title fw-bold tx-dark" style={{ fontSize: "clamp(22px, 4vw, 36px)" }}>
+              What We Handle
+            </h2>
+          </div>
+
+          <div className="row gx-4 gy-4">
+            <div className="col-lg-6">
+              <div style={{ background: "#fff", borderRadius: "16px", padding: "32px 28px", height: "100%", boxShadow: "0 4px 20px rgba(0,0,0,0.06)" }}>
+                <h3 style={{ fontSize: "18px", fontWeight: 700, color: "#1a1a2e", marginBottom: "16px" }}>
+                  Types of Insurance
+                </h3>
+                <ul style={{ listStyle: "none", margin: 0, padding: 0 }}>
+                  {["Health Insurance", "Life Insurance", "Motor / Vehicle Insurance", "Home Insurance", "Travel Insurance"].map((item, i) => (
+                    <li key={i} style={{ display: "flex", alignItems: "center", gap: "10px", padding: "8px 0", fontSize: "14px", color: "#374151" }}>
+                      <span style={{ width: "8px", height: "8px", borderRadius: "50%", background: "#0d6efd", flexShrink: 0 }} />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+            <div className="col-lg-6">
+              <div style={{ background: "#fff", borderRadius: "16px", padding: "32px 28px", height: "100%", boxShadow: "0 4px 20px rgba(0,0,0,0.06)" }}>
+                <h3 style={{ fontSize: "18px", fontWeight: 700, color: "#1a1a2e", marginBottom: "16px" }}>
+                  Types of Disputes
+                </h3>
+                <ul style={{ listStyle: "none", margin: 0, padding: 0 }}>
+                  {["Claim Rejection", "Delayed Claim Processing", "Short / Partial Settlement", "Mis-selling of Policy", "Policy Cancellation / Refund", "Non-disclosure Rejection"].map((item, i) => (
+                    <li key={i} style={{ display: "flex", alignItems: "center", gap: "10px", padding: "8px 0", fontSize: "14px", color: "#374151" }}>
+                      <span style={{ width: "8px", height: "8px", borderRadius: "50%", background: "#059669", flexShrink: 0 }} />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* /.What We Handle */}
 
       {/* 
         =============================================

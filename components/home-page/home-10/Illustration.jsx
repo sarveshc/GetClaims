@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Illustration = () => {
   const shapes = [
     // { src: "/images/shape/shape_01.svg", className: "shapes shape-one" },
@@ -11,10 +13,14 @@ const Illustration = () => {
 
   return (
     <div className="illustration-holder">
-      <img
+      <Image
         src="/images/assets/banner.png"
-        alt="illustration"
+        alt="Father and daughter using GetClaims on a phone"
+        width={562}
+        height={449}
+        priority
         className="lazy-img main-illustration w-100"
+        style={{ height: "auto" }}
       />
       {shapes.map((shape, i) => (
         <img

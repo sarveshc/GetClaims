@@ -14,24 +14,26 @@ const AboutCeo = () => {
             </h2>
           </div>
 
-          <h4 className="tx-dark pt-65 pb-20 lg-pt-40 lg-pb-10">Who we are?</h4>
+          <h2 className="tx-dark pt-65 pb-20 lg-pt-40 lg-pb-10">Who We Are</h2>
           <p className="fs-20">
             GetClaims is a team of insurance and legal experts dedicated to
             helping policyholders across India resolve rejected, delayed, or
             underpaid claims. We navigate IRDAI guidelines so you don&apos;t have to.
           </p>
-          <p className="fs-18 mb-10 pt-30 lg-pt-20">
-            <span className="fw-500 tx-dark">
-              Trusted by 100+ policyholders — from health to motor to life insurance claims.
-            </span>
+          <p className="fs-18 mt-20">
+            Insurance policies are written in dense, technical language, and
+            insurers hold the advantage when a claim is disputed. We exist to
+            close that gap — reviewing your policy terms, identifying where a
+            rejection or short-settlement doesn&apos;t hold up, and handling the
+            paperwork, correspondence, and escalation on your behalf so you
+            don&apos;t have to fight the process alone.
           </p>
-
-          {/* Star rating */}
-          <ul className="d-flex style-none rating">
-            {[...Array(5)].map((_, i) => (
-              <li key={i}><i className="bi bi-star-fill" /></li>
-            ))}
-          </ul>
+          <p className="fs-18 mt-20">
+            Every case starts with a free, no-obligation review. If we take on
+            your case, we work on a No Win, No Fee basis: a nominal case
+            acceptance fee is adjusted against your final payment, and our
+            success fee is only due once your claim is actually resolved.
+          </p>
         </div>
       </div>
       {/* End text block */}
@@ -88,15 +90,13 @@ const AboutCeo = () => {
             className="lazy-img shapes shape-seven"
           />
 
-          {/* Floating testimonial card */}
+          {/* Floating benefit card */}
           <div  className="card-one" data-aos="fade-up" data-aos-delay="250">
-            
             <div className="name fs-18 fw-500 tx-dark mb-10">
-              — Verified Client,{" "}
-              <span className="opacity-50">Mumbai</span>
+              Free Case Review
             </div>
             <p className="fs-18 m0">
-              GetClaims recovered ₹4.8 lakh after my health claim was rejected.
+              No cost, no obligation — you only pay if we resolve your claim.
             </p>
           </div>
         </div>

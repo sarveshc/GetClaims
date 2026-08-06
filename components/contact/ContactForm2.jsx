@@ -447,13 +447,13 @@ const ContactForm2 = () => {
     <form onSubmit={handleSubmit} noValidate>
       {/* ── Section: Personal Details ─────────────────────────────────────── */}
       <div style={{ marginBottom: "28px" }}>
-        <h5 style={{
+        <h3 style={{
           fontSize: "13px", fontWeight: 700, color: "#0d6efd",
           textTransform: "uppercase", letterSpacing: "1px",
           borderBottom: "2px solid #e8f0fe", paddingBottom: "8px", marginBottom: "20px",
         }}>
           Personal Details
-        </h5>
+        </h3>
 
         <div className="row">
           <div className="col-md-6">
@@ -529,13 +529,13 @@ const ContactForm2 = () => {
 
       {/* ── Section: Claim Details ────────────────────────────────────────── */}
       <div style={{ marginBottom: "28px" }}>
-        <h5 style={{
+        <h3 style={{
           fontSize: "13px", fontWeight: 700, color: "#0d6efd",
           textTransform: "uppercase", letterSpacing: "1px",
           borderBottom: "2px solid #e8f0fe", paddingBottom: "8px", marginBottom: "20px",
         }}>
           Claim Details
-        </h5>
+        </h3>
 
         <div className="row">
           <div className="col-md-6">
@@ -632,13 +632,13 @@ const ContactForm2 = () => {
 
       {/* ── Section: Document Upload ─────────────────────────────────────── */}
       <div style={{ marginBottom: "28px" }}>
-        <h5 style={{
+        <h3 style={{
           fontSize: "13px", fontWeight: 700, color: "#0d6efd",
           textTransform: "uppercase", letterSpacing: "1px",
           borderBottom: "2px solid #e8f0fe", paddingBottom: "8px", marginBottom: "6px",
         }}>
           Upload Documents
-        </h5>
+        </h3>
         <p style={{ fontSize: "12px", color: "#6b7280", marginBottom: "20px" }}>
           Attach supporting documents to speed up your case review. Accepted: PDF, JPG, PNG — max 10 MB each.
         </p>

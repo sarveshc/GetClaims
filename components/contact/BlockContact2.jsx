@@ -68,7 +68,7 @@ const BlockContact2 = () => {
             <Image width={30} height={30} src={block.icon} alt={block.title} />
           </div>
           <div className="text" style={{ paddingLeft: "16px" }}>
-            <h5 className="title">{block.title}</h5>
+            <h3 className="title" style={{ fontSize: "17px" }}>{block.title}</h3>
             <p style={{ lineHeight: "1.6", fontSize: "14px" }}>{block.content}</p>
           </div>
         </div>
@@ -84,7 +84,7 @@ const BlockContact2 = () => {
           marginTop: "8px",
         }}
       >
-        <p
+        <h3
           style={{
             margin: "0 0 12px",
             fontSize: "12px",
@@ -95,10 +95,11 @@ const BlockContact2 = () => {
           }}
         >
           Why Choose GetClaims?
-        </p>
+        </h3>
         {[
-          "✅ 100+ Claims Successfully Resolved",
-          "✅ Expert team with 15+ years experience",          
+          "✅ Free case review, no obligation",
+          "✅ No Win, No Fee — pay only on success",
+          "✅ Ombudsman & IRDAI Grievance Cell representation",
         ].map((point, i) => (
           <p
             key={i}

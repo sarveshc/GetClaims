@@ -55,9 +55,11 @@ const TestimonialLarge = () => {
         <div className="carousel-item text-center">
           <img
             className="rounded-circle shadow-1-strong mb-4"
-             src="/images/icon/clientTesti_01.jpg"
+            src="/images/icon/clientTesti_01.webp"
             alt="avatar"
-            style={{ width: '150px', margin:'auto' }}
+            width={150}
+            height={150}
+            style={{ width: '150px', height: '150px', margin:'auto' }}
           />
           <div className="row d-flex justify-content-center">
             <div className="col-lg-12">
@@ -83,9 +85,11 @@ const TestimonialLarge = () => {
         <div className="carousel-item">
           <img
             className="rounded-circle shadow-1-strong mb-4"
-             src="/images/icon/clientTesti_01.jpg"
+            src="/images/icon/clientTesti_01.webp"
             alt="avatar"
-            style={{ width: '150px', margin:'auto' }}
+            width={150}
+            height={150}
+            style={{ width: '150px', height: '150px', margin:'auto' }}
           />
           <div className="row d-flex justify-content-center">
             <div className="col-lg-12">
@@ -111,9 +115,11 @@ const TestimonialLarge = () => {
         <div className="carousel-item">
           <img
             className="rounded-circle shadow-1-strong mb-4"
-            src="/images/icon/clientTesti_01.jpg"
+            src="/images/icon/clientTesti_01.webp"
             alt="avatar"
-            style={{ width: '150px', margin:'auto' }}
+            width={150}
+            height={150}
+            style={{ width: '150px', height: '150px', margin:'auto' }}
           />
           <div className="row d-flex justify-content-center">
             <div className="col-lg-12">

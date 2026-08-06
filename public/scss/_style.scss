@@ -10444,7 +10444,9 @@ body .btn-twentySix:hover:after {
   padding: 0px 40px;
 }
 .os-3-l img {
-  width: auto !important;
+  width: 90px !important;
+  height: 90px !important;
+  object-fit: contain;
 }
 .os-3 {
   display: flex
@@ -10479,7 +10481,9 @@ body .btn-twentySix:hover:after {
   padding-right: 20px;
 }
 .os-3-l img {
-  width: auto !important;
+  width: 90px !important;
+  height: 90px !important;
+  object-fit: contain;
 }
 .os-3-c3 {
   background: #FBF3F1;
