@@ -13,6 +13,7 @@ import CallToActions from "@/components/home-page/home-10/CallToActions";
 import Footer from "@/components/home-page/home-10/Footer";
 import TestimonialLarge from "@/components/home-page/home-10/TestimonialLarge";
 import TimeLine from "@/components/common/TimeLine";
+import ProcessVideo from "@/components/home-page/home-10/ProcessVideo";
 export const metadata = {
   title: "Agency Modern || GetClaims - Creative Multipurpose React NextJS Template",
 };
@@ -89,10 +90,20 @@ const AgencyModern = () => {
       </div>
       {/* /.fancy-feature-one */}
 
-      {/* 
+      {/*
+        =============================================
+        Process Video
+        ==============================================
+        */}
+      <div className="pt-100 pb-60 lg-pt-70 lg-pb-40">
+        <ProcessVideo />
+      </div>
+      {/* /.Process Video */}
+
+      {/*
         =============================================
         Feature Section Two
-        ============================================== 
+        ==============================================
         */}
       <div style={{display:'none'}} className="fancy-feature-two position-relative pt-50 mt-40 lg-pt-50 sm-pt-60">
         <div className="container">
