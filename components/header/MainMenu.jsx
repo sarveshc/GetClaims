@@ -245,7 +245,7 @@ const MainMenu = () => {
 
         {/* Mobile Content */}
         <div className="mobile-content d-block d-lg-none">
-        <Link className="getPhone mt-70" href="tel:+918046810500">
+        <Link className="getPhone mt-70" href="tel:+918826582181">
   <svg 
     enableBackground="new 0 0 40 40" 
     height="40px" 
@@ -276,7 +276,7 @@ const MainMenu = () => {
       />
     </g>
   </svg> 
-  +91 80468-10500  
+  +91 88265-82181
 </Link>
           
           <div className="d-flex flex-column align-items-center justify-content-center mt-20">

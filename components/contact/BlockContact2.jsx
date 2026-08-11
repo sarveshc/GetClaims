@@ -9,12 +9,12 @@ const BlockContact2 = () => {
         <>
           Mon – Sat, 9 AM – 7 PM
           <br />
-          <a href="tel:+918046810500" className="call" style={{ fontWeight: 600 }}>
-            +91 80468-10500 
+          <a href="tel:+918826582181" className="call" style={{ fontWeight: 600 }}>
+            +91 88265-82181
           </a>
           <br />
           <a
-            href="https://wa.me/919650571623?text=Hi, I need help with my insurance claim"
+            href="https://wa.me/918826582181?text=Hi, I need help with my insurance claim"
             target="_blank"
             rel="noopener noreferrer"
             style={{

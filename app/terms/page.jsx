@@ -58,7 +58,7 @@ const sections = [
   },
   {
     title: "13. Contact Us",
-    body: `If you have any questions about these Terms and Conditions, please contact us:\n\nEmail: support@getclaims.in\nPhone: +91 80468-10500\nWebsite: getclaims.in`,
+    body: `If you have any questions about these Terms and Conditions, please contact us:\n\nEmail: support@getclaims.in\nPhone: +91 88265-82181\nWebsite: getclaims.in`,
   },
 ];
 

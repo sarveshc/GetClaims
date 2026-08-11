@@ -42,7 +42,7 @@ const Header = () => {
             </Link>
           </div>
           <div className="right-widget ms-auto d-flex align-items-center order-lg-3">
-          <Link className="getPhone" href="tel:+918046810500">
+          <Link className="getPhone" href="tel:+918826582181">
   <svg 
     enableBackground="new 0 0 40 40" 
     height="40px" 
@@ -73,7 +73,7 @@ const Header = () => {
       />
     </g>
   </svg> 
-  +91 80468-10500  
+  +91 88265-82181
 </Link>
           
              {/* <Link

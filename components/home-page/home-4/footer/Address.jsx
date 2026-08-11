@@ -5,8 +5,8 @@ const Address = () => {
       <p className="mb-30">
         2190 Lojiho Terrace, Mirpur, Equal Licensed in 50 states.
       </p> */}
-      <a href="tel:+7576994478" className="email tran3s fs-18">
-      +91 80468-10500 
+      <a href="tel:+918826582181" className="email tran3s fs-18">
+      +91 88265-82181
       </a>
       <br />
       <a
