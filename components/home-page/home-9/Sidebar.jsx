@@ -77,7 +77,7 @@ const Sidebar = () => {
       </ul>
 
       <p className="pt-10 fs-15">
-        © 2026@gridtech.in
+        © 2026@getclaims.in
       </p>
     </div>
   );

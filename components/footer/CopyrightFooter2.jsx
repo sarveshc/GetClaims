@@ -65,7 +65,7 @@ const Footer = () => {
           </div>
           <div className="col-lg-4 order-lg-1 mt-15">
             <p className="copyright text-center m0">
-              © 2026@gridtech.in
+              © 2026@getclaims.in
             </p>
           </div>
         </div>

@@ -273,7 +273,7 @@ We hope this meets your needs! Let me know if you need any further adjustments o
             <Footer />
             <div className="bottom-footer">
               <p className="copyright text-center m0">
-                © 2026@gridtech.in
+                © 2026@getclaims.in
               </p>
             </div>
           </div>

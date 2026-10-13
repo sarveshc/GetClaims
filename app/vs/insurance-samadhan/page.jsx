@@ -458,7 +458,7 @@ const ComparisonPage = () => {
           <div className="inner-wrapper">
             <Footer />
             <div className="bottom-footer">
-              <p className="copyright text-center m0">© 2026@gridtech.in</p>
+              <p className="copyright text-center m0">© 2026@getclaims.in</p>
             </div>
           </div>
         </div>
