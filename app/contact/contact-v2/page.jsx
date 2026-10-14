@@ -58,21 +58,18 @@ const ContactV2 = () => {
 		Theme Inner Banner
 		============================================== 
 		*/}
-      <div className="inner-banner-three text-center p-30">
-        <div
-          className="bg-wrapper text-center"
-          style={{ backgroundImage: "url(/images/assets/bg-17.svg)" }}
-        >
+      <div style={{ background: "#FFFBF3", borderBottom: "1px solid #EDE7D9", paddingTop: "148px", paddingBottom: "0" }}>
+        <div style={{ textAlign: "center", padding: "0 0 48px" }}>
           <div className="container">
-            <div className="title-style-five">
-              <h1 className="main-title tx-dark fw-bold">Contact Us</h1>
-            </div>
-            <p className="fs-20 mt-30 lg-mt-20">
+            <p style={{ fontSize: "11px", fontWeight: 700, letterSpacing: ".12em", textTransform: "uppercase", color: "#E8920A", marginBottom: "12px" }}>Get in touch</p>
+            <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(28px, 4vw, 48px)", fontWeight: 700, color: "#1C354F", marginBottom: "16px" }}>Contact Us</h1>
+            <p style={{ fontSize: "17px", color: "#5C7089", maxWidth: "520px", margin: "0 auto" }}>
               Submit your claim details and documents below. Our experts will review your case and contact you within 24 hours — free of charge.
             </p>
           </div>
-          {/* End container */}
+        </div>
 
+        <div style={{ background: "#fff", borderTop: "1px solid #EDE7D9" }}>
           <div className="container">
             <div className="contact-section-two text-start mt-80 lg-mt-60">
               <div className="row">
@@ -81,7 +78,7 @@ const ContactV2 = () => {
                     className="form-style-three md-mb-60"
                     data-aos="fade-right"
                   >
-                    <h2 className="fs-24 fw-bold tx-dark mb-30">Submit Your Case</h2>
+                    <h2 style={{ fontSize: "24px", fontWeight: 700, color: "#1C354F", marginBottom: "30px" }}>Submit Your Case</h2>
                     <ContactForm2 />
                   </div>
                   {/* /.form-style-three */}
@@ -92,7 +89,7 @@ const ContactV2 = () => {
                   className="col-xl-4 col-lg-5  ms-auto"
                   data-aos="fade-left"
                 >
-                  <h2 className="fs-24 fw-bold tx-dark mb-30">Get in Touch</h2>
+                  <h2 style={{ fontSize: "24px", fontWeight: 700, color: "#1C354F", marginBottom: "30px" }}>Get in Touch</h2>
                   <BlockContact2 />
                 </div>
                 {/* End col-xl-4 */}
@@ -102,9 +99,9 @@ const ContactV2 = () => {
           </div>
           {/* /.container */}
         </div>
-        {/* /.bg-wrapper */}
+        {/* white form section */}
       </div>
-      {/* /.inner-banner-three */}
+      {/* /.contact banner */}
 
       {/* 
         =============================================

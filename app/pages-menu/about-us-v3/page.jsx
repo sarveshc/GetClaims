@@ -64,24 +64,15 @@ const AboutUsV3 = () => {
       Theme Inner Banner
       ============================================== 
       */}
-      <div className="inner-banner-three text-center p-30">
-        <div
-          className="bg-wrapper text-center"
-          style={{ backgroundImage: "url(/images/assets/bg-17.svg)" }}
-        >
-          <div className="container">
-            <div className="title-style-five">
-              <h1 className="main-title tx-dark fw-bold">About us</h1>
-            </div>
-            <p className="fs-20 mt-30 lg-mt-20">
-              At GetClaims, we help resolve claims and financial disputes of every nature with expert guidance and professional support. Many customers often feel dissatisfied with claim settlement outcomes due to lack of clarity, unfair deductions, delays, or unjustified rejections. Our team works to ensure your concerns are properly addressed and helps you secure a fair and rightful resolution.
-            </p>
-          </div>
-          {/* End container */}
+      <div style={{ background: "#FFFBF3", borderBottom: "1px solid #EDE7D9", padding: "148px 0 60px", textAlign: "center" }}>
+        <div className="container">
+          <p style={{ fontSize: "11px", fontWeight: 700, letterSpacing: ".12em", textTransform: "uppercase", color: "#E8920A", marginBottom: "12px" }}>Our story</p>
+          <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(28px, 4vw, 48px)", fontWeight: 700, color: "#1C354F", marginBottom: "16px" }}>About Us</h1>
+          <p style={{ fontSize: "17px", color: "#5C7089", maxWidth: "640px", margin: "0 auto" }}>
+            At GetClaims, we help resolve claims and financial disputes of every nature with expert guidance and professional support. Our team ensures your concerns are properly addressed and helps you secure a fair and rightful resolution.
+          </p>
         </div>
-        {/* /.bg-wrapper */}
       </div>
-      {/* /.inner-banner-three */}
 
       {/* 
         =============================================
@@ -109,18 +100,17 @@ const AboutUsV3 = () => {
         ============================================== 
         */}
       <div className="fancy-feature-fiftyFour p-30 mt-150 lg-mt-90">
-        <div className="bg-wrapper position-relative zn2 pt-140 lg-pt-60 pb-140 lg-pb-60">
+        <div className="bg-wrapper position-relative zn2 pt-140 lg-pt-60 pb-140 lg-pb-60" style={{ background: "#FFFBF3" }}>
           <div className="container">
             <div className="row">
               <div className="col-lg-4" data-aos="fade-right">
                 <div className="title-style-one mt-30">
-                  <div className="sc-title text-uppercase">Why us?</div>
-                  <h2 className="main-title fw-bold tx-dark">
-                    Why <span>choose</span> GetClaims.
+                  <div className="sc-title text-uppercase" style={{ color: "#E8920A" }}>Why us?</div>
+                  <h2 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontWeight: 700, color: "#1C354F" }}>
+                    Why <span style={{ color: "#E8920A" }}>choose</span> GetClaims.
                   </h2>
-                </div>{" "}
-                {/* /.title-style-one */}
-                <p className="text-lg mt-40 lg-mt-20">
+                </div>
+                <p className="text-lg mt-40 lg-mt-20" style={{ color: "#5C7089" }}>
                   From your first call to the final settlement, we handle the
                   paperwork, the correspondence, and the escalation — so you
                   know exactly where your case stands at every stage.
@@ -183,8 +173,8 @@ const AboutUsV3 = () => {
       <div className="pt-100 pb-80 lg-pt-60 lg-pb-60">
         <div className="container">
           <div className="text-center mb-60 lg-mb-40">
-            <div className="sc-title text-uppercase">How It Works</div>
-            <h2 className="main-title fw-bold tx-dark" style={{ fontSize: "clamp(22px, 4vw, 36px)" }}>
+            <p style={{ fontSize: "11px", fontWeight: 700, letterSpacing: ".12em", textTransform: "uppercase", color: "#E8920A", marginBottom: "12px" }}>How It Works</p>
+            <h2 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(22px, 4vw, 36px)", fontWeight: 700, color: "#1C354F" }}>
               How We Help You, Step by Step
             </h2>
           </div>
@@ -220,20 +210,20 @@ const AboutUsV3 = () => {
                 <div
                   style={{
                     background: "#fff",
-                    border: "1px solid #e5e7eb",
+                    border: "1px solid #EDE7D9",
                     borderRadius: "16px",
                     padding: "32px 28px",
                     height: "100%",
-                    boxShadow: "0 4px 20px rgba(0,0,0,0.06)",
+                    boxShadow: "0 4px 20px rgba(28,53,79,0.06)",
                   }}
                 >
-                  <div style={{ fontSize: "40px", fontWeight: 800, color: "#f1f5f9", lineHeight: 1, marginBottom: "14px" }}>
+                  <div style={{ fontSize: "40px", fontWeight: 800, color: "#EDE7D9", lineHeight: 1, marginBottom: "14px" }}>
                     {step.num}
                   </div>
-                  <h3 style={{ fontSize: "18px", fontWeight: 700, color: "#1a1a2e", marginBottom: "10px" }}>
+                  <h3 style={{ fontSize: "18px", fontWeight: 700, color: "#1C354F", marginBottom: "10px" }}>
                     {step.title}
                   </h3>
-                  <p style={{ fontSize: "14px", color: "#6b7280", lineHeight: "1.7", margin: 0 }}>
+                  <p style={{ fontSize: "14px", color: "#5C7089", lineHeight: "1.7", margin: 0 }}>
                     {step.desc}
                   </p>
                 </div>
@@ -249,25 +239,25 @@ const AboutUsV3 = () => {
         What We Handle
         ==============================================
         */}
-      <div className="pt-40 pb-80 lg-pt-20 lg-pb-60" style={{ background: "#f8faff" }}>
+      <div className="pt-40 pb-80 lg-pt-20 lg-pb-60" style={{ background: "#FFFBF3" }}>
         <div className="container">
           <div className="text-center mb-60 lg-mb-40">
-            <div className="sc-title text-uppercase">Our Coverage</div>
-            <h2 className="main-title fw-bold tx-dark" style={{ fontSize: "clamp(22px, 4vw, 36px)" }}>
+            <p style={{ fontSize: "11px", fontWeight: 700, letterSpacing: ".12em", textTransform: "uppercase", color: "#E8920A", marginBottom: "12px" }}>Our Coverage</p>
+            <h2 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(22px, 4vw, 36px)", fontWeight: 700, color: "#1C354F" }}>
               What We Handle
             </h2>
           </div>
 
           <div className="row gx-4 gy-4">
             <div className="col-lg-6">
-              <div style={{ background: "#fff", borderRadius: "16px", padding: "32px 28px", height: "100%", boxShadow: "0 4px 20px rgba(0,0,0,0.06)" }}>
-                <h3 style={{ fontSize: "18px", fontWeight: 700, color: "#1a1a2e", marginBottom: "16px" }}>
+              <div style={{ background: "#fff", border: "1px solid #EDE7D9", borderRadius: "16px", padding: "32px 28px", height: "100%", boxShadow: "0 4px 20px rgba(28,53,79,0.06)" }}>
+                <h3 style={{ fontSize: "18px", fontWeight: 700, color: "#1C354F", marginBottom: "16px" }}>
                   Types of Insurance
                 </h3>
                 <ul style={{ listStyle: "none", margin: 0, padding: 0 }}>
                   {["Health Insurance", "Life Insurance", "Motor / Vehicle Insurance", "Home Insurance", "Travel Insurance"].map((item, i) => (
-                    <li key={i} style={{ display: "flex", alignItems: "center", gap: "10px", padding: "8px 0", fontSize: "14px", color: "#374151" }}>
-                      <span style={{ width: "8px", height: "8px", borderRadius: "50%", background: "#0d6efd", flexShrink: 0 }} />
+                    <li key={i} style={{ display: "flex", alignItems: "center", gap: "10px", padding: "8px 0", fontSize: "14px", color: "#5C7089" }}>
+                      <span style={{ width: "8px", height: "8px", borderRadius: "50%", background: "#E8920A", flexShrink: 0 }} />
                       {item}
                     </li>
                   ))}
@@ -275,14 +265,14 @@ const AboutUsV3 = () => {
               </div>
             </div>
             <div className="col-lg-6">
-              <div style={{ background: "#fff", borderRadius: "16px", padding: "32px 28px", height: "100%", boxShadow: "0 4px 20px rgba(0,0,0,0.06)" }}>
-                <h3 style={{ fontSize: "18px", fontWeight: 700, color: "#1a1a2e", marginBottom: "16px" }}>
+              <div style={{ background: "#fff", border: "1px solid #EDE7D9", borderRadius: "16px", padding: "32px 28px", height: "100%", boxShadow: "0 4px 20px rgba(28,53,79,0.06)" }}>
+                <h3 style={{ fontSize: "18px", fontWeight: 700, color: "#1C354F", marginBottom: "16px" }}>
                   Types of Disputes
                 </h3>
                 <ul style={{ listStyle: "none", margin: 0, padding: 0 }}>
                   {["Claim Rejection", "Delayed Claim Processing", "Short / Partial Settlement", "Mis-selling of Policy", "Policy Cancellation / Refund", "Non-disclosure Rejection"].map((item, i) => (
-                    <li key={i} style={{ display: "flex", alignItems: "center", gap: "10px", padding: "8px 0", fontSize: "14px", color: "#374151" }}>
-                      <span style={{ width: "8px", height: "8px", borderRadius: "50%", background: "#059669", flexShrink: 0 }} />
+                    <li key={i} style={{ display: "flex", alignItems: "center", gap: "10px", padding: "8px 0", fontSize: "14px", color: "#5C7089" }}>
+                      <span style={{ width: "8px", height: "8px", borderRadius: "50%", background: "#E8920A", flexShrink: 0 }} />
                       {item}
                     </li>
                   ))}

@@ -116,30 +116,26 @@ const PricingPage = () => {
       <Header />
 
       {/* ── Banner ───────────────────────────────────────────────────── */}
-      <div className="inner-banner-three text-center p-30">
-        <div
-          className="bg-wrapper text-center"
-          style={{ backgroundImage: "url(/images/assets/bg-17.svg)" }}
-        >
-          <div className="container">
-            <div className="title-style-five">
-              <h1 className="main-title tx-dark fw-bold">
-                Simple, Transparent Pricing
-              </h1>
-            </div>
-           
-          </div>
+      <div style={{ background: "#FFFBF3", borderBottom: "1px solid #EDE7D9", padding: "148px 0 60px", textAlign: "center" }}>
+        <div className="container">
+          <p style={{ fontSize: "11px", fontWeight: 700, letterSpacing: ".12em", textTransform: "uppercase", color: "#E8920A", marginBottom: "12px" }}>Our pricing model</p>
+          <h1 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(28px, 4vw, 48px)", fontWeight: 700, color: "#1C354F", marginBottom: "16px" }}>
+            Simple, Transparent Pricing
+          </h1>
+          <p style={{ fontSize: "17px", color: "#5C7089", maxWidth: "520px", margin: "0 auto" }}>
+            Zero upfront fees. You only pay when your claim is successfully resolved.
+          </p>
         </div>
       </div>
 
       {/* ── No Win No Fee Hero ──────────────────────────────────────── */}
-      <div className="pt-20 pb-60 lg-pt-20">
+      <div className="pt-60 pb-20 lg-pt-40">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-xl-8 col-lg-10 text-center">
               <div
                 style={{
-                  background: "linear-gradient(135deg, #1a1a2e 0%, #0f3460 100%)",
+                  background: "#1C354F",
                   borderRadius: "20px",
                   padding: "48px 40px",
                   color: "#fff",
@@ -148,7 +144,7 @@ const PricingPage = () => {
                 <div
                   style={{
                     display: "inline-block",
-                    background: "#059669",
+                    background: "#E8920A",
                     color: "#fff",
                     fontSize: "13px",
                     fontWeight: 700,
@@ -163,6 +159,7 @@ const PricingPage = () => {
                 </div>
                 <h2
                   style={{
+                    fontFamily: "var(--font-playfair), Georgia, serif",
                     fontSize: "clamp(28px, 5vw, 48px)",
                     fontWeight: 800,
                     marginBottom: "16px",
@@ -170,10 +167,8 @@ const PricingPage = () => {
                   }}
                 >
                   No Win,{" "}
-                  <span style={{ color: "#60a5fa" }}>No Fee</span>
+                  <span style={{ color: "#E8920A" }}>No Fee</span>
                 </h2>
-               
-               
               </div>
             </div>
           </div>
@@ -188,7 +183,7 @@ const PricingPage = () => {
               style={{
                 fontSize: "12px",
                 fontWeight: 700,
-                color: "#0d6efd",
+                color: "#E8920A",
                 textTransform: "uppercase",
                 letterSpacing: "2px",
                 marginBottom: "12px",
@@ -197,8 +192,7 @@ const PricingPage = () => {
               How We Charge
             </div>
             <h2
-              className="main-title fw-bold tx-dark"
-              style={{ fontSize: "clamp(22px, 4vw, 36px)" }}
+              style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(22px, 4vw, 36px)", fontWeight: 700, color: "#1C354F" }}
             >
               Three Simple Stages
             </h2>
@@ -210,19 +204,19 @@ const PricingPage = () => {
                 <div
                   style={{
                     background: "#fff",
-                    border: "1px solid #e5e7eb",
+                    border: "1px solid #EDE7D9",
                     borderRadius: "16px",
                     padding: "36px 28px",
                     height: "100%",
                     position: "relative",
-                    boxShadow: "0 4px 20px rgba(0,0,0,0.06)",
+                    boxShadow: "0 4px 20px rgba(28,53,79,0.06)",
                   }}
                 >
                   <div
                     style={{
                       fontSize: "48px",
                       fontWeight: 800,
-                      color: "#f1f5f9",
+                      color: "#EDE7D9",
                       lineHeight: 1,
                       marginBottom: "16px",
                     }}
@@ -233,7 +227,7 @@ const PricingPage = () => {
                     style={{
                       fontSize: "18px",
                       fontWeight: 700,
-                      color: "#1a1a2e",
+                      color: "#1C354F",
                       marginBottom: "12px",
                     }}
                   >
@@ -242,7 +236,7 @@ const PricingPage = () => {
                   <p
                     style={{
                       fontSize: "14px",
-                      color: "#6b7280",
+                      color: "#5C7089",
                       lineHeight: "1.7",
                       marginBottom: "20px",
                     }}
@@ -252,8 +246,8 @@ const PricingPage = () => {
                   <div
                     style={{
                       display: "inline-block",
-                      background: step.color === "#059669" ? "#d1fae5" : "#eff6ff",
-                      color: step.color,
+                      background: step.color === "#059669" ? "#DCFCE7" : "#FEF3D0",
+                      color: step.color === "#059669" ? "#15803D" : "#E8920A",
                       fontSize: "13px",
                       fontWeight: 700,
                       padding: "6px 16px",
@@ -272,7 +266,7 @@ const PricingPage = () => {
       {/* ── What's Included ────────────────────────────────────────── */}
       <div
         className="pt-80 pb-80 lg-pt-60 lg-pb-60"
-        style={{ background: "#f8faff" }}
+        style={{ background: "#FFFBF3" }}
       >
         <div className="container">
           <div className="row align-items-center gx-5 gy-5">
@@ -281,7 +275,7 @@ const PricingPage = () => {
                 style={{
                   fontSize: "12px",
                   fontWeight: 700,
-                  color: "#0d6efd",
+                  color: "#E8920A",
                   textTransform: "uppercase",
                   letterSpacing: "2px",
                   marginBottom: "12px",
@@ -290,20 +284,19 @@ const PricingPage = () => {
                 Everything Included
               </div>
               <h2
-                className="main-title fw-bold tx-dark"
-                style={{ fontSize: "clamp(22px, 3.5vw, 34px)", marginBottom: "20px" }}
+                style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(22px, 3.5vw, 34px)", fontWeight: 700, color: "#1C354F", marginBottom: "20px" }}
               >
                 All services covered under our{" "}
-                <span style={{ color: "#0d6efd" }}>No Win, No Fee</span> model
+                <span style={{ color: "#E8920A" }}>No Win, No Fee</span> model
               </h2>
-              <p style={{ color: "#6b7280", fontSize: "15px", lineHeight: "1.7" }}>
+              <p style={{ color: "#5C7089", fontSize: "15px", lineHeight: "1.7" }}>
                 From the first consultation to the final settlement, every step
                 is handled by our team. You focus on
                 recovery — we focus on your claim.
               </p>
               <Link
                 href="/contact"
-                className="btn-one fw-500 mt-30 d-inline-block"
+                style={{ background: "#E8920A", color: "#fff", padding: "13px 28px", borderRadius: "12px", fontSize: "15px", fontWeight: 600, textDecoration: "none", display: "inline-block", marginTop: "28px" }}
               >
                 Start Your Free Consultation
               </Link>
@@ -315,7 +308,8 @@ const PricingPage = () => {
                   background: "#fff",
                   borderRadius: "16px",
                   padding: "36px 32px",
-                  boxShadow: "0 4px 24px rgba(0,0,0,0.08)",
+                  boxShadow: "0 4px 24px rgba(28,53,79,0.08)",
+                  border: "1px solid #EDE7D9",
                 }}
               >
                 <ul style={{ listStyle: "none", margin: 0, padding: 0 }}>
@@ -327,9 +321,9 @@ const PricingPage = () => {
                         alignItems: "flex-start",
                         gap: "12px",
                         padding: "10px 0",
-                        borderBottom: i < included.length - 1 ? "1px solid #f3f4f6" : "none",
+                        borderBottom: i < included.length - 1 ? "1px solid #EDE7D9" : "none",
                         fontSize: "14px",
-                        color: "#374151",
+                        color: "#1C354F",
                       }}
                     >
                       <span
@@ -337,8 +331,8 @@ const PricingPage = () => {
                           width: "22px",
                           height: "22px",
                           borderRadius: "50%",
-                          background: "#d1fae5",
-                          color: "#059669",
+                          background: "#DCFCE7",
+                          color: "#15803D",
                           display: "flex",
                           alignItems: "center",
                           justifyContent: "center",
@@ -367,8 +361,8 @@ const PricingPage = () => {
             <div className="col-xl-9 col-lg-11">
               <div
                 style={{
-                  background: "#eff6ff",
-                  border: "1px solid #bfdbfe",
+                  background: "#FEF9EE",
+                  border: "1px solid #FDDFA0",
                   borderRadius: "16px",
                   padding: "40px 36px",
                   display: "flex",
@@ -381,7 +375,7 @@ const PricingPage = () => {
                   style={{
                     width: "52px",
                     height: "52px",
-                    background: "#0d6efd",
+                    background: "#E8920A",
                     borderRadius: "50%",
                     display: "flex",
                     alignItems: "center",
@@ -396,10 +390,10 @@ const PricingPage = () => {
                   </svg>
                 </div>
                 <div style={{ flex: 1, minWidth: "240px" }}>
-                  <h4 style={{ fontSize: "18px", fontWeight: 700, color: "#1a1a2e", marginBottom: "10px" }}>
+                  <h4 style={{ fontSize: "18px", fontWeight: 700, color: "#1C354F", marginBottom: "10px" }}>
                     About the Success Fee
                   </h4>
-                  <p style={{ fontSize: "14px", color: "#374151", lineHeight: "1.7", margin: 0 }}>
+                  <p style={{ fontSize: "14px", color: "#5C7089", lineHeight: "1.7", margin: 0 }}>
                     You only pay a pre-agreed success fee if your claim is settled successfully. Lose the case, and there's nothing to pay.
                   </p>
                 </div>
@@ -412,7 +406,7 @@ const PricingPage = () => {
       {/* ── FAQ ─────────────────────────────────────────────────────── */}
       <div
         className="pt-80 pb-80 lg-pt-60 lg-pb-60"
-        style={{ background: "#f8faff" }}
+        style={{ background: "#FFFBF3" }}
       >
         <div className="container">
           <div className="text-center mb-60 lg-mb-40">
@@ -420,7 +414,7 @@ const PricingPage = () => {
               style={{
                 fontSize: "12px",
                 fontWeight: 700,
-                color: "#0d6efd",
+                color: "#E8920A",
                 textTransform: "uppercase",
                 letterSpacing: "2px",
                 marginBottom: "12px",
@@ -429,8 +423,7 @@ const PricingPage = () => {
               Got Questions?
             </div>
             <h2
-              className="main-title fw-bold tx-dark"
-              style={{ fontSize: "clamp(22px, 4vw, 36px)" }}
+              style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(22px, 4vw, 36px)", fontWeight: 700, color: "#1C354F" }}
             >
               Frequently Asked Questions
             </h2>
@@ -443,17 +436,18 @@ const PricingPage = () => {
                   key={i}
                   style={{
                     background: "#fff",
+                    border: "1px solid #EDE7D9",
                     borderRadius: "12px",
                     padding: "24px 28px",
                     marginBottom: "16px",
-                    boxShadow: "0 2px 12px rgba(0,0,0,0.05)",
+                    boxShadow: "0 2px 12px rgba(28,53,79,0.05)",
                   }}
                 >
                   <h5
                     style={{
                       fontSize: "15px",
                       fontWeight: 700,
-                      color: "#1a1a2e",
+                      color: "#1C354F",
                       marginBottom: "10px",
                       display: "flex",
                       alignItems: "flex-start",
@@ -462,7 +456,7 @@ const PricingPage = () => {
                   >
                     <span
                       style={{
-                        color: "#0d6efd",
+                        color: "#E8920A",
                         fontWeight: 800,
                         flexShrink: 0,
                         fontSize: "16px",
@@ -475,7 +469,7 @@ const PricingPage = () => {
                   <p
                     style={{
                       fontSize: "14px",
-                      color: "#6b7280",
+                      color: "#5C7089",
                       lineHeight: "1.7",
                       margin: "0 0 0 26px",
                     }}
