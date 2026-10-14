@@ -1,95 +1,72 @@
-import Link from "next/link";
-
-const servicesData = [
+const services = [
   {
-    bgColor: "rgba(255, 171, 51, 0.18)",
-    iconSrc: "/images/icon/ic_01.svg",
-   // title: "Misselling of Life Insurance policy",
-   title: "Deceptive Policies",
-    description:
-      "We help in getting the premium refunded in case insurance policy is mis-sold to you.",
-  },
-  {
-    bgColor: "rgba(100, 219, 226, 0.18)",
-    iconSrc: "/images/icon/ic_02.png",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="#E8920A" strokeWidth="1.8" width="26" height="26">
+        <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
+      </svg>
+    ),
     title: "Claim Rejection",
-    description:
-      "Any type of claim rejected by the insurance company we will help you in getting the claim.",
+    text: "Any claim rejected by an insurer — we review the denial, build your appeal, and escalate to IRDAI or the Ombudsman when needed.",
   },
   {
-    bgColor: "rgba(255, 160, 194, 0.18)",
-    iconSrc: "/images/icon/ic_03.png",
-   // title: "Delay in Claim Processing",
-   title: "Delayed Claims",
-    description:
-      "We will help you in quick settlement of claim in accordance with IRDIA specified turned around time.",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="#E8920A" strokeWidth="1.8" width="26" height="26">
+        <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+      </svg>
+    ),
+    title: "Delayed Claims",
+    text: "IRDAI mandates 30-day settlement. We push insurers to meet their legal obligation with formal complaints and documented timelines.",
   },
   {
-    bgColor: "rgba(246, 243, 255, 1)",
-    iconSrc: "/images/icon/ic_04.png",
-   // title: "Claim short settled",
-   title: "Claim Shortfall",
-    description:
-      "We will help you in getting maximum possible amount in accordance with policy term and conditions.",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="#E8920A" strokeWidth="1.8" width="26" height="26">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+      </svg>
+    ),
+    title: "Mis-selling",
+    text: "Sold a policy without proper disclosure? We help you seek redressal and recover premiums where the insurer failed their duty.",
   },
   {
-    bgColor: "rgba(108, 55, 221, 0.1)",
-    iconSrc: "/images/icon/ic_05.png",
-   // title: "Any type of insurance claim filing",
-   title: "Claim Application",
-    description:
-      "We will help in filling the claim form to be submitted in insurance company.",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="#E8920A" strokeWidth="1.8" width="26" height="26">
+        <line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+      </svg>
+    ),
+    title: "Short Settlement",
+    text: "Paid far less than expected? We audit the insurer's deduction calculation line by line and fight for the full amount you're entitled to.",
   },
 ];
 
 const Services = () => {
   return (
     <>
-    <h2 className="visually-hidden">Types of insurance claim issues we resolve</h2>
-    <div className="row">
-          <div className="col-md-5">
-            <div className="os-3 os os-3-c1">
-              <div className="os-3-l"><img src="/images/icon/ic_02.webp" alt="Claim rejection" width={90} height={90} /></div>
-              <div className="os-3-r">
-                <h3>Claim Rejection</h3>
-                <p className="os-4">Any type of claim rejected by the insurance company we will help you in getting the claim....</p>
-                
-              </div>
+      <h2 className="visually-hidden">Types of insurance claim issues we resolve</h2>
+      {services.map((s, i) => (
+        <div key={i} className="col-lg-3 col-md-6 col-sm-6" style={{ marginBottom: "24px" }}>
+          <div style={{
+            background: "#FFFFFF", border: "1px solid #EDE7D9",
+            borderRadius: "14px", padding: "28px 24px", height: "100%",
+          }}>
+            <div style={{
+              width: "52px", height: "52px", borderRadius: "12px",
+              background: "#FEF3D0", display: "flex", alignItems: "center",
+              justifyContent: "center", marginBottom: "18px",
+            }}>
+              {s.icon}
             </div>
-          </div>
-          <div className="col-md-7">
-            <div className="os-3 os-3-c2">
-              <div className="os-3-l"><img src="/images/icon/ic_03.webp" alt="Delay in Claim Process" width={90} height={90} /></div>
-              <div className="os-3-r">
-                <h3>Delay in Claim Processing </h3>
-                <p className="os-4">We will help you in quick settlement of claim in accordance with IRDIA specified turned around time.</p>
-               
-              </div>
-            </div>
-          </div>
-          <div className="col-md-7">
-            <div className="os-3 os-3-c3">
-              <div className="os-3-l"><img src="/images/icon/ic_01.webp" alt="Mis-selling of Insurance" width={90} height={90} /></div>
-              <div className="os-3-r">
-                <h3>Mis-selling</h3>
-                <p className="os-4">We help in getting the premium refunded in case insurance policy is mis-sold to you.</p>
-               
-              </div>
-            </div>
-          </div>
-          <div className="col-md-5">
-            <div className="os-3 os-3-c4">
-              <div className="os-3-l"><img src="/images/icon/ic_04.webp" alt="Claim short settled" width={90} height={90} /></div>
-              <div className="os-3-r">
-                <h3>Claim short-settled</h3>
-                <p className="os-4">We will help you in getting maximum possible amount in accordance with policy term and conditions.</p>
-               
-              </div>
-            </div>
+            <h3 style={{
+              fontFamily: "var(--font-playfair), Georgia, serif",
+              fontSize: "18px", fontWeight: "700", color: "#1C354F", marginBottom: "10px",
+            }}>
+              {s.title}
+            </h3>
+            <p style={{ fontSize: "14px", lineHeight: "1.75", color: "#5C7089", margin: 0 }}>
+              {s.text}
+            </p>
           </div>
         </div>
+      ))}
     </>
-    
   );
 };
 

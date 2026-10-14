@@ -3,7 +3,7 @@
 import Aos from "aos";
 import { useEffect } from "react";
 import Script from "next/script";
-import { Nunito } from "next/font/google";
+import { Nunito, Playfair_Display } from "next/font/google";
 import "aos/dist/aos.css";
 import "../styles/index.scss";
 import ScrollToTop from "@/components/common/ScrollTop";
@@ -17,6 +17,14 @@ const nunito = Nunito({
   weight: "variable",
   style: ["normal", "italic"],
   display: "swap",
+});
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  weight: ["500", "700"],
+  style: ["normal", "italic"],
+  display: "swap",
+  variable: "--font-playfair",
 });
 
 export default function RootLayout({ children }) {
@@ -33,7 +41,7 @@ export default function RootLayout({ children }) {
         <link rel="shortcut icon" href="/favicon.svg?v=2" />
         <meta name="theme-color" content="#FAA61B" />
       </head>
-      <body className={nunito.className}>
+      <body className={`${nunito.className} ${playfair.variable}`}>
         <Script
           strategy="afterInteractive"
           src={`https://www.googletagmanager.com/gtag/js?id=G-LCHCQVVJYP`}

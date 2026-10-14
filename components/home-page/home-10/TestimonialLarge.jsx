@@ -1,179 +1,106 @@
-"use client";
+const testimonials = [
+  {
+    initials: "RV",
+    name: "Radha Varshney",
+    meta: "Homemaker, Lucknow — SBI Life Insurance",
+    result: "Full premium refund secured",
+    text: "I cannot thank the GetClaims team enough for their incredible help in recovering a SBI Life refund for my mother after she fell victim to insurance fraud. From the very beginning they were determined, resourceful, and relentless in navigating the complex process. Thanks to their persistence, we secured the refund she rightfully deserved. I highly recommend GetClaims to anyone who needs a true advocate.",
+  },
+  {
+    initials: "VA",
+    name: "Vikram Agarwal",
+    meta: "Business owner, Pune — Motor Insurance",
+    result: "₹1.72 lakh recovered",
+    text: "My car was totalled in an accident and the insurer offered just ₹75,000 against an IDV of ₹2.1 lakh. I felt completely lost. GetClaims reviewed the IDV calculation, challenged the deductions with market data, and within 8 weeks I received ₹1.72 lakh. The professionalism and transparency throughout the process was outstanding.",
+  },
+  {
+    initials: "SI",
+    name: "Sunita Iyer",
+    meta: "Retired teacher, Chennai — Health Insurance",
+    result: "₹3.4 lakh claim paid in full",
+    text: "My cashless hospitalisation was denied mid-treatment, citing a pre-existing condition I had disclosed at enrollment. It was a frightening situation. GetClaims took over the paperwork immediately, filed a formal complaint with the Ombudsman, and the insurer settled the ₹3.4 lakh claim in full within 45 days. They turned a nightmare into a resolution.",
+  },
+];
 
-import Slider from "react-slick";
-import React, { useRef } from "react";
-import Image from "next/image";
+const Star = () => (
+  <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B">
+    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+  </svg>
+);
 
 const TestimonialLarge = () => {
-    const settings = {
-      dots: false,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 1,
-          },
-        },
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 1,
-          },
-        },
-      ],
-    };
-    const sliderRef = useRef(null);
- 
   return (
-    <>
-      <div className="container">
-      <div className="row align-items-center mb-20">
-          <div className="col-lg-12 col-md-12">
-            <div className="title-style-one text-center text-md-start">
-              <h3 className="main-title text-center testiTitle fw-bold tx-dark">
-                What’s <span>Our Client</span> Say About us.
-              </h3>
-            </div>
-            {/* /.title-style-one */}
-          </div>
-          
-        </div>
-       
-
-      
-      <div
-      id="carouselExampleControls"
-      className="carousel slide text-center carousel-dark"
-      data-mdb-ride="carousel"
-    >
-      <div className="carousel-inner">
-      <Slider {...settings} ref={sliderRef} arrows={false}>
-        <div className="carousel-item text-center">
-          <img
-            className="rounded-circle shadow-1-strong mb-4"
-            src="/images/icon/clientTesti_01.webp"
-            alt="avatar"
-            width={150}
-            height={150}
-            style={{ width: '150px', height: '150px', margin:'auto' }}
-          />
-          <div className="row d-flex justify-content-center">
-            <div className="col-lg-12">
-              <h4 className="mb-3">Radha Varshney</h4>
-              {/* <p>Photographer</p> */}
-              <p className="text-muted">
-                <i className="fas fa-quote-left pe-2"></i>
-                I cannot thank GetClaims.in Team enough for their incredible help in recovering a SBI Life refund for my mother after she fell victim to insurance fraud. From the very beginning, team was determined, resourceful, and relentless in navigating the complex process. They took the time to gather evidence, communicate with the right people, and ensure that my mother’s case was taken seriously.
-              </p>
-              <p className="text-muted">
-              Thanks to their persistence and knowledge, we were able to secure the refund she rightfully deserved. Beyond just their expertise, their kindness and support made a stressful situation so much easier to handle. I highly recommend GetClaims.in to anyone in need of an advocate who truly cares. We are forever grateful!
-              </p>
-            </div>
-          </div>
-          <ul className="list-unstyled d-flex justify-content-center text-warning mb-0">
-            <li><i className="fas fa-star fa-sm"></i></li>
-            <li><i className="fas fa-star fa-sm"></i></li>
-            <li><i className="fas fa-star fa-sm"></i></li>
-            <li><i className="fas fa-star fa-sm"></i></li>
-            <li><i className="fas fa-star fa-sm"></i></li>
-          </ul>
-        </div>
-        <div className="carousel-item">
-          <img
-            className="rounded-circle shadow-1-strong mb-4"
-            src="/images/icon/clientTesti_01.webp"
-            alt="avatar"
-            width={150}
-            height={150}
-            style={{ width: '150px', height: '150px', margin:'auto' }}
-          />
-          <div className="row d-flex justify-content-center">
-            <div className="col-lg-12">
-              <h4 className="mb-3">Radha Varshney</h4>
-              {/* <p>Photographer</p> */}
-              <p className="text-muted">
-                <i className="fas fa-quote-left pe-2"></i>
-                I cannot thank GetClaims.in Team enough for their incredible help in recovering a SBI Life refund for my mother after she fell victim to insurance fraud. From the very beginning, team was determined, resourceful, and relentless in navigating the complex process. They took the time to gather evidence, communicate with the right people, and ensure that my mother’s case was taken seriously.
-              </p>
-              <p className="text-muted">
-              Thanks to their persistence and knowledge, we were able to secure the refund she rightfully deserved. Beyond just their expertise, their kindness and support made a stressful situation so much easier to handle. I highly recommend GetClaims.in to anyone in need of an advocate who truly cares. We are forever grateful!
-              </p>
-            </div>
-          </div>
-          <ul className="list-unstyled d-flex justify-content-center text-warning mb-0">
-            <li><i className="fas fa-star fa-sm"></i></li>
-            <li><i className="fas fa-star fa-sm"></i></li>
-            <li><i className="fas fa-star fa-sm"></i></li>
-            <li><i className="fas fa-star fa-sm"></i></li>
-            <li><i className="fas fa-star fa-sm"></i></li>
-          </ul>
-        </div>
-        <div className="carousel-item">
-          <img
-            className="rounded-circle shadow-1-strong mb-4"
-            src="/images/icon/clientTesti_01.webp"
-            alt="avatar"
-            width={150}
-            height={150}
-            style={{ width: '150px', height: '150px', margin:'auto' }}
-          />
-          <div className="row d-flex justify-content-center">
-            <div className="col-lg-12">
-              <h4 className="mb-3">Radha Varshney</h4>
-              {/* <p>Photographer</p> */}
-              <p className="text-muted">
-                <i className="fas fa-quote-left pe-2"></i>
-                I cannot thank GetClaims.in Team enough for their incredible help in recovering a SBI Life refund for my mother after she fell victim to insurance fraud. From the very beginning, team was determined, resourceful, and relentless in navigating the complex process. They took the time to gather evidence, communicate with the right people, and ensure that my mother’s case was taken seriously.
-              </p>
-              <p className="text-muted">
-              Thanks to their persistence and knowledge, we were able to secure the refund she rightfully deserved. Beyond just their expertise, their kindness and support made a stressful situation so much easier to handle. I highly recommend GetClaims.in to anyone in need of an advocate who truly cares. We are forever grateful!
-              </p>
-            </div>
-          </div>
-          <ul className="list-unstyled d-flex justify-content-center text-warning mb-0">
-            <li><i className="fas fa-star fa-sm"></i></li>
-            <li><i className="fas fa-star fa-sm"></i></li>
-            <li><i className="fas fa-star fa-sm"></i></li>
-            <li><i className="fas fa-star fa-sm"></i></li>
-            <li><i className="fas fa-star fa-sm"></i></li>
-          </ul>
-        </div>
-       
-        </Slider>
+    <div className="container">
+      <div style={{ textAlign: "center", marginBottom: "48px" }}>
+        <p style={{
+          fontSize: "11px", fontWeight: "700", letterSpacing: ".12em",
+          textTransform: "uppercase", color: "#E8920A", marginBottom: "12px",
+        }}>
+          Client stories
+        </p>
+        <h2 style={{
+          fontFamily: "var(--font-playfair), Georgia, serif",
+          fontSize: "clamp(24px, 3vw, 36px)", fontWeight: "700",
+          color: "#1C354F", marginBottom: "12px",
+        }}>
+          Real People, Real Results
+        </h2>
+        <p style={{ fontSize: "16px", color: "#5C7089", maxWidth: "520px", margin: "0 auto" }}>
+          Families who came to us after being let down by their insurer — and left with the settlement they deserved.
+        </p>
       </div>
 
+      <div className="row g-4">
+        {testimonials.map((t, i) => (
+          <div key={i} className="col-lg-4 col-md-6">
+            <div style={{
+              background: "#FEF9EE", border: "1px solid #FDDFA0",
+              borderRadius: "14px", padding: "28px", height: "100%",
+              display: "flex", flexDirection: "column",
+            }}>
+              <div style={{ marginBottom: "14px" }}>
+                <span style={{
+                  fontFamily: "var(--font-playfair), Georgia, serif",
+                  fontSize: "48px", lineHeight: ".8", color: "#E8920A", display: "block",
+                }}>&#8220;</span>
+              </div>
+              <p style={{
+                fontSize: "14px", lineHeight: "1.8", color: "#1C354F",
+                fontStyle: "italic", flex: "1", marginBottom: "24px",
+              }}>
+                {t.text}
+              </p>
+              <div>
+                <div style={{ display: "flex", gap: "3px", marginBottom: "14px" }}>
+                  {[0,1,2,3,4].map(j => <Star key={j} />)}
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                  <div style={{
+                    width: "42px", height: "42px", borderRadius: "50%",
+                    background: "#E8920A", color: "#fff",
+                    display: "flex", alignItems: "center", justifyContent: "center",
+                    fontSize: "13px", fontWeight: "700", flexShrink: "0",
+                  }}>
+                    {t.initials}
+                  </div>
+                  <div>
+                    <div style={{ fontSize: "14px", fontWeight: "600", color: "#1C354F" }}>{t.name}</div>
+                    <div style={{ fontSize: "12px", color: "#5C7089", marginTop: "2px" }}>{t.meta}</div>
+                    <div style={{
+                      display: "inline-block", background: "#DCFCE7", color: "#15803D",
+                      padding: "2px 9px", borderRadius: "4px", fontSize: "11px",
+                      fontWeight: "600", marginTop: "6px",
+                    }}>
+                      {t.result}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
-
-    <div className="row align-items-center mt-20">
-          
-          <div className="col-lg-12 col-md-12 ms-auto d-flex justify-content-center">
-            <ul className="slider-arrows text-center slick-arrow-one d-flex justify-content-center style-none mb-30">
-              <li
-                className="prev_f1 slick-arrow rounded-circle text-center fs-20 tran3s"
-                onClick={() => sliderRef.current.slickPrev()}
-              >
-                <i className="bi bi-chevron-left" />
-              </li>
-              <li
-                className="next_f1 slick-arrow rounded-circle text-center fs-20 tran3s"
-                onClick={() => sliderRef.current.slickNext()}
-              >
-                <i className="bi bi-chevron-right" />
-              </li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-      {/* /.container */}
-
-      
-      {/* /.inner-content */}
-    </>
   );
 };
 

@@ -16,18 +16,6 @@ const socialIcons = [
   },
 ];
 
-const Social = () => {
-  return (
-    <ul className="d-flex social-icon style-none">
-      {socialIcons.map((icon, index) => (
-        <li key={index}>
-          <a href={icon.link} target="_blank" rel="noopener noreferrer" aria-label={icon.name}>
-            <i className={icon.iconClass} aria-hidden="true" />
-          </a>
-        </li>
-      ))}
-    </ul>
-  );
-};
+const Social = () => null;
 
 export default Social;
