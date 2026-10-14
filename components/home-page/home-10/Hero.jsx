@@ -15,7 +15,7 @@ const Hero = () => {
 
   return (
     <div className="container">
-      <div className="row align-items-center">
+      <div className="row align-items-start">
         <div className="col-lg-6 col-md-7">
           <div style={{
             display: "inline-flex", alignItems: "center", gap: "8px",
@@ -69,22 +69,22 @@ const Hero = () => {
         </div>
 
         <div className="col-lg-6 col-md-5 d-none d-md-block" style={{ paddingLeft: "32px" }}>
-          <div style={{
-            borderRadius: "20px",
-            overflow: "hidden",
-            boxShadow: "0 16px 48px rgba(28,53,79,0.18)",
-          }}>
-            <video
-              ref={videoRef}
-              src="/videos/getclaimvideo.mp4"
-              autoPlay
-              muted
-              loop
-              playsInline
-              preload="auto"
-              style={{ width: "100%", height: "auto", display: "block" }}
-            />
-          </div>
+          <video
+            ref={videoRef}
+            src="/videos/getclaimvideo.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="auto"
+            style={{
+              width: "100%",
+              height: "auto",
+              display: "block",
+              borderRadius: "16px",
+              boxShadow: "0 16px 48px rgba(28,53,79,0.18)",
+            }}
+          />
           <p style={{
             textAlign: "center", fontSize: "12px", color: "#5C7089",
             marginTop: "10px", letterSpacing: ".02em",
