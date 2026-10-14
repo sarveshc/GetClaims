@@ -38,6 +38,97 @@ const AgencyModern = () => {
         <Hero />
       </section>
 
+      {/* ── Scenario selector ───────────────────────────────────── */}
+      <section style={{ background: A.card, borderBottom: `1px solid ${A.border}`, padding: "48px 0 44px" }}>
+        <div className="container">
+          <p style={{
+            textAlign: "center", fontSize: "12px", fontWeight: "700",
+            letterSpacing: ".1em", textTransform: "uppercase",
+            color: A.muted, marginBottom: "28px",
+          }}>
+            What happened with your claim?
+          </p>
+          <div className="row g-3">
+            {[
+              {
+                icon: (
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#E8920A" strokeWidth="1.8" width="28" height="28">
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                  </svg>
+                ),
+                label: "Cashless treatment denied",
+                sub: "Hospital rejected your health card mid-treatment",
+              },
+              {
+                icon: (
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#E8920A" strokeWidth="1.8" width="28" height="28">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    <line x1="9" y1="12" x2="15" y2="12"/>
+                  </svg>
+                ),
+                label: "Life / LIC claim rejected",
+                sub: "Claim denied after paying premiums for years",
+              },
+              {
+                icon: (
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#E8920A" strokeWidth="1.8" width="28" height="28">
+                    <rect x="1" y="3" width="15" height="13" rx="2"/>
+                    <path d="M16 8h4l3 5v3h-7V8z"/>
+                    <circle cx="5.5" cy="18.5" r="2.5"/>
+                    <circle cx="18.5" cy="18.5" r="2.5"/>
+                  </svg>
+                ),
+                label: "Motor claim underpaid",
+                sub: "Insurer paid far less than your vehicle's IDV",
+              },
+              {
+                icon: (
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#E8920A" strokeWidth="1.8" width="28" height="28">
+                    <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+                    <polyline points="14 2 14 8 20 8"/>
+                    <line x1="12" y1="12" x2="12" y2="17"/>
+                    <line x1="12" y1="10" x2="12.01" y2="10"/>
+                  </svg>
+                ),
+                label: "Policy mis-sold or cancelled",
+                sub: "Terms didn't match what agent promised you",
+              },
+            ].map((s, i) => (
+              <div key={i} className="col-lg-3 col-md-6">
+                <Link
+                  href="/contact/contact-v2"
+                  className="gc-scenario-card"
+                  style={{
+                    background: A.bg,
+                    border: `1.5px solid ${A.border}`,
+                    padding: "22px 20px",
+                  }}
+                >
+                  <div style={{ marginBottom: "14px" }}>{s.icon}</div>
+                  <div style={{
+                    fontSize: "15px", fontWeight: "700",
+                    color: A.navy, marginBottom: "6px",
+                  }}>
+                    {s.label}
+                  </div>
+                  <div style={{
+                    fontSize: "13px", color: A.muted,
+                    lineHeight: "1.6", marginBottom: "16px",
+                  }}>
+                    {s.sub}
+                  </div>
+                  <div className="gc-scenario-arrow" style={{
+                    fontSize: "13px", fontWeight: "700", color: A.amber,
+                  }}>
+                    Get help →
+                  </div>
+                </Link>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── Trust stats ─────────────────────────────────────────── */}
       <section style={{ background: A.card, borderBottom: `1px solid ${A.border}` }}>
         <div className="container">

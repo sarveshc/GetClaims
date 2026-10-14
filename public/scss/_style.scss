@@ -10571,6 +10571,41 @@ body .btn-twentySix:hover:after {
   left: 72%;
 }
 
+// GetClaims scenario card
+.gc-scenario-card {
+  display: block;
+  text-decoration: none;
+  border-radius: 14px;
+  height: 100%;
+  transition: border-color .18s, background .18s;
+}
+.gc-scenario-card:hover {
+  border-color: #E8920A !important;
+  background: #FEF9EE !important;
+}
+.gc-scenario-card:hover .gc-scenario-arrow {
+  text-decoration: underline;
+}
+
+// GetClaims WhatsApp float
+.gc-wa-btn {
+  position: fixed;
+  bottom: 64px;
+  right: 5px;
+  z-index: 200;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #25D366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(37,211,102,.35);
+  transition: transform .15s;
+}
+.gc-wa-btn:hover { transform: scale(1.1); }
+.gc-wa-btn svg { width: 22px; height: 22px; fill: #fff; }
+
 // GetClaims brand typography — apply Playfair Display to headings site-wide
 .main-title,
 .inner-banner-three h1,
