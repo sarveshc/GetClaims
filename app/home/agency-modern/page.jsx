@@ -46,7 +46,7 @@ const AgencyModern = () => {
       {/* ── Hero ────────────────────────────────────────────────── */}
       <section style={{
         background: A.bg,
-        padding: "72px 0 56px",
+        padding: "148px 0 56px",
         borderBottom: `1px solid ${A.border}`,
       }}>
         <Hero />

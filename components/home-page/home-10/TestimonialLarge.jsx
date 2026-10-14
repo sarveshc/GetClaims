@@ -1,20 +1,20 @@
 const testimonials = [
   {
-    initials: "RV",
+    photo: "/images/testimonials/radha.jpg",
     name: "Radha Varshney",
     meta: "Homemaker, Lucknow — SBI Life Insurance",
     result: "Full premium refund secured",
     text: "I cannot thank the GetClaims team enough for their incredible help in recovering a SBI Life refund for my mother after she fell victim to insurance fraud. From the very beginning they were determined, resourceful, and relentless in navigating the complex process. Thanks to their persistence, we secured the refund she rightfully deserved. I highly recommend GetClaims to anyone who needs a true advocate.",
   },
   {
-    initials: "VA",
+    photo: "/images/testimonials/vikram.jpg",
     name: "Vikram Agarwal",
     meta: "Business owner, Pune — Motor Insurance",
     result: "₹1.72 lakh recovered",
     text: "My car was totalled in an accident and the insurer offered just ₹75,000 against an IDV of ₹2.1 lakh. I felt completely lost. GetClaims reviewed the IDV calculation, challenged the deductions with market data, and within 8 weeks I received ₹1.72 lakh. The professionalism and transparency throughout the process was outstanding.",
   },
   {
-    initials: "SI",
+    photo: "/images/testimonials/sunita.jpg",
     name: "Sunita Iyer",
     meta: "Retired teacher, Chennai — Health Insurance",
     result: "₹3.4 lakh claim paid in full",
@@ -75,14 +75,15 @@ const TestimonialLarge = () => {
                   {[0,1,2,3,4].map(j => <Star key={j} />)}
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-                  <div style={{
-                    width: "42px", height: "42px", borderRadius: "50%",
-                    background: "#E8920A", color: "#fff",
-                    display: "flex", alignItems: "center", justifyContent: "center",
-                    fontSize: "13px", fontWeight: "700", flexShrink: "0",
-                  }}>
-                    {t.initials}
-                  </div>
+                  <img
+                    src={t.photo}
+                    alt={t.name}
+                    style={{
+                      width: "48px", height: "48px", borderRadius: "50%",
+                      objectFit: "cover", flexShrink: "0",
+                      border: "2px solid #FDDFA0",
+                    }}
+                  />
                   <div>
                     <div style={{ fontSize: "14px", fontWeight: "600", color: "#1C354F" }}>{t.name}</div>
                     <div style={{ fontSize: "12px", color: "#5C7089", marginTop: "2px" }}>{t.meta}</div>
