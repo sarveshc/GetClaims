@@ -4,12 +4,22 @@ import Hero from "@/components/home-page/home-10/Hero";
 import Services from "@/components/home-page/home-10/Services";
 import TestimonialLarge from "@/components/home-page/home-10/TestimonialLarge";
 import Footer from "@/components/home-page/home-10/Footer";
-import ProcessVideo from "@/components/home-page/home-10/ProcessVideo";
 import TimeLine from "@/components/common/TimeLine";
 
 export const metadata = {
   title: "GetClaims | Insurance Claim Resolution Experts",
   description: "Expert insurance claim advocacy for rejected, delayed, and under-settled claims. 2,400+ claims resolved. No fee unless we win.",
+};
+
+const videoJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  name: "See How GetClaims Works",
+  description: "A quick look at how GetClaims takes your case from a rejected or delayed insurance claim through to resolution.",
+  thumbnailUrl: "https://getclaims.in/videos/video_banner.jpg",
+  uploadDate: "2026-08-09",
+  duration: "PT10S",
+  contentUrl: "https://getclaims.in/videos/getclaimvideo.mp4",
 };
 
 const A = {
@@ -26,6 +36,10 @@ const A = {
 const AgencyModern = () => {
   return (
     <div style={{ background: A.bg }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(videoJsonLd) }}
+      />
       {/* ── Nav ─────────────────────────────────────────────────── */}
       <Header />
 
@@ -183,16 +197,6 @@ const AgencyModern = () => {
             <Services />
           </div>
         </div>
-      </section>
-
-      {/* ── Process Video ───────────────────────────────────────── */}
-      <section style={{
-        background: A.card,
-        borderTop: `1px solid ${A.border}`,
-        borderBottom: `1px solid ${A.border}`,
-        padding: "80px 0",
-      }}>
-        <ProcessVideo />
       </section>
 
       {/* ── Testimonials ────────────────────────────────────────── */}

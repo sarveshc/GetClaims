@@ -1,11 +1,22 @@
+"use client";
+
 import Link from "next/link";
-import Illustration from "./Illustration";
+import { useRef, useEffect } from "react";
 
 const Hero = () => {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.muted = true;
+      videoRef.current.play().catch(() => {});
+    }
+  }, []);
+
   return (
     <div className="container">
       <div className="row align-items-center">
-        <div className="col-lg-7 col-md-8">
+        <div className="col-lg-6 col-md-7">
           <div style={{
             display: "inline-flex", alignItems: "center", gap: "8px",
             background: "#FEF3D0", color: "#C47708", borderRadius: "20px",
@@ -17,28 +28,28 @@ const Hero = () => {
           </div>
           <h1 style={{
             fontFamily: "var(--font-playfair), Georgia, serif",
-            fontSize: "clamp(32px, 4.5vw, 52px)", lineHeight: "1.18",
+            fontSize: "clamp(28px, 4vw, 50px)", lineHeight: "1.18",
             fontWeight: "700", color: "#1C354F", marginBottom: "20px",
           }}>
             Helping You Claim What&apos;s{" "}
             <em style={{fontStyle:"italic", color:"#E8920A"}}>Rightfully Yours</em>
           </h1>
           <p style={{
-            fontSize: "17px", lineHeight: "1.75", color: "#5C7089",
-            marginBottom: "36px", maxWidth: "520px",
+            fontSize: "16px", lineHeight: "1.75", color: "#5C7089",
+            marginBottom: "32px", maxWidth: "480px",
           }}>
             When insurance companies reject, delay, or underpay your claim, our experts step in as your dedicated advocate — fighting for the fair settlement you deserve.
           </p>
-          <div style={{ display: "flex", gap: "14px", flexWrap: "wrap", marginBottom: "40px" }}>
+          <div style={{ display: "flex", gap: "14px", flexWrap: "wrap", marginBottom: "36px" }}>
             <Link href="/contact/contact-v2" style={{
-              background: "#E8920A", color: "#fff", padding: "14px 30px",
+              background: "#E8920A", color: "#fff", padding: "13px 28px",
               borderRadius: "12px", fontSize: "15px", fontWeight: "600",
               textDecoration: "none", display: "inline-block",
             }}>
               Book a Free Consultation
             </Link>
             <Link href="/pages-menu/about-us-v3" style={{
-              background: "transparent", color: "#1C354F", padding: "14px 30px",
+              background: "transparent", color: "#1C354F", padding: "13px 28px",
               borderRadius: "12px", fontSize: "15px", fontWeight: "600",
               textDecoration: "none", border: "1.5px solid #D9D0C0", display: "inline-block",
             }}>
@@ -56,8 +67,34 @@ const Hero = () => {
             <span>— Free initial call</span>
           </div>
         </div>
-        <div className="col-lg-5 col-md-4 d-none d-md-block">
-          <Illustration />
+
+        <div className="col-lg-6 col-md-5 d-none d-md-block" style={{ paddingLeft: "32px" }}>
+          <div style={{
+            position: "relative",
+            width: "100%",
+            aspectRatio: "16 / 9",
+            borderRadius: "20px",
+            overflow: "hidden",
+            boxShadow: "0 16px 48px rgba(28,53,79,0.18)",
+            background: "#0f172a",
+          }}>
+            <video
+              ref={videoRef}
+              src="/videos/getclaimvideo.mp4"
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="auto"
+              style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+            />
+          </div>
+          <p style={{
+            textAlign: "center", fontSize: "12px", color: "#5C7089",
+            marginTop: "10px", letterSpacing: ".02em",
+          }}>
+            Watch how we resolve your claim
+          </p>
         </div>
       </div>
     </div>
