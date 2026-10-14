@@ -28,8 +28,8 @@ const services = [
   },
   {
     icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="#E8920A" strokeWidth="1.8" width="26" height="26">
-        <line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+      <svg viewBox="0 0 16 16" fill="none" stroke="#E8920A" strokeWidth="1.4" width="26" height="26">
+        <path d="M4 3h8a4 4 0 0 1 0 8H4m8 0-4 6m0-10v10M4 8h8"/>
       </svg>
     ),
     title: "Short Settlement",

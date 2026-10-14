@@ -10570,3 +10570,18 @@ body .btn-twentySix:hover:after {
   top: 65%;
   left: 72%;
 }
+
+// GetClaims brand typography — apply Playfair Display to headings site-wide
+.main-title,
+.inner-banner-three h1,
+.inner-banner-three h2,
+.inner-banner-four h1,
+.inner-banner-four h2 {
+  font-family: var(--font-playfair), Georgia, serif;
+}
+
+h1.main-title,
+h2.main-title,
+h3.main-title {
+  font-family: var(--font-playfair), Georgia, serif;
+}
