@@ -28,9 +28,9 @@ const services = [
   },
   {
     icon: (
-      <svg viewBox="0 0 16 16" fill="none" stroke="#E8920A" strokeWidth="1.4" width="26" height="26">
-        <path d="M4 3h8a4 4 0 0 1 0 8H4m8 0-4 6m0-10v10M4 8h8"/>
-      </svg>
+      <span style={{ fontSize: "24px", fontWeight: "700", color: "#E8920A", fontFamily: "system-ui, -apple-system, Arial, sans-serif", lineHeight: 1 }}>
+        ₹
+      </span>
     ),
     title: "Short Settlement",
     text: "Paid far less than expected? We audit the insurer's deduction calculation line by line and fight for the full amount you're entitled to.",
