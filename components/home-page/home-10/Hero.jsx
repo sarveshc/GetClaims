@@ -70,13 +70,9 @@ const Hero = () => {
 
         <div className="col-lg-6 col-md-5 d-none d-md-block" style={{ paddingLeft: "32px" }}>
           <div style={{
-            position: "relative",
-            width: "100%",
-            aspectRatio: "16 / 9",
             borderRadius: "20px",
             overflow: "hidden",
             boxShadow: "0 16px 48px rgba(28,53,79,0.18)",
-            background: "#0f172a",
           }}>
             <video
               ref={videoRef}
@@ -86,7 +82,7 @@ const Hero = () => {
               loop
               playsInline
               preload="auto"
-              style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+              style={{ width: "100%", height: "auto", display: "block" }}
             />
           </div>
           <p style={{
