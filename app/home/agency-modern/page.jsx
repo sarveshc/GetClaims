@@ -150,7 +150,7 @@ const AgencyModern = () => {
             {[
               { num: "50+",    label: "Claims successfully resolved" },
               { num: "100%",   label: "Success rate across all cases" },
-              { num: "30+",    label: "Total recovered for clients" },
+              { num: "₹3 Cr+", label: "Total recovered for clients" },
             ].map((s, i) => (
               <div key={i} className="col-4" style={{
                 padding: "28px 16px",
