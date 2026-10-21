@@ -8,7 +8,7 @@ import TimeLine from "@/components/common/TimeLine";
 
 export const metadata = {
   title: "GetClaims | Insurance Claim Resolution Experts",
-  description: "Expert insurance claim advocacy for rejected, delayed, and under-settled claims. 2,400+ claims resolved. No fee unless we win.",
+  description: "Expert insurance claim advocacy for rejected, delayed, and under-settled claims. 50+ claims resolved. No fee unless we win.",
 };
 
 const videoJsonLd = {
@@ -148,9 +148,9 @@ const AgencyModern = () => {
         <div className="container">
           <div className="row text-center">
             {[
-              { num: "2,400+", label: "Claims successfully resolved" },
-              { num: "93%",    label: "Success rate across all cases" },
-              { num: "₹82 Cr+", label: "Total recovered for clients" },
+              { num: "50+",    label: "Claims successfully resolved" },
+              { num: "100%",   label: "Success rate across all cases" },
+              { num: "30+",    label: "Total recovered for clients" },
             ].map((s, i) => (
               <div key={i} className="col-4" style={{
                 padding: "28px 16px",

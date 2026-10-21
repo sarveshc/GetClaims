@@ -24,7 +24,7 @@ const Hero = () => {
             letterSpacing: ".05em", textTransform: "uppercase", marginBottom: "20px",
           }}>
             <span style={{width:"7px",height:"7px",borderRadius:"50%",background:"#E8920A",display:"inline-block"}} />
-            Trusted by 2,400+ families across India
+            Trusted by 50+ families across India
           </div>
           <h1 style={{
             fontFamily: "var(--font-playfair), Georgia, serif",
