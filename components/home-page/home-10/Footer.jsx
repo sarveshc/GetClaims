@@ -10,7 +10,6 @@ const Footer = () => {
        
         { label: "About us", href: "/about" },
         { label: "Pricing", href: "/pricing" },
-        { label: "GetClaims vs Insurance Samadhan", href: "/vs/insurance-samadhan" },
         // { label: "Blog", href: "/blog/blog-v1" },
       ],
       classes: "col-lg-2 col-sm-4 ms-auto mb-30",
