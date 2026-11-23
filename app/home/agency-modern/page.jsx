@@ -199,6 +199,41 @@ const AgencyModern = () => {
         </div>
       </section>
 
+      {/* ── ₹499 Case Plan promo ────────────────────────────────── */}
+      <section style={{ background: A.navy, padding: "64px 0" }}>
+        <div className="container">
+          <div className="row align-items-center gy-4">
+            <div className="col-lg-8">
+              <p style={{ fontSize: "11px", fontWeight: 700, letterSpacing: ".12em", textTransform: "uppercase", color: A.amber, marginBottom: "10px" }}>
+                Flat-fee option
+              </p>
+              <h2 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(22px, 3vw, 34px)", fontWeight: 700, color: "#fff", marginBottom: "12px" }}>
+                Get 1 Case Handled for <span style={{ color: A.amber }}>₹499</span>
+              </h2>
+              <p style={{ fontSize: "15px", color: "rgba(255,255,255,.65)", lineHeight: "1.7", marginBottom: "0", maxWidth: "520px" }}>
+                Pay a one-time flat fee of ₹499 and our experts take on your insurance dispute — drafting complaints, filing with IRDAI, and following up till resolution.
+              </p>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: "16px", marginTop: "20px" }}>
+                {["Complaint drafting included", "IRDAI & Ombudsman filing", "Priority 24-hr response", "No hidden charges"].map((item, i) => (
+                  <div key={i} style={{ display: "flex", alignItems: "center", gap: "7px", fontSize: "13px", color: "rgba(255,255,255,.75)" }}>
+                    <span style={{ width: "18px", height: "18px", borderRadius: "50%", background: A.amber, color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "10px", fontWeight: 700, flexShrink: 0 }}>✓</span>
+                    {item}
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="col-lg-4 text-lg-end text-start">
+              <Link href="/pricing" style={{ background: A.amber, color: "#fff", padding: "15px 36px", borderRadius: "12px", fontSize: "16px", fontWeight: 600, textDecoration: "none", display: "inline-block" }}>
+                Get Started — ₹499
+              </Link>
+              <p style={{ fontSize: "12px", color: "rgba(255,255,255,.45)", marginTop: "10px", marginBottom: 0 }}>
+                1 case · no annual commitment
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── Testimonials ────────────────────────────────────────── */}
       <section style={{ padding: "80px 0" }}>
         <TestimonialLarge />

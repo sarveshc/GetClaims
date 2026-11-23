@@ -29,9 +29,9 @@ export async function POST(request) {
     return NextResponse.json({ success: false, error: "Payment verification failed." }, { status: 400 });
   }
 
-  // Store subscriber — expires 1 year from now
+  // Store subscriber — expires 6 months from now (1-case plan)
   const expiresAt = new Date();
-  expiresAt.setFullYear(expiresAt.getFullYear() + 1);
+  expiresAt.setMonth(expiresAt.getMonth() + 6);
 
   try {
     await prisma.subscriber.upsert({

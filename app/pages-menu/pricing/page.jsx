@@ -186,21 +186,21 @@ const PricingPage = () => {
                 {/* Left — copy */}
                 <div className="col-lg-6">
                   <p style={{ fontSize: "11px", fontWeight: 700, letterSpacing: ".12em", textTransform: "uppercase", color: "#E8920A", marginBottom: "12px" }}>
-                    Annual Membership
+                    Flat-Fee Option
                   </p>
                   <h2 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(24px, 3.5vw, 36px)", fontWeight: 700, color: "#1C354F", marginBottom: "16px" }}>
-                    Skip the Consultation Fee — Forever
+                    Get 1 Case Handled for ₹499
                   </h2>
                   <p style={{ fontSize: "15px", color: "#5C7089", lineHeight: "1.7", marginBottom: "24px" }}>
-                    For a one-time annual fee of <strong style={{ color: "#1C354F" }}>₹499</strong>, your consultation fee is waived on every case you bring to us — this year and every renewal.
+                    Pay a one-time flat fee of <strong style={{ color: "#1C354F" }}>₹499</strong> and our experts take on your insurance dispute — drafting complaints, filing with IRDAI, and following up till resolution.
                   </p>
                   <ul style={{ listStyle: "none", margin: "0 0 24px", padding: 0 }}>
                     {[
-                      "No consultation fee on all cases",
+                      "1 insurance case handled end-to-end",
+                      "Complaint drafting & IRDAI / Ombudsman filing",
                       "Priority review — response within 24 hours",
-                      "Dedicated case manager",
-                      "Valid for 1 full year",
-                      "Renew anytime at the same ₹499",
+                      "Dedicated case manager assigned",
+                      "No hidden charges at any stage",
                     ].map((item, i) => (
                       <li key={i} style={{ display: "flex", alignItems: "center", gap: "10px", padding: "6px 0", fontSize: "14px", color: "#5C7089" }}>
                         <span style={{ width: "20px", height: "20px", borderRadius: "50%", background: "#DCFCE7", color: "#15803D", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "11px", fontWeight: 700, flexShrink: 0 }}>✓</span>
@@ -229,7 +229,7 @@ const PricingPage = () => {
                       <div style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "48px", fontWeight: 800, color: "#1C354F", lineHeight: 1 }}>
                         &#8377;499
                       </div>
-                      <div style={{ fontSize: "14px", color: "#5C7089", marginTop: "4px" }}>per year</div>
+                      <div style={{ fontSize: "14px", color: "#5C7089", marginTop: "4px" }}>per case · one-time</div>
                     </div>
                     <SubscribeButton />
                   </div>
