@@ -1,7 +1,7 @@
 const testimonials = [
   {
     initials: "RV",
-    name: "Radhika Varshney",
+    name: "Radha Varshney",
     meta: "Homemaker, Lucknow — SBI Life Insurance",
     result: "Full premium refund secured",
     text: "I cannot thank the GetClaims team enough for their incredible help in recovering a SBI Life refund for my mother after she fell victim to insurance fraud. From the very beginning they were determined, resourceful, and relentless in navigating the complex process. Thanks to their persistence, we secured the refund she rightfully deserved. I highly recommend GetClaims to anyone who needs a true advocate.",
