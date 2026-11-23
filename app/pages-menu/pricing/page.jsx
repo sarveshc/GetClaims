@@ -189,7 +189,7 @@ const PricingPage = () => {
                     Flat-Fee Option
                   </p>
                   <h2 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(24px, 3.5vw, 36px)", fontWeight: 700, color: "#1C354F", marginBottom: "16px" }}>
-                    Get 1 Case Handled for ₹499
+                    Fight Your Insurer for ₹499
                   </h2>
                   <p style={{ fontSize: "15px", color: "#5C7089", lineHeight: "1.7", marginBottom: "24px" }}>
                     Pay a one-time flat fee of <strong style={{ color: "#1C354F" }}>₹499</strong> and our experts take on your insurance dispute — drafting complaints, filing with IRDAI, and following up till resolution.
