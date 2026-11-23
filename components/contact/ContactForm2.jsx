@@ -265,12 +265,26 @@ const ContactForm2 = () => {
   const [uploadWarning, setUploadWarning] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const [referenceNo, setReferenceNo] = useState("");
+  const [isSubscriber, setIsSubscriber] = useState(false);
+
+  // ── Subscriber check on email blur ──────────────────────────────────────────
+  const checkSubscriber = async (email) => {
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return;
+    try {
+      const res = await fetch(`/api/subscription/check?email=${encodeURIComponent(email)}`);
+      const data = await res.json();
+      setIsSubscriber(!!data.isSubscriber);
+    } catch {
+      // silent — subscriber check is non-critical
+    }
+  };
 
   // ── Handlers ────────────────────────────────────────────────────────────────
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
     setFormData((prev) => ({ ...prev, [name]: type === "checkbox" ? checked : value }));
     setErrors((prev) => ({ ...prev, [name]: "" }));
+    if (name === "email") setIsSubscriber(false);
   };
 
   const handleFilesSelect = (newFiles, docType) => {
@@ -488,10 +502,23 @@ const ContactForm2 = () => {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
+                onBlur={(e) => checkSubscriber(e.target.value)}
                 placeholder="yourname@email.com"
                 style={inputStyle("email", errors)}
               />
             </Field>
+            {isSubscriber && (
+              <div style={{
+                display: "flex", alignItems: "center", gap: "8px",
+                background: "#DCFCE7", border: "1px solid #86EFAC",
+                borderRadius: "8px", padding: "8px 12px", marginTop: "-16px", marginBottom: "16px",
+              }}>
+                <span style={{ fontSize: "14px" }}>✓</span>
+                <span style={{ fontSize: "12px", fontWeight: 600, color: "#15803D" }}>
+                  Active Member — No consultation fee applies to your case
+                </span>
+              </div>
+            )}
           </div>
           <div className="col-md-6">
             <Field name="city" label="City" required errors={errors}>
