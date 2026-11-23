@@ -3,8 +3,8 @@ import Header from "@/components/home-page/home-10/Header";
 import Footer from "@/components/home-page/home-10/Footer";
 
 export const metadata = {
-  title: "Subscription Confirmed | GetClaims",
-  description: "Your GetClaims annual membership is active. No consultation fee applies to your cases.",
+  title: "Payment Confirmed | GetClaims",
+  description: "Your GetClaims case plan is active. Our team will contact you within 24 hours to begin working on your case.",
 };
 
 const SubscriptionSuccess = ({ searchParams }) => {
@@ -40,8 +40,8 @@ const SubscriptionSuccess = ({ searchParams }) => {
                 Welcome, {name}!
               </h1>
               <p style={{ fontSize: "16px", color: "#5C7089", lineHeight: "1.7", marginBottom: "32px" }}>
-                Your <strong style={{ color: "#1C354F" }}>GetClaims Annual Membership</strong> is now active.
-                You will not be charged any consultation fee — just submit your case and our experts will get in touch.
+                Your <strong style={{ color: "#1C354F" }}>GetClaims Case Plan</strong> is now active.
+                Our team will contact you within 24 hours to review your documents and begin work on your case.
               </p>
 
               {/* Membership card */}
@@ -66,8 +66,8 @@ const SubscriptionSuccess = ({ searchParams }) => {
                 <div style={{ marginTop: "20px", paddingTop: "20px", borderTop: "1px solid rgba(255,255,255,0.15)" }}>
                   <div style={{ display: "flex", gap: "24px", flexWrap: "wrap" }}>
                     {[
-                      { label: "Plan", value: "Annual — ₹499/year" },
-                      { label: "Consultation Fee", value: "₹0 (Waived)" },
+                      { label: "Plan", value: "1 Case — ₹499" },
+                      { label: "Consultation Fee", value: "₹0 (Included)" },
                     ].map((item) => (
                       <div key={item.label}>
                         <p style={{ fontSize: "11px", color: "rgba(255,255,255,0.5)", marginBottom: "2px" }}>{item.label}</p>
@@ -84,14 +84,14 @@ const SubscriptionSuccess = ({ searchParams }) => {
                 padding: "24px 28px", marginBottom: "32px", textAlign: "left",
               }}>
                 <p style={{ fontSize: "13px", fontWeight: 700, color: "#1C354F", marginBottom: "16px" }}>
-                  What your membership includes:
+                  What your case plan includes:
                 </p>
                 {[
-                  "No consultation fee on all cases",
-                  "Priority case review within 24 hours",
+                  "1 insurance case handled end-to-end",
+                  "Complaint drafting & IRDAI / Ombudsman filing",
+                  "Priority review — response within 24 hours",
                   "Dedicated case manager assigned",
-                  "Direct WhatsApp access to our team",
-                  "Valid for 1 year from today",
+                  "No hidden charges at any stage",
                 ].map((item, i) => (
                   <div key={i} style={{ display: "flex", alignItems: "center", gap: "10px", padding: "6px 0", fontSize: "14px", color: "#5C7089" }}>
                     <span style={{ width: "20px", height: "20px", borderRadius: "50%", background: "#DCFCE7", color: "#15803D", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "11px", fontWeight: 700, flexShrink: 0 }}>✓</span>

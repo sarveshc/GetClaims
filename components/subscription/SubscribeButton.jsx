@@ -59,7 +59,7 @@ export default function SubscribeButton() {
         amount: orderData.amount,
         currency: orderData.currency,
         name: "GetClaims",
-        description: "Annual Membership — ₹499/year",
+        description: "1-Case Plan — ₹499",
         order_id: orderData.orderId,
         prefill: { name: form.name, email: form.email, contact: form.phone },
         theme: { color: "#E8920A" },
@@ -152,7 +152,7 @@ export default function SubscribeButton() {
             Processing…
           </>
         ) : (
-          "Subscribe Now — ₹499/year"
+          "Pay ₹499 — Start My Case"
         )}
       </button>
 

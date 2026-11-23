@@ -223,7 +223,7 @@ const AgencyModern = () => {
               </div>
             </div>
             <div className="col-lg-4 text-lg-end text-start">
-              <Link href="/pricing" style={{ background: A.amber, color: "#fff", padding: "15px 36px", borderRadius: "12px", fontSize: "16px", fontWeight: 600, textDecoration: "none", display: "inline-block" }}>
+              <Link href="/subscribe" style={{ background: A.amber, color: "#fff", padding: "15px 36px", borderRadius: "12px", fontSize: "16px", fontWeight: 600, textDecoration: "none", display: "inline-block" }}>
                 Get Started — ₹499
               </Link>
               <p style={{ fontSize: "12px", color: "rgba(255,255,255,.45)", marginTop: "10px", marginBottom: 0 }}>

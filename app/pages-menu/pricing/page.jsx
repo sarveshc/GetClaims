@@ -2,7 +2,6 @@ import Link from "next/link";
 import Header from "@/components/home-page/home-10/Header";
 import Footer from "@/components/home-page/home-10/Footer";
 import CallToActions from "@/components/services/CallToActions";
-import SubscribeButton from "@/components/subscription/SubscribeButton";
 
 export const metadata = {
   title: "Pricing | GetClaims — No Win, No Fee",
@@ -176,65 +175,29 @@ const PricingPage = () => {
         </div>
       </div>
 
-      {/* ── Annual Membership ───────────────────────────────────────────── */}
+      {/* ── Flat-Fee Option CTA ────────────────────────────────────────── */}
       <div className="pt-80 pb-80 lg-pt-60 lg-pb-60" style={{ background: "#FFFBF3" }}>
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-10">
-              <div className="row align-items-center gx-5 gy-5">
-
-                {/* Left — copy */}
-                <div className="col-lg-6">
-                  <p style={{ fontSize: "11px", fontWeight: 700, letterSpacing: ".12em", textTransform: "uppercase", color: "#E8920A", marginBottom: "12px" }}>
-                    Flat-Fee Option
+              <div style={{ background: "#1C354F", borderRadius: "20px", padding: "48px 40px", display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "24px" }}>
+                <div>
+                  <p style={{ fontSize: "11px", fontWeight: 700, letterSpacing: ".12em", textTransform: "uppercase", color: "#E8920A", marginBottom: "10px" }}>
+                    Flat-fee option
                   </p>
-                  <h2 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(24px, 3.5vw, 36px)", fontWeight: 700, color: "#1C354F", marginBottom: "16px" }}>
+                  <h2 style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "clamp(22px, 3vw, 32px)", fontWeight: 700, color: "#fff", marginBottom: "10px" }}>
                     Fight Your Insurer for ₹499
                   </h2>
-                  <p style={{ fontSize: "15px", color: "#5C7089", lineHeight: "1.7", marginBottom: "24px" }}>
-                    Pay a one-time flat fee of <strong style={{ color: "#1C354F" }}>₹499</strong> and our experts take on your insurance dispute — drafting complaints, filing with IRDAI, and following up till resolution.
+                  <p style={{ fontSize: "15px", color: "rgba(255,255,255,.65)", lineHeight: "1.6", margin: 0, maxWidth: "480px" }}>
+                    One case, one flat fee — complaint drafting, IRDAI filing, and follow-up till resolution. No annual commitment.
                   </p>
-                  <ul style={{ listStyle: "none", margin: "0 0 24px", padding: 0 }}>
-                    {[
-                      "1 insurance case handled end-to-end",
-                      "Complaint drafting & IRDAI / Ombudsman filing",
-                      "Priority review — response within 24 hours",
-                      "Dedicated case manager assigned",
-                      "No hidden charges at any stage",
-                    ].map((item, i) => (
-                      <li key={i} style={{ display: "flex", alignItems: "center", gap: "10px", padding: "6px 0", fontSize: "14px", color: "#5C7089" }}>
-                        <span style={{ width: "20px", height: "20px", borderRadius: "50%", background: "#DCFCE7", color: "#15803D", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "11px", fontWeight: 700, flexShrink: 0 }}>✓</span>
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
                 </div>
-
-                {/* Right — subscribe card */}
-                <div className="col-lg-6">
-                  <div style={{
-                    background: "#fff", border: "2px solid #FDDFA0",
-                    borderRadius: "20px", padding: "36px 32px",
-                    boxShadow: "0 8px 32px rgba(28,53,79,0.1)",
-                  }}>
-                    <div style={{ textAlign: "center", marginBottom: "24px" }}>
-                      <div style={{
-                        display: "inline-block", background: "#FEF3D0", color: "#C47708",
-                        fontSize: "12px", fontWeight: 700, letterSpacing: ".08em",
-                        textTransform: "uppercase", padding: "5px 14px", borderRadius: "20px",
-                        marginBottom: "16px",
-                      }}>
-                        Best Value
-                      </div>
-                      <div style={{ fontFamily: "var(--font-playfair), Georgia, serif", fontSize: "48px", fontWeight: 800, color: "#1C354F", lineHeight: 1 }}>
-                        &#8377;499
-                      </div>
-                      <div style={{ fontSize: "14px", color: "#5C7089", marginTop: "4px" }}>per case · one-time</div>
-                    </div>
-                    <SubscribeButton />
-                  </div>
-                </div>
-
+                <Link
+                  href="/subscribe"
+                  style={{ background: "#E8920A", color: "#fff", padding: "15px 36px", borderRadius: "12px", fontSize: "16px", fontWeight: 600, textDecoration: "none", display: "inline-block", whiteSpace: "nowrap" }}
+                >
+                  Get Started — ₹499
+                </Link>
               </div>
             </div>
           </div>
